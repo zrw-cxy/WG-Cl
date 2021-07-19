@@ -5,236 +5,281 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN_16, server: 52.81.181.78, port: 21827, type: vmess, uuid: 9cea87a9-07d8-42ef-990a-0cbd5992371d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.81.181.78}}
-  - {name: 🇨🇳 CN_17, server: 52.81.181.78, port: 21825, type: vmess, uuid: 9cea87a9-07d8-42ef-990a-0cbd5992371d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.81.181.78}}
-  - {name: 🇨🇳 CN_18, server: 52.81.181.78, port: 21824, type: vmess, uuid: 9cea87a9-07d8-42ef-990a-0cbd5992371d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.81.181.78}}
-  - {name: 🇭🇰 HK_32, server: 212.102.42.199, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇭🇰 HK_33, server: 212.102.42.194, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇭🇰 HK_34, server: azhk2.pengui.tools, port: 50000, type: vmess, uuid: fa77a1da-32ee-4b4c-b62c-05d0d3426f4b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: azhk2.pengui.tools}}
-  - {name: 🇭🇰 HK_35, server: azhk2.pengui.tools, port: 50007, type: vmess, uuid: fa77a1da-32ee-4b4c-b62c-05d0d3426f4b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: azhk2.pengui.tools}}
-  - {name: 🇯🇵 JP_42, server: 137.220.161.216, port: 35654, type: ss, cipher: chacha20-ietf-poly1305, password: 96a15b984cd95acc}
-  - {name: 🇯🇵 JP_43, server: azjp.pengui.tools, port: 50000, type: vmess, uuid: fa77a1da-32ee-4b4c-b62c-05d0d3426f4b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: azjp.pengui.tools}}
+  - {name: 🇨🇳 CN_20, server: ngzyd-1.okex-tradebot.xyz, port: 30004, type: vmess, uuid: bfcd0463-2f1e-4945-9d90-50037230a372, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 🇭🇰 HK_36, server: 212.102.42.199, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇭🇰 HK_37, server: 84.17.57.73, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇭🇰 HK_38, server: 212.102.42.194, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇭🇰 HK_39, server: azhk2.pengui.tools, port: 50007, type: vmess, uuid: fa77a1da-32ee-4b4c-b62c-05d0d3426f4b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: azhk2.pengui.tools}}
+  - {name: 🇭🇰 HK_40, server: azhk2.pengui.tools, port: 50000, type: vmess, uuid: fa77a1da-32ee-4b4c-b62c-05d0d3426f4b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: azhk2.pengui.tools}}
+  - {name: 🇭🇰 HK_41, server: 18.166.214.33, port: 80, type: vmess, uuid: cc8b49a6-577c-466e-aa6f-d941a4c37e70, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 18.166.214.33}}
+  - {name: 🇯🇵 JP_47, server: 54.199.6.184, port: 65432, type: vmess, uuid: d13634e2-9cd3-4947-ac45-10652da4d147, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 54.199.6.184}}
+  - {name: 🇯🇵 JP_48, server: dreet.dfiiopopiwsdadsda.tk, port: 443, type: vmess, uuid: cdec276f-bb6c-4da2-972a-2174728ac2c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /c12a/, ws-headers: {Host: dreet.dfiiopopiwsdadsda.tk}}
 proxy-groups:
-  - name: 🎯 总模式
+  - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 延迟最低
-      - 🔮 负载均衡
-      - 🔯 故障转移
-      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🚀 手动切换
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
       - DIRECT
-  - name: ♻️ 延迟最低
+  - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 CN_16
-      - 🇨🇳 CN_17
-      - 🇨🇳 CN_18
-      - 🇭🇰 HK_32
-      - 🇭🇰 HK_33
-      - 🇭🇰 HK_34
-      - 🇭🇰 HK_35
-      - 🇯🇵 JP_42
-      - 🇯🇵 JP_43
-  - name: 🔯 故障转移
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 180
-    proxies:
-      - 🇨🇳 CN_16
-      - 🇨🇳 CN_17
-      - 🇨🇳 CN_18
-      - 🇭🇰 HK_32
-      - 🇭🇰 HK_33
-      - 🇭🇰 HK_34
-      - 🇭🇰 HK_35
-      - 🇯🇵 JP_42
-      - 🇯🇵 JP_43
-  - name: 🔮 负载均衡
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 180
-    proxies:
-      - 🇨🇳 CN_16
-      - 🇨🇳 CN_17
-      - 🇨🇳 CN_18
-      - 🇭🇰 HK_32
-      - 🇭🇰 HK_33
-      - 🇭🇰 HK_34
-      - 🇭🇰 HK_35
-      - 🇯🇵 JP_42
-      - 🇯🇵 JP_43
-  - name: 🚀 节点选择
+      - 🇨🇳 CN_20
+      - 🇭🇰 HK_36
+      - 🇭🇰 HK_37
+      - 🇭🇰 HK_38
+      - 🇭🇰 HK_39
+      - 🇭🇰 HK_40
+      - 🇭🇰 HK_41
+      - 🇯🇵 JP_47
+      - 🇯🇵 JP_48
+  - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇨🇳 CN_16
-      - 🇨🇳 CN_17
-      - 🇨🇳 CN_18
-      - 🇭🇰 HK_32
-      - 🇭🇰 HK_33
-      - 🇭🇰 HK_34
-      - 🇭🇰 HK_35
-      - 🇯🇵 JP_42
-      - 🇯🇵 JP_43
+      - 🇨🇳 CN_20
+      - 🇭🇰 HK_36
+      - 🇭🇰 HK_37
+      - 🇭🇰 HK_38
+      - 🇭🇰 HK_39
+      - 🇭🇰 HK_40
+      - 🇭🇰 HK_41
+      - 🇯🇵 JP_47
+      - 🇯🇵 JP_48
   - name: ▶ YouTube
     type: select
     proxies:
-      - 🎯 总模式
-      - 🔮 负载均衡
-      - ♻️ 延迟最低
-      - 🔯 故障转移
       - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
   - name: 🎥 NETFLIX
     type: select
     proxies:
-      - 🎯 总模式
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
       - 🚀 节点选择
-      - 🇨🇳 CN_16
-      - 🇨🇳 CN_17
-      - 🇨🇳 CN_18
-      - 🇭🇰 HK_32
-      - 🇭🇰 HK_33
-      - 🇭🇰 HK_34
-      - 🇭🇰 HK_35
-      - 🇯🇵 JP_42
-      - 🇯🇵 JP_43
       - DIRECT
   - name: 📺 巴哈姆特
     type: select
     proxies:
-      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🚀 手动切换
       - DIRECT
   - name: 📺 哔哩哔哩
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 HK_32
-      - 🇭🇰 HK_33
-      - 🇭🇰 HK_34
-      - 🇭🇰 HK_35
-      - 🚀 节点选择
-  - name: 📺 爱奇艺
-    type: select
-    proxies:
-      - DIRECT
-      - 🇭🇰 HK_32
-      - 🇭🇰 HK_33
-      - 🇭🇰 HK_34
-      - 🇭🇰 HK_35
-      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🚀 手动切换
   - name: ⛩ 日韩媒体
     type: select
     proxies:
-      - 🇯🇵 JP_42
-      - 🇯🇵 JP_43
-      - 🚀 节点选择
-      - DIRECT
-  - name: 🌍 国外媒体
-    type: select
-    proxies:
-      - 🎯 总模式
-      - 🔮 负载均衡
-      - ♻️ 延迟最低
-      - 🔯 故障转移
-      - 🚀 节点选择
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
   - name: 🌏 港台媒体
     type: select
     proxies:
-      - 🇭🇰 HK_32
-      - 🇭🇰 HK_33
-      - 🇭🇰 HK_34
-      - 🇭🇰 HK_35
-      - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🚀 手动切换
       - DIRECT
   - name: 📡 Emby公益服
     type: select
     proxies:
       - DIRECT
-      - 🎯 总模式
-      - 🔮 负载均衡
-      - ♻️ 延迟最低
-      - 🔯 故障转移
       - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: 🎵 TikTok
     type: select
     proxies:
-      - 🎯 总模式
-      - 🔮 负载均衡
-      - 🔯 故障转移
       - 🚀 节点选择
+      - 🇯🇵 日本节点
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
   - name: 🍎 苹果服务
     type: select
     proxies:
       - DIRECT
-      - 🎯 总模式
-      - 🔮 负载均衡
-      - 🔯 故障转移
       - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: 🧩 微软服务
     type: select
     proxies:
       - DIRECT
-      - 🎯 总模式
-      - 🔮 负载均衡
-      - 🔯 故障转移
       - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: 📲 聊天软件
     type: select
     proxies:
-      - 🎯 总模式
-      - 🔮 负载均衡
-      - ♻️ 延迟最低
-      - 🔯 故障转移
       - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
   - name: 🇧🇹 BT&PT
     type: select
     proxies:
       - DIRECT
-      - 🎯 总模式
-      - 🔯 故障转移
-      - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: 🇺🇳 国外网站
     type: select
     proxies:
-      - 🎯 总模式
-      - 🔮 负载均衡
-      - ♻️ 延迟最低
-      - 🔯 故障转移
       - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
   - name: 🇨🇳 国内网站
     type: select
     proxies:
       - DIRECT
-      - 🎯 总模式
-      - 🔯 故障转移
       - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
     proxies:
       - DIRECT
-      - 🎯 总模式
-      - 🔯 故障转移
       - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - DIRECT
-      - 🎯 总模式
-      - 🔮 负载均衡
-      - ♻️ 延迟最低
-      - 🔯 故障转移
       - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: ⛔ 全球拦截
     type: select
     proxies:
       - REJECT
+      - DIRECT
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇭🇰 HK_36
+      - 🇭🇰 HK_37
+      - 🇭🇰 HK_38
+      - 🇭🇰 HK_39
+      - 🇭🇰 HK_40
+      - 🇭🇰 HK_41
+  - name: 🇹🇼 台湾节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - DIRECT
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - 🇯🇵 JP_47
+      - 🇯🇵 JP_48
+  - name: 🇺🇲 美国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - DIRECT
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - DIRECT
+  - name: 🇰🇷 韩国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
       - DIRECT
 rules:
  - DOMAIN-SUFFIX,ip6-localhost,🇨🇳 国内网站
@@ -2097,306 +2142,6 @@ rules:
  - IP-CIDR,103.246.56.0/22,📲 聊天软件,no-resolve
  - IP-CIDR,110.76.140.0/22,📲 聊天软件,no-resolve
  - IP-CIDR,113.61.104.0/22,📲 聊天软件,no-resolve
- - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
- - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
- - DOMAIN-KEYWORD,abema,🌍 国外媒体
- - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
- - DOMAIN,hamifans.emome.net,🌍 国外媒体
- - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
- - DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
- - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
- - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
- - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
- - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
- - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasialive.akamaized.net,🌍 国外媒体
- - DOMAIN,hbogoprod-vod.akamaized.net,🌍 国外媒体
- - DOMAIN,hbolb.onwardsmg.com,🌍 国外媒体
- - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
- - DOMAIN,players.brightcove.net,🌍 国外媒体
- - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
- - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
- - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
- - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
- - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
- - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
- - DOMAIN-SUFFIX,muscdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,musical.ly,🌍 国外媒体
- - DOMAIN-SUFFIX,tik-tokapi.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tiktok.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
- - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
- - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
- - DOMAIN-SUFFIX,scdn.co,🌍 国外媒体
- - DOMAIN-SUFFIX,spoti.fi,🌍 国外媒体
- - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
- - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,spotilocal.com,🌍 国外媒体
- - IP-CIDR,35.186.224.47/32,🌍 国外媒体,no-resolve
- - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
- - DOMAIN-SUFFIX,go.com,🌍 国外媒体
- - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
- - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
- - DOMAIN,atv-ps.amazon.,🌍 国外媒体
- - DOMAIN,fls-na.amazon.com,🌍 国外媒体
- - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
- - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,amazon.co.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,amazon.com,🌍 国外媒体
- - DOMAIN-SUFFIX,amazonaws.co.uk,🌍 国外媒体
- - DOMAIN-SUFFIX,amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,llnwd.net,🌍 国外媒体
- - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
- - IP-CIDR,13.32.0.0/15,🌍 国外媒体,no-resolve
- - IP-CIDR,13.35.0.0/17,🌍 国外媒体,no-resolve
- - IP-CIDR,18.184.0.0/15,🌍 国外媒体,no-resolve
- - IP-CIDR,18.194.0.0/15,🌍 国外媒体,no-resolve
- - IP-CIDR,18.208.0.0/13,🌍 国外媒体,no-resolve
- - IP-CIDR,18.232.0.0/14,🌍 国外媒体,no-resolve
- - IP-CIDR,52.58.0.0/15,🌍 国外媒体,no-resolve
- - IP-CIDR,52.74.0.0/16,🌍 国外媒体,no-resolve
- - IP-CIDR,52.77.0.0/16,🌍 国外媒体,no-resolve
- - IP-CIDR,52.84.0.0/15,🌍 国外媒体,no-resolve
- - IP-CIDR,52.200.0.0/13,🌍 国外媒体,no-resolve
- - IP-CIDR,54.93.0.0/16,🌍 国外媒体,no-resolve
- - IP-CIDR,54.156.0.0/14,🌍 国外媒体,no-resolve
- - IP-CIDR,54.226.0.0/15,🌍 国外媒体,no-resolve
- - IP-CIDR,54.230.156.0/22,🌍 国外媒体,no-resolve
- - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
- - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
- - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
- - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
- - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cdn.cookielaw.org,🌍 国外媒体
- - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
- - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-ll-livedazn-dznlivejp.s.llnwi.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-ll-voddazn-dznvodjp.s.llnwi.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dcalivedazn.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,docomo.ne.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
- - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
- - DOMAIN-SUFFIX,pause-confirmed-marketing-images-prod.s3.eu-central-1.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,rest.zuora.com,🌍 国外媒体
- - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
- - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
- - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
- - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
- - DOMAIN-SUFFIX,bamgrid.com,🌍 国外媒体
- - DOMAIN-SUFFIX,braze.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cdn.optimizely.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cdn.registerdisney.go.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
- - DOMAIN-SUFFIX,d9.flashtalking.com,🌍 国外媒体
- - DOMAIN-SUFFIX,disney-plus.net,🌍 国外媒体
- - DOMAIN-SUFFIX,disney-portal.my.onetrust.com,🌍 国外媒体
- - DOMAIN-SUFFIX,disney.demdex.net,🌍 国外媒体
- - DOMAIN-SUFFIX,disney.my.sentry.io,🌍 国外媒体
- - DOMAIN-SUFFIX,disneyplus.bn5x.net,🌍 国外媒体
- - DOMAIN-SUFFIX,disneyplus.com,🌍 国外媒体
- - DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,🌍 国外媒体
- - DOMAIN-SUFFIX,disneystreaming.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
- - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
- - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
- - DOMAIN,content.jwplatform.com,🌍 国外媒体
- - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
- - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
- - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
- - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
- - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
- - DOMAIN-SUFFIX,theplatform.com,🌍 国外媒体
- - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
- - DOMAIN,cdn-fox-networks-group-green.akamaized.net,🌍 国外媒体
- - DOMAIN,d3cv4a9a9wh0bt.cloudfront.net,🌍 国外媒体
- - DOMAIN,foxsports01-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,foxsports02-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,foxsports03-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,staticasiafox.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,foxplus.com,🌍 国外媒体
- - DOMAIN-SUFFIX,theplatform.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hulu.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hulu.hb.omtrdc.net,🌍 国外媒体
- - DOMAIN-SUFFIX,hulu.sc.omtrdc.net,🌍 国外媒体
- - DOMAIN-SUFFIX,huluad.com,🌍 国外媒体
- - DOMAIN-SUFFIX,huluim.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hulustream.com,🌍 国外媒体
- - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
- - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
- - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
- - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
- - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
- - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
- - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
- - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
- - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
- - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
- - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pandora.tv,🌍 国外媒体
- - DOMAIN-KEYWORD,porn,🌍 国外媒体
- - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
- - DOMAIN-SUFFIX,porn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,porn2.com,🌍 国外媒体
- - DOMAIN-SUFFIX,porn5.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornbase.org,🌍 国外媒体
- - DOMAIN-SUFFIX,pornerbros.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornhd.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornhost.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornhubdeutsch.net,🌍 国外媒体
- - DOMAIN-SUFFIX,pornmm.net,🌍 国外媒体
- - DOMAIN-SUFFIX,pornoxo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornrapidshare.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornsharing.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornsocket.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornstarclub.com,🌍 国外媒体
- - DOMAIN-SUFFIX,porntube.com,🌍 国外媒体
- - DOMAIN-SUFFIX,porntubenews.com,🌍 国外媒体
- - DOMAIN-SUFFIX,porntvblog.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornvisit.com,🌍 国外媒体
- - DOMAIN-SUFFIX,8teenxxx.com,🌍 国外媒体
- - DOMAIN-SUFFIX,ahcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bcvcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bongacams.com,🌍 国外媒体
- - DOMAIN-SUFFIX,chaturbate.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dditscdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,livejasmin.com,🌍 国外媒体
- - DOMAIN-SUFFIX,rdtcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,redtube.com,🌍 国外媒体
- - DOMAIN-SUFFIX,sb-cd.com,🌍 国外媒体
- - DOMAIN-SUFFIX,spankbang.com,🌍 国外媒体
- - DOMAIN-SUFFIX,t66y.com,🌍 国外媒体
- - DOMAIN-SUFFIX,xhamster.com,🌍 国外媒体
- - DOMAIN-SUFFIX,xnxx-cdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,xnxx.com,🌍 国外媒体
- - DOMAIN-SUFFIX,xvideos-cdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,xvideos.com,🌍 国外媒体
- - DOMAIN-SUFFIX,xvideos.es,🌍 国外媒体
- - DOMAIN-SUFFIX,ypncdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,gavgle.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cdn-video03.xyz,🌍 国外媒体
- - DOMAIN-SUFFIX,avgle.com,🌍 国外媒体
- - DOMAIN-SUFFIX,qooqlevideo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,91p52.com,🌍 国外媒体
- - DOMAIN-SUFFIX,91p07.com,🌍 国外媒体
- - DOMAIN-SUFFIX,jquery.com,🌍 国外媒体
- - DOMAIN-SUFFIX,wonderfulday21.live,🌍 国外媒体
- - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
- - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
- - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
- - DOMAIN,aod-hls-uk-live.akamaized.net,🌍 国外媒体
- - DOMAIN,vod-dash-uk-live.akamaized.net,🌍 国外媒体
- - DOMAIN,vod-thumb-uk-live.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,bbc.co,🌍 国外媒体
- - DOMAIN-SUFFIX,bbc.co.uk,🌍 国外媒体
- - DOMAIN-SUFFIX,bbc.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bbc.net.uk,🌍 国外媒体
- - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🌍 国外媒体
- - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
- - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
- - DOMAIN-SUFFIX,discord.co,🌍 国外媒体
- - DOMAIN-SUFFIX,discord.com,🌍 国外媒体
- - DOMAIN-SUFFIX,discord.gg,🌍 国外媒体
- - DOMAIN-SUFFIX,discord.media,🌍 国外媒体
- - DOMAIN-SUFFIX,discordapp.com,🌍 国外媒体
- - DOMAIN-SUFFIX,discordapp.net,🌍 国外媒体
- - DOMAIN-KEYWORD,facebook,🌍 国外媒体
- - DOMAIN-KEYWORD,fbcdn,🌍 国外媒体
- - DOMAIN-SUFFIX,facebook.com,🌍 国外媒体
- - DOMAIN-SUFFIX,fb.com,🌍 国外媒体
- - DOMAIN-SUFFIX,fb.me,🌍 国外媒体
- - DOMAIN-SUFFIX,fbcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,fbcdn.net,🌍 国外媒体
- - IP-CIDR,31.13.24.0/21,🌍 国外媒体,no-resolve
- - IP-CIDR,31.13.64.0/18,🌍 国外媒体,no-resolve
- - IP-CIDR,45.64.40.0/22,🌍 国外媒体,no-resolve
- - IP-CIDR,66.220.144.0/20,🌍 国外媒体,no-resolve
- - IP-CIDR,69.63.176.0/20,🌍 国外媒体,no-resolve
- - IP-CIDR,69.171.224.0/19,🌍 国外媒体,no-resolve
- - IP-CIDR,74.119.76.0/22,🌍 国外媒体,no-resolve
- - IP-CIDR,103.4.96.0/22,🌍 国外媒体,no-resolve
- - IP-CIDR,129.134.0.0/17,🌍 国外媒体,no-resolve
- - IP-CIDR,157.240.0.0/17,🌍 国外媒体,no-resolve
- - IP-CIDR,173.252.64.0/18,🌍 国外媒体,no-resolve
- - IP-CIDR,179.60.192.0/22,🌍 国外媒体,no-resolve
- - IP-CIDR,185.60.216.0/22,🌍 国外媒体,no-resolve
- - IP-CIDR,204.15.20.0/22,🌍 国外媒体,no-resolve
- - DOMAIN-KEYWORD,instagram,🌍 国外媒体
- - DOMAIN-SUFFIX,cdninstagram.com,🌍 国外媒体
- - DOMAIN-SUFFIX,instagram.com,🌍 国外媒体
- - DOMAIN-SUFFIX,instagr.am,🌍 国外媒体
- - DOMAIN-KEYWORD,twitter,🌍 国外媒体
- - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
- - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
- - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
- - DOMAIN-KEYWORD,twitter,🌍 国外媒体
- - DOMAIN-SUFFIX,periscope.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,pscp.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,t.co,🌍 国外媒体
- - DOMAIN-SUFFIX,twimg.co,🌍 国外媒体
- - DOMAIN-SUFFIX,twimg.com,🌍 国外媒体
- - DOMAIN-SUFFIX,twimg.org,🌍 国外媒体
- - DOMAIN-SUFFIX,twitpic.com,🌍 国外媒体
- - DOMAIN-SUFFIX,twitter.com,🌍 国外媒体
- - DOMAIN-SUFFIX,twitter.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,vine.co,🌍 国外媒体
- - DOMAIN-SUFFIX,e-hentai.org,🌍 国外媒体
- - DOMAIN-SUFFIX,ehwiki.org,🌍 国外媒体
- - DOMAIN-SUFFIX,ehgt.org,🌍 国外媒体
- - DOMAIN-SUFFIX,exhentai.org,🌍 国外媒体
- - DOMAIN-SUFFIX,hentaiverse.org,🌍 国外媒体
- - DOMAIN-SUFFIX,hath.network,🌍 国外媒体
- - DOMAIN-KEYWORD,-tiktokcdn-com,🎵 TikTok
- - DOMAIN-SUFFIX,byteoversea.com,🎵 TikTok
- - DOMAIN-SUFFIX,ibytedtos.com,🎵 TikTok
- - DOMAIN-SUFFIX,ipstatp.com,🎵 TikTok
- - DOMAIN-SUFFIX,muscdn.com,🎵 TikTok
- - DOMAIN-SUFFIX,musical.ly,🎵 TikTok
- - DOMAIN-SUFFIX,tik-tokapi.com,🎵 TikTok
- - DOMAIN-SUFFIX,tiktok.com,🎵 TikTok
- - DOMAIN-SUFFIX,tiktokcdn.com,🎵 TikTok
- - DOMAIN-SUFFIX,tiktokv.com,🎵 TikTok
  - DOMAIN,gamer-cds.cdn.hinet.net,📺 巴哈姆特
  - DOMAIN,gamer2-cds.cdn.hinet.net,📺 巴哈姆特
  - DOMAIN-SUFFIX,bahamut.com.tw,📺 巴哈姆特
@@ -2453,6 +2198,16 @@ rules:
  - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
  - IP-CIDR,207.45.72.0/22,🎥 NETFLIX,no-resolve
  - IP-CIDR,208.75.76.0/22,🎥 NETFLIX,no-resolve
+ - DOMAIN-KEYWORD,-tiktokcdn-com,🎵 TikTok
+ - DOMAIN-SUFFIX,byteoversea.com,🎵 TikTok
+ - DOMAIN-SUFFIX,ibytedtos.com,🎵 TikTok
+ - DOMAIN-SUFFIX,ipstatp.com,🎵 TikTok
+ - DOMAIN-SUFFIX,muscdn.com,🎵 TikTok
+ - DOMAIN-SUFFIX,musical.ly,🎵 TikTok
+ - DOMAIN-SUFFIX,tik-tokapi.com,🎵 TikTok
+ - DOMAIN-SUFFIX,tiktok.com,🎵 TikTok
+ - DOMAIN-SUFFIX,tiktokcdn.com,🎵 TikTok
+ - DOMAIN-SUFFIX,tiktokv.com,🎵 TikTok
  - DOMAIN-SUFFIX,dmc.nico,⛩ 日韩媒体
  - DOMAIN-SUFFIX,nicovideo.jp,⛩ 日韩媒体
  - DOMAIN-SUFFIX,nimg.jp,⛩ 日韩媒体
@@ -2547,28 +2302,6 @@ rules:
  - DOMAIN-SUFFIX,hdslb.com,📺 哔哩哔哩
  - DOMAIN-SUFFIX,im9.com,📺 哔哩哔哩
  - DOMAIN-SUFFIX,smtcdns.net,📺 哔哩哔哩
- - DOMAIN,intel-cache.m.iqiyi.com,📺 爱奇艺
- - DOMAIN,intel-cache.video.iqiyi.com,📺 爱奇艺
- - DOMAIN,intl-rcd.iqiyi.com,📺 爱奇艺
- - DOMAIN,intl-subscription.iqiyi.com,📺 爱奇艺
- - DOMAIN-SUFFIX,71.am,📺 爱奇艺
- - DOMAIN-SUFFIX,71edge.com,📺 爱奇艺
- - DOMAIN-SUFFIX,inter.iqiyi.com,📺 爱奇艺
- - DOMAIN-SUFFIX,inter.ptqy.gitv.tv,📺 爱奇艺
- - DOMAIN-SUFFIX,intl.iqiyi.com,📺 爱奇艺
- - DOMAIN-SUFFIX,iq.com,📺 爱奇艺
- - DOMAIN-SUFFIX,iqiyi.com,📺 爱奇艺
- - DOMAIN-SUFFIX,iqiyipic.com,📺 爱奇艺
- - DOMAIN-SUFFIX,ppsimg.com,📺 爱奇艺
- - DOMAIN-SUFFIX,qiyi.com,📺 爱奇艺
- - DOMAIN-SUFFIX,qiyipic.com,📺 爱奇艺
- - DOMAIN-SUFFIX,qy.net,📺 爱奇艺
- - IP-CIDR,23.40.241.251/32,📺 爱奇艺,no-resolve
- - IP-CIDR,23.40.242.10/32,📺 爱奇艺,no-resolve
- - IP-CIDR,103.44.56.0/22,📺 爱奇艺,no-resolve
- - IP-CIDR,118.26.32.0/23,📺 爱奇艺,no-resolve
- - IP-CIDR,118.26.120.0/24,📺 爱奇艺,no-resolve
- - IP-CIDR,223.119.62.225/28,📺 爱奇艺,no-resolve
  - DOMAIN-KEYWORD,announce,🇧🇹 BT&PT
  - DOMAIN-KEYWORD,torrent,🇧🇹 BT&PT
  - DOMAIN-KEYWORD,tracker,🇧🇹 BT&PT
@@ -2688,6 +2421,296 @@ rules:
  - DOMAIN-SUFFIX,plusmedia.site,📡 Emby公益服,Emby
  - DOMAIN-SUFFIX,mickeycloud.com,📡 Emby公益服,Emby
  - DOMAIN-SUFFIX,jmsooo.com,📡 Emby公益服,Emby
+ - DOMAIN-SUFFIX,p-cdn.us,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,sndcdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,soundcloud.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,tidal.com,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,abema,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,skyking.com.tw,🇺🇳 国外网站
+ - DOMAIN,hamifans.emome.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,qobuz.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,🇺🇳 国外网站
+ - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🇺🇳 国外网站
+ - DOMAIN,bcbolthboa-a.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🇺🇳 国外网站
+ - DOMAIN,dai3fd1oh325y.cloudfront.net,🇺🇳 国外网站
+ - DOMAIN,hboasia1-i.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,hboasia2-i.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,hboasia3-i.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,hboasia4-i.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,hboasia5-i.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,hboasialive.akamaized.net,🇺🇳 国外网站
+ - DOMAIN,hbogoprod-vod.akamaized.net,🇺🇳 国外网站
+ - DOMAIN,hbolb.onwardsmg.com,🇺🇳 国外网站
+ - DOMAIN,hbounify-prod.evergent.com,🇺🇳 国外网站
+ - DOMAIN,players.brightcove.net,🇺🇳 国外网站
+ - DOMAIN,s3-ap-southeast-1.amazonaws.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hbo.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hboasia.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hbogo.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hbogoasia.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hbogoasia.hk,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hbomax.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hbomaxcdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hbonow.com,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,-tiktokcdn-com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,byteoversea.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,ibytedtos.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,ipstatp.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,muscdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,musical.ly,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,tik-tokapi.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,tiktok.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,tiktokcdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,tiktokv.com,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,-spotify-com,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,spotify.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pscdn.co,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,scdn.co,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,spoti.fi,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,spotify.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,spotifycdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,spotifycdn.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,spotilocal.com,🇺🇳 国外网站
+ - IP-CIDR,35.186.224.47/32,🇺🇳 国外网站,no-resolve
+ - DOMAIN-SUFFIX,edgedatg.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,go.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,c4assets.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,channel4.com,🇺🇳 国外网站
+ - DOMAIN,atv-ps.amazon.,🇺🇳 国外网站
+ - DOMAIN,fls-na.amazon.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,media-amazon.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,aiv-cdn.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,amazon.co.jp,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,amazon.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,amazonaws.co.uk,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,amazonaws.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,amazonvideo.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,llnwd.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,primevideo.com,🇺🇳 国外网站
+ - IP-CIDR,13.32.0.0/15,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,13.35.0.0/17,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,18.184.0.0/15,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,18.194.0.0/15,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,18.208.0.0/13,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,18.232.0.0/14,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,52.58.0.0/15,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,52.74.0.0/16,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,52.77.0.0/16,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,52.84.0.0/15,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,52.200.0.0/13,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,54.93.0.0/16,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,54.156.0.0/14,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,54.226.0.0/15,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,54.230.156.0/22,🇺🇳 国外网站,no-resolve
+ - DOMAIN,gspe1-ssl.ls.apple.com,🇺🇳 国外网站
+ - DOMAIN,np-edge.itunes.apple.com,🇺🇳 国外网站
+ - DOMAIN,play-edge.itunes.apple.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,tv.apple.com,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,voddazn,🇺🇳 国外网站
+ - DOMAIN,d151l6v8er5bdm.cloudfront.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,amplify.outbrain.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bluekai.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,cdn.cookielaw.org,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,control.kochava.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dazn-api.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dazn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dazndn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dca-ll-livedazn-dznlivejp.s.llnwi.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dca-ll-voddazn-dznvodjp.s.llnwi.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dcalivedazn.akamaized.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,docomo.ne.jp,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,indazn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,indaznlab.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,intercom.io,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pause-confirmed-marketing-images-prod.s3.eu-central-1.amazonaws.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,perfops.doracdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,rest.zuora.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,s.yimg.jp,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,sentry.io,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,vjs.zencdn.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,yahoo.co.jp,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,deezer.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dzcdn.net,🇺🇳 国外网站
+ - DOMAIN,cdn.registerdisney.go.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,adobedtm.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bam.nr-data.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bamgrid.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,braze.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,cdn.optimizely.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,cdn.registerdisney.go.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,cws.conviva.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,d9.flashtalking.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,disney-plus.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,disney-portal.my.onetrust.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,disney.demdex.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,disney.my.sentry.io,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,disneyplus.bn5x.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,disneyplus.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,disneystreaming.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dssott.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,js-agent.newrelic.com,🇺🇳 国外网站
+ - DOMAIN,bcbolt446c5271-a.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,content.jwplatform.com,🇺🇳 国外网站
+ - DOMAIN,edge.api.brightcove.com,🇺🇳 国外网站
+ - DOMAIN,videos-f.jwpsrv.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,encoretvb.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,fox.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,foxdcg.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,theplatform.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,uplynk.com,🇺🇳 国外网站
+ - DOMAIN,cdn-fox-networks-group-green.akamaized.net,🇺🇳 国外网站
+ - DOMAIN,d3cv4a9a9wh0bt.cloudfront.net,🇺🇳 国外网站
+ - DOMAIN,foxsports01-i.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,foxsports02-i.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,foxsports03-i.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN,staticasiafox.akamaized.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,akamaized.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,foxplus.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,theplatform.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,cws-hulu.conviva.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hulu.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hulu.hb.omtrdc.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hulu.sc.omtrdc.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,huluad.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,huluim.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hulustream.com,🇺🇳 国外网站
+ - DOMAIN,itvpnpmobile-a.akamaihd.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,itv.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,itvstatic.com,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,jooxweb-api,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,joox.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,kfs.io,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,kkbox.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,kkbox.com.tw,🇺🇳 国外网站
+ - DOMAIN,d349g9zuie06uo.cloudfront.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,channel5.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,my5.tv,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pbs.org,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pandora.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pandora.tv,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,porn,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,phncdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,phprcdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornhubpremium.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,porn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,porn2.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,porn5.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornbase.org,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornerbros.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornhd.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornhost.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornhub.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornhubdeutsch.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornmm.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornoxo.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornrapidshare.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornsharing.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornsocket.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornstarclub.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,porntube.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,porntubenews.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,porntvblog.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pornvisit.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,8teenxxx.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,ahcdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bcvcdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bongacams.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,chaturbate.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,dditscdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,livejasmin.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,rdtcdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,redtube.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,sb-cd.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,spankbang.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,t66y.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,xhamster.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,xnxx-cdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,xnxx.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,xvideos-cdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,xvideos.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,xvideos.es,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,ypncdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,gavgle.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,cdn-video03.xyz,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,avgle.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,qooqlevideo.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,91p52.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,91p07.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,jquery.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,wonderfulday21.live,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,bbcfmt,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,uk-live,🇺🇳 国外网站
+ - DOMAIN,aod-dash-uk-live.akamaized.net,🇺🇳 国外网站
+ - DOMAIN,aod-hls-uk-live.akamaized.net,🇺🇳 国外网站
+ - DOMAIN,vod-dash-uk-live.akamaized.net,🇺🇳 国外网站
+ - DOMAIN,vod-thumb-uk-live.akamaized.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bbc.co,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bbc.co.uk,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bbc.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bbc.net.uk,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bbci.co,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,bbci.co.uk,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,discord.co,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,discord.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,discord.gg,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,discord.media,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,discordapp.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,discordapp.net,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,facebook,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,fbcdn,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,facebook.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,fb.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,fb.me,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,fbcdn.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,fbcdn.net,🇺🇳 国外网站
+ - IP-CIDR,31.13.24.0/21,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,31.13.64.0/18,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,45.64.40.0/22,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,66.220.144.0/20,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,69.63.176.0/20,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,69.171.224.0/19,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,74.119.76.0/22,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,103.4.96.0/22,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,129.134.0.0/17,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,157.240.0.0/17,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,173.252.64.0/18,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,179.60.192.0/22,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,185.60.216.0/22,🇺🇳 国外网站,no-resolve
+ - IP-CIDR,204.15.20.0/22,🇺🇳 国外网站,no-resolve
+ - DOMAIN-KEYWORD,instagram,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,cdninstagram.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,instagram.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,instagr.am,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,twitter,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,twitch.tv,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,ttvnw.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,jtvnw.net,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,twitchcdn.net,🇺🇳 国外网站
+ - DOMAIN-KEYWORD,twitter,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,periscope.tv,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,pscp.tv,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,t.co,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,twimg.co,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,twimg.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,twimg.org,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,twitpic.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,twitter.com,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,twitter.jp,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,vine.co,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,e-hentai.org,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,ehwiki.org,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,ehgt.org,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,exhentai.org,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hentaiverse.org,🇺🇳 国外网站
+ - DOMAIN-SUFFIX,hath.network,🇺🇳 国外网站
  - DOMAIN-SUFFIX,dler.cloud,🇺🇳 国外网站
  - DOMAIN-SUFFIX,dlercloud.com,🇺🇳 国外网站
  - DOMAIN,dl.google.com,🇺🇳 国外网站
@@ -9069,6 +9092,72 @@ rules:
  - IP-CIDR,203.135.11.0/24,🇨🇳 国内网站,no-resolve
  - IP-CIDR,203.135.13.0/24,🇨🇳 国内网站,no-resolve
  - IP-CIDR,203.135.20.0/24,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.22.0/23,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.24.0/23,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.26.0/24,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.29.0/24,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.33.0/24,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.38.0/23,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.40.0/24,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.43.0/24,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.48.0/24,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,203.135.50.0/24,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,42.186.0.0/16,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,45.127.128.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,45.195.24.0/24,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,45.253.132.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,45.253.240.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,45.254.48.0/23,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,59.111.0.0/20,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,59.111.128.0/17,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.71.120.0/21,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.71.128.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.71.196.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.71.200.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.72.12.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.72.18.0/23,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.72.24.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.72.28.0/23,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.72.38.0/23,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.72.40.0/23,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.72.44.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.72.48.0/21,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.72.128.0/21,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.74.24.0/21,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.74.48.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.126.92.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.129.252.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.131.252.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.135.240.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,103.196.64.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,106.2.32.0/19,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,106.2.64.0/18,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,114.113.196.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,114.113.200.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,115.236.112.0/20,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,115.238.76.0/22,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,123.58.160.0/19,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,223.252.192.0/19,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,101.198.128.0/18,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,101.198.192.0/19,🇨🇳 国内网站,no-resolve
+ - IP-CIDR,101.199.196.0/22,🇨🇳 国内网站,no-resolve
+ - DOMAIN-SUFFIX,smtp,🇨🇳 国内网站
+ - DOMAIN-KEYWORD,aria2,🇨🇳 国内网站
+ - DOMAIN,www.zhjtong.com,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,zhjtong.com,🇨🇳 国内网站
+ - IP-CIDR,129.226.49.82/32,🇨🇳 国内网站
+ - DOMAIN-KEYWORD,speedtest,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,ooklaserver.net,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,time.is,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,seetong.com,🇨🇳 国内网站
+ - IP-CIDR,239.255.255.250/32,🇨🇳 国内网站
+ - IP-CIDR,224.0.0.251/32,🇨🇳 国内网站
+ - IP-CIDR,224.0.0.252/32,🇨🇳 国内网站
+ - IP-CIDR,240.1.0.6/32,🇨🇳 国内网站
+ - IP-CIDR,149.154.175.55/32,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,app-measurement.com,🇨🇳 国内网站
+ - GEOIP,CN,🇨🇳 国内网站
+ - MATCH,🐟 漏网之鱼o-resolve
  - IP-CIDR,203.135.22.0/23,🇨🇳 国内网站,no-resolve
  - IP-CIDR,203.135.24.0/23,🇨🇳 国内网站,no-resolve
  - IP-CIDR,203.135.26.0/24,🇨🇳 国内网站,no-resolve
