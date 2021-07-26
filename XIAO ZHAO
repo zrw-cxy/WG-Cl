@@ -5,14 +5,105 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CZ_19, server: 185.180.14.149, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: CZ_20, server: 185.180.14.149, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: FR_25, server: 51.89.99.59, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: IN_35, server: 137.59.52.107, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: RO_44, server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇭🇰 HK_30, server: 212.102.42.199, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇭🇰 Pool_🇭🇰HK_1735, server: 212.102.42.206, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇺🇸 Pool_🇺🇸US_70 |41.81Mb, server: 104.200.131.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: AU_01, server: 45.248.78.45, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: AU_02, server: 45.248.79.67, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: AU_03, server: 45.248.78.45, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: BA_04, server: 185.99.3.7, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: CA_05, server: ss5.ssrsub.one, port: 7443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_06, server: ss7.ssrsub.one, port: 7139, type: ss, cipher: aes-256-cfb, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_07, server: ss6.ssrsub.one, port: 6443, type: ss, cipher: aes-128-gcm, password: https://dlj.tf/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_08, server: ss8.ssrsub.one, port: 47478, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_09, server: ss10.ssrsub.one, port: 47478, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_10, server: ss3.ssrsub.one, port: 7443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_11, server: ss2.ssrsub.one, port: 6443, type: ss, cipher: aes-128-gcm, password: https://dlj.tf/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_12, server: ss9.ssrsub.one, port: 7139, type: ss, cipher: aes-256-cfb, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_13, server: ss4.ssrsub.one, port: 6443, type: ss, cipher: aes-128-gcm, password: https://dlj.tf/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_14, server: ss1.ssrsub.one, port: 7443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}}
+  - {name: CA_15, server: ss.ca.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: r4TeEt5bK0UD}
+  - {name: CA_16, server: ssr4.ssrsub.one, port: 47478, type: ssr, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: CA_17, server: ssr2.ssrsub.one, port: 47478, type: ssr, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: CA_18, server: ssr1.ssrsub.one, port: 7139, type: ssr, cipher: aes-256-cfb, password: suo.yt/ssrsub, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: CA_19, server: ssr3.ssrsub.one, port: 7139, type: ssr, cipher: aes-256-cfb, password: suo.yt/ssrsub, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: CH_20, server: 84.17.53.210, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: CY_34, server: 195.47.194.42, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: CY_35, server: 195.47.194.42, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: CZ_36, server: 89.187.168.39, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: CZ_37, server: 89.187.168.39, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: DE_38, server: 18.192.65.108, port: 55577, type: vmess, uuid: cb8c035f-b3d5-41a2-fbee-8ba505a9ff29, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 18.192.65.108}}
+  - {name: FR_39, server: ss.de.sshmax.net, port: 21474, type: ss, cipher: chacha20-ietf-poly1305, password: HgCMlgbtQMxl}
+  - {name: FR_40, server: ss.fr.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: 6nhHHuGHw2D5}
+  - {name: FR_41, server: ss.uk.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: JSvsHhHYIuVG}
+  - {name: FR_42, server: ss.uk.sshmax.net, port: 57478, type: ss, cipher: chacha20-ietf-poly1305, password: HgVDIN05O6bH}
+  - {name: FR_43, server: 51.89.99.59, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: FR_44, server: 51.195.62.220, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: FR_45, server: 51.195.62.220, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: FR_46, server: ss.de.sshmax.net, port: 21474, type: ss, cipher: chacha20-ietf-poly1305, password: cWv8FcJk0VpS}
+  - {name: GB_47, server: 81.19.208.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: HR_54, server: 85.10.50.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: HR_55, server: 85.10.50.164, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: HU_56, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: IN_57, server: 137.59.52.107, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: IN_58, server: 137.59.52.107, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: IT_59, server: 82.102.26.117, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: IT_60, server: 82.102.26.117, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: IT_61, server: 82.102.26.117, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: IT_62, server: 82.102.26.117, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: IT_63, server: 82.102.26.117, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: IT_64, server: 82.102.26.117, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: IT_65, server: 82.102.26.117, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: IT_66, server: 82.102.26.117, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: IT_67, server: 82.102.26.117, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: IT_68, server: 82.102.26.117, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: NL_73, server: 46.182.107.146, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: 46.182.107.146}}
+  - {name: NL_74, server: 46.182.107.154, port: 443, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: 46.182.107.154}}
+  - {name: NL_75, server: 46.182.107.94, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: 46.182.107.94}}
+  - {name: NL_76, server: 46.182.107.39, port: 443, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: 46.182.107.39}}
+  - {name: NL_77, server: 46.182.107.157, port: 443, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: 46.182.107.157}}
+  - {name: NL_78, server: 46.182.107.44, port: 443, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: 46.182.107.44}}
+  - {name: NL_79, server: 46.182.107.37, port: 443, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: 46.182.107.37}}
+  - {name: NL_80, server: 46.182.107.93, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: 46.182.107.93}}
+  - {name: NZ_81, server: 180.149.231.11, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: RO_82, server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: ZZ_150, server: 138.199.40.172, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: ZZ_151, server: 138.199.16.137, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: ZZ_152, server: 138.199.16.137, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: ZZ_153, server: 138.199.16.137, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: ZZ_154, server: 138.199.40.172, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: ZZ_155, server: 138.199.19.182, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: ZZ_156, server: 138.199.19.162, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: ZZ_157, server: 138.199.9.202, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: ZZ_158, server: 138.199.16.137, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: 🇨🇳 CN_21, server: zzlt.flyss.link, port: 10015, type: ss, cipher: aes-256-gcm, password: 5b7e05ad-862d-498e-803f-ed2759f52884}
+  - {name: 🇨🇳 CN_22, server: 117.28.243.169, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇨🇳 CN_23, server: zzlt.flyss.link, port: 10023, type: ss, cipher: aes-256-gcm, password: 5b7e05ad-862d-498e-803f-ed2759f52884}
+  - {name: 🇨🇳 CN_24, server: zzlt.flyss.link, port: 10022, type: ss, cipher: aes-256-gcm, password: 5b7e05ad-862d-498e-803f-ed2759f52884}
+  - {name: 🇨🇳 CN_25, server: zzlt.flyss.link, port: 10021, type: ss, cipher: aes-256-gcm, password: 5b7e05ad-862d-498e-803f-ed2759f52884}
+  - {name: 🇨🇳 CN_26, server: p8.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇨🇳 CN_27, server: 117.28.243.246, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇨🇳 CN_28, server: zzlt.flyss.link, port: 10017, type: ss, cipher: aes-256-gcm, password: 5b7e05ad-862d-498e-803f-ed2759f52884}
+  - {name: 🇨🇳 CN_29, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: 🇨🇳 CN_30, server: zzlt.flyss.link, port: 10013, type: ss, cipher: aes-256-gcm, password: 5b7e05ad-862d-498e-803f-ed2759f52884}
+  - {name: 🇨🇳 CN_31, server: ngzyd-1.okex-tradebot.xyz, port: 30014, type: vmess, uuid: e9c1a436-7af3-4118-a826-a5373760c8a2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 🇨🇳 CN_32, server: ngzyd-1.okex-tradebot.xyz, port: 30008, type: vmess, uuid: e9c1a436-7af3-4118-a826-a5373760c8a2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 🇨🇳 CN_33, server: ngzyd-1.okex-tradebot.xyz, port: 30006, type: vmess, uuid: e9c1a436-7af3-4118-a826-a5373760c8a2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 🇨🇳 TW_90, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
+  - {name: 🇭🇰 HK_48, server: 84.17.57.73, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇭🇰 HK_49, server: 212.102.42.194, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇭🇰 HK_50, server: 212.102.42.199, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇭🇰 HK_51, server: kaizen-hk-2.cn0.me, port: 443, type: trojan, password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink, skip-cert-verify: false}
+  - {name: 🇭🇰 HK_52, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, skip-cert-verify: false}
+  - {name: 🇭🇰 HK_53, server: kaizen-hk-4.cn0.me, port: 443, type: trojan, password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink, skip-cert-verify: false}
+  - {name: 🇯🇵 JP_69, server: 137.220.161.216, port: 35654, type: ss, cipher: chacha20-ietf-poly1305, password: 96a15b984cd95acc}
+  - {name: 🇯🇵 JP_70, server: auto.freev2.top, port: 46306, type: vmess, uuid: 5c239b39-4567-4999-bae4-645fc9ab2a30, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 JP_71, server: dreet.dfiiopopiwsdadsda.tk, port: 443, type: vmess, uuid: cdec276f-bb6c-4da2-972a-2174728ac2c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /c12a/, ws-headers: {Host: dreet.dfiiopopiwsdadsda.tk}}
+  - {name: 🇰🇷 KR_72, server: 13.209.43.110, port: 56531, type: vmess, uuid: dca7cafb-0828-465c-b6e7-812b241ad538, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 RU_83, server: 5.189.202.16, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: 🇷🇺 RU_84, server: 5.189.202.16, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: 🇷🇺 RU_85, server: 5.189.202.16, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇷🇺 RU_86, server: 5.189.202.16, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: 🇷🇺 RU_87, server: 5.189.202.16, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇷🇺 RU_88, server: 194.87.48.252, port: 38673, type: vmess, uuid: f0da4655-f438-4008-a9e0-6c7f0c4cfaa5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 SG_89, server: 89.187.163.205, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
 proxy-groups:
   - name: 🎯 总模式
     type: select
@@ -28,51 +119,415 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - CZ_19
-      - CZ_20
-      - FR_25
-      - IN_35
-      - RO_44
-      - 🇭🇰 HK_30
-      - 🇭🇰 Pool_🇭🇰HK_1735
-      - 🇺🇸 Pool_🇺🇸US_70 |41.81Mb
+      - AU_01
+      - AU_02
+      - AU_03
+      - BA_04
+      - CA_05
+      - CA_06
+      - CA_07
+      - CA_08
+      - CA_09
+      - CA_10
+      - CA_11
+      - CA_12
+      - CA_13
+      - CA_14
+      - CA_15
+      - CA_16
+      - CA_17
+      - CA_18
+      - CA_19
+      - CH_20
+      - CY_34
+      - CY_35
+      - CZ_36
+      - CZ_37
+      - DE_38
+      - FR_39
+      - FR_40
+      - FR_41
+      - FR_42
+      - FR_43
+      - FR_44
+      - FR_45
+      - FR_46
+      - GB_47
+      - HR_54
+      - HR_55
+      - HU_56
+      - IN_57
+      - IN_58
+      - IT_59
+      - IT_60
+      - IT_61
+      - IT_62
+      - IT_63
+      - IT_64
+      - IT_65
+      - IT_66
+      - IT_67
+      - IT_68
+      - NL_73
+      - NL_74
+      - NL_75
+      - NL_76
+      - NL_77
+      - NL_78
+      - NL_79
+      - NL_80
+      - NZ_81
+      - RO_82
+      - ZZ_150
+      - ZZ_151
+      - ZZ_152
+      - ZZ_153
+      - ZZ_154
+      - ZZ_155
+      - ZZ_156
+      - ZZ_157
+      - ZZ_158
+      - 🇨🇳 CN_21
+      - 🇨🇳 CN_22
+      - 🇨🇳 CN_23
+      - 🇨🇳 CN_24
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_26
+      - 🇨🇳 CN_27
+      - 🇨🇳 CN_28
+      - 🇨🇳 CN_29
+      - 🇨🇳 CN_30
+      - 🇨🇳 CN_31
+      - 🇨🇳 CN_32
+      - 🇨🇳 CN_33
+      - 🇨🇳 TW_90
+      - 🇭🇰 HK_48
+      - 🇭🇰 HK_49
+      - 🇭🇰 HK_50
+      - 🇭🇰 HK_51
+      - 🇭🇰 HK_52
+      - 🇭🇰 HK_53
+      - 🇯🇵 JP_69
+      - 🇯🇵 JP_70
+      - 🇯🇵 JP_71
+      - 🇰🇷 KR_72
+      - 🇷🇺 RU_83
+      - 🇷🇺 RU_84
+      - 🇷🇺 RU_85
+      - 🇷🇺 RU_86
+      - 🇷🇺 RU_87
+      - 🇷🇺 RU_88
+      - 🇸🇬 SG_89
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - CZ_19
-      - CZ_20
-      - FR_25
-      - IN_35
-      - RO_44
-      - 🇭🇰 HK_30
-      - 🇭🇰 Pool_🇭🇰HK_1735
-      - 🇺🇸 Pool_🇺🇸US_70 |41.81Mb
+      - AU_01
+      - AU_02
+      - AU_03
+      - BA_04
+      - CA_05
+      - CA_06
+      - CA_07
+      - CA_08
+      - CA_09
+      - CA_10
+      - CA_11
+      - CA_12
+      - CA_13
+      - CA_14
+      - CA_15
+      - CA_16
+      - CA_17
+      - CA_18
+      - CA_19
+      - CH_20
+      - CY_34
+      - CY_35
+      - CZ_36
+      - CZ_37
+      - DE_38
+      - FR_39
+      - FR_40
+      - FR_41
+      - FR_42
+      - FR_43
+      - FR_44
+      - FR_45
+      - FR_46
+      - GB_47
+      - HR_54
+      - HR_55
+      - HU_56
+      - IN_57
+      - IN_58
+      - IT_59
+      - IT_60
+      - IT_61
+      - IT_62
+      - IT_63
+      - IT_64
+      - IT_65
+      - IT_66
+      - IT_67
+      - IT_68
+      - NL_73
+      - NL_74
+      - NL_75
+      - NL_76
+      - NL_77
+      - NL_78
+      - NL_79
+      - NL_80
+      - NZ_81
+      - RO_82
+      - ZZ_150
+      - ZZ_151
+      - ZZ_152
+      - ZZ_153
+      - ZZ_154
+      - ZZ_155
+      - ZZ_156
+      - ZZ_157
+      - ZZ_158
+      - 🇨🇳 CN_21
+      - 🇨🇳 CN_22
+      - 🇨🇳 CN_23
+      - 🇨🇳 CN_24
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_26
+      - 🇨🇳 CN_27
+      - 🇨🇳 CN_28
+      - 🇨🇳 CN_29
+      - 🇨🇳 CN_30
+      - 🇨🇳 CN_31
+      - 🇨🇳 CN_32
+      - 🇨🇳 CN_33
+      - 🇨🇳 TW_90
+      - 🇭🇰 HK_48
+      - 🇭🇰 HK_49
+      - 🇭🇰 HK_50
+      - 🇭🇰 HK_51
+      - 🇭🇰 HK_52
+      - 🇭🇰 HK_53
+      - 🇯🇵 JP_69
+      - 🇯🇵 JP_70
+      - 🇯🇵 JP_71
+      - 🇰🇷 KR_72
+      - 🇷🇺 RU_83
+      - 🇷🇺 RU_84
+      - 🇷🇺 RU_85
+      - 🇷🇺 RU_86
+      - 🇷🇺 RU_87
+      - 🇷🇺 RU_88
+      - 🇸🇬 SG_89
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - CZ_19
-      - CZ_20
-      - FR_25
-      - IN_35
-      - RO_44
-      - 🇭🇰 HK_30
-      - 🇭🇰 Pool_🇭🇰HK_1735
-      - 🇺🇸 Pool_🇺🇸US_70 |41.81Mb
+      - AU_01
+      - AU_02
+      - AU_03
+      - BA_04
+      - CA_05
+      - CA_06
+      - CA_07
+      - CA_08
+      - CA_09
+      - CA_10
+      - CA_11
+      - CA_12
+      - CA_13
+      - CA_14
+      - CA_15
+      - CA_16
+      - CA_17
+      - CA_18
+      - CA_19
+      - CH_20
+      - CY_34
+      - CY_35
+      - CZ_36
+      - CZ_37
+      - DE_38
+      - FR_39
+      - FR_40
+      - FR_41
+      - FR_42
+      - FR_43
+      - FR_44
+      - FR_45
+      - FR_46
+      - GB_47
+      - HR_54
+      - HR_55
+      - HU_56
+      - IN_57
+      - IN_58
+      - IT_59
+      - IT_60
+      - IT_61
+      - IT_62
+      - IT_63
+      - IT_64
+      - IT_65
+      - IT_66
+      - IT_67
+      - IT_68
+      - NL_73
+      - NL_74
+      - NL_75
+      - NL_76
+      - NL_77
+      - NL_78
+      - NL_79
+      - NL_80
+      - NZ_81
+      - RO_82
+      - ZZ_150
+      - ZZ_151
+      - ZZ_152
+      - ZZ_153
+      - ZZ_154
+      - ZZ_155
+      - ZZ_156
+      - ZZ_157
+      - ZZ_158
+      - 🇨🇳 CN_21
+      - 🇨🇳 CN_22
+      - 🇨🇳 CN_23
+      - 🇨🇳 CN_24
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_26
+      - 🇨🇳 CN_27
+      - 🇨🇳 CN_28
+      - 🇨🇳 CN_29
+      - 🇨🇳 CN_30
+      - 🇨🇳 CN_31
+      - 🇨🇳 CN_32
+      - 🇨🇳 CN_33
+      - 🇨🇳 TW_90
+      - 🇭🇰 HK_48
+      - 🇭🇰 HK_49
+      - 🇭🇰 HK_50
+      - 🇭🇰 HK_51
+      - 🇭🇰 HK_52
+      - 🇭🇰 HK_53
+      - 🇯🇵 JP_69
+      - 🇯🇵 JP_70
+      - 🇯🇵 JP_71
+      - 🇰🇷 KR_72
+      - 🇷🇺 RU_83
+      - 🇷🇺 RU_84
+      - 🇷🇺 RU_85
+      - 🇷🇺 RU_86
+      - 🇷🇺 RU_87
+      - 🇷🇺 RU_88
+      - 🇸🇬 SG_89
   - name: 🚀 节点选择
     type: select
     proxies:
-      - CZ_19
-      - CZ_20
-      - FR_25
-      - IN_35
-      - RO_44
-      - 🇭🇰 HK_30
-      - 🇭🇰 Pool_🇭🇰HK_1735
-      - 🇺🇸 Pool_🇺🇸US_70 |41.81Mb
+      - AU_01
+      - AU_02
+      - AU_03
+      - BA_04
+      - CA_05
+      - CA_06
+      - CA_07
+      - CA_08
+      - CA_09
+      - CA_10
+      - CA_11
+      - CA_12
+      - CA_13
+      - CA_14
+      - CA_15
+      - CA_16
+      - CA_17
+      - CA_18
+      - CA_19
+      - CH_20
+      - CY_34
+      - CY_35
+      - CZ_36
+      - CZ_37
+      - DE_38
+      - FR_39
+      - FR_40
+      - FR_41
+      - FR_42
+      - FR_43
+      - FR_44
+      - FR_45
+      - FR_46
+      - GB_47
+      - HR_54
+      - HR_55
+      - HU_56
+      - IN_57
+      - IN_58
+      - IT_59
+      - IT_60
+      - IT_61
+      - IT_62
+      - IT_63
+      - IT_64
+      - IT_65
+      - IT_66
+      - IT_67
+      - IT_68
+      - NL_73
+      - NL_74
+      - NL_75
+      - NL_76
+      - NL_77
+      - NL_78
+      - NL_79
+      - NL_80
+      - NZ_81
+      - RO_82
+      - ZZ_150
+      - ZZ_151
+      - ZZ_152
+      - ZZ_153
+      - ZZ_154
+      - ZZ_155
+      - ZZ_156
+      - ZZ_157
+      - ZZ_158
+      - 🇨🇳 CN_21
+      - 🇨🇳 CN_22
+      - 🇨🇳 CN_23
+      - 🇨🇳 CN_24
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_26
+      - 🇨🇳 CN_27
+      - 🇨🇳 CN_28
+      - 🇨🇳 CN_29
+      - 🇨🇳 CN_30
+      - 🇨🇳 CN_31
+      - 🇨🇳 CN_32
+      - 🇨🇳 CN_33
+      - 🇨🇳 TW_90
+      - 🇭🇰 HK_48
+      - 🇭🇰 HK_49
+      - 🇭🇰 HK_50
+      - 🇭🇰 HK_51
+      - 🇭🇰 HK_52
+      - 🇭🇰 HK_53
+      - 🇯🇵 JP_69
+      - 🇯🇵 JP_70
+      - 🇯🇵 JP_71
+      - 🇰🇷 KR_72
+      - 🇷🇺 RU_83
+      - 🇷🇺 RU_84
+      - 🇷🇺 RU_85
+      - 🇷🇺 RU_86
+      - 🇷🇺 RU_87
+      - 🇷🇺 RU_88
+      - 🇸🇬 SG_89
   - name: ▶ YouTube
     type: select
     proxies:
@@ -87,37 +542,143 @@ proxy-groups:
     proxies:
       - 🎯 总模式
       - 🚀 节点选择
-      - CZ_19
-      - CZ_20
-      - FR_25
-      - IN_35
-      - RO_44
-      - 🇭🇰 HK_30
-      - 🇭🇰 Pool_🇭🇰HK_1735
-      - 🇺🇸 Pool_🇺🇸US_70 |41.81Mb
+      - AU_01
+      - AU_02
+      - AU_03
+      - BA_04
+      - CA_05
+      - CA_06
+      - CA_07
+      - CA_08
+      - CA_09
+      - CA_10
+      - CA_11
+      - CA_12
+      - CA_13
+      - CA_14
+      - CA_15
+      - CA_16
+      - CA_17
+      - CA_18
+      - CA_19
+      - CH_20
+      - CY_34
+      - CY_35
+      - CZ_36
+      - CZ_37
+      - DE_38
+      - FR_39
+      - FR_40
+      - FR_41
+      - FR_42
+      - FR_43
+      - FR_44
+      - FR_45
+      - FR_46
+      - GB_47
+      - HR_54
+      - HR_55
+      - HU_56
+      - IN_57
+      - IN_58
+      - IT_59
+      - IT_60
+      - IT_61
+      - IT_62
+      - IT_63
+      - IT_64
+      - IT_65
+      - IT_66
+      - IT_67
+      - IT_68
+      - NL_73
+      - NL_74
+      - NL_75
+      - NL_76
+      - NL_77
+      - NL_78
+      - NL_79
+      - NL_80
+      - NZ_81
+      - RO_82
+      - ZZ_150
+      - ZZ_151
+      - ZZ_152
+      - ZZ_153
+      - ZZ_154
+      - ZZ_155
+      - ZZ_156
+      - ZZ_157
+      - ZZ_158
+      - 🇨🇳 CN_21
+      - 🇨🇳 CN_22
+      - 🇨🇳 CN_23
+      - 🇨🇳 CN_24
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_26
+      - 🇨🇳 CN_27
+      - 🇨🇳 CN_28
+      - 🇨🇳 CN_29
+      - 🇨🇳 CN_30
+      - 🇨🇳 CN_31
+      - 🇨🇳 CN_32
+      - 🇨🇳 CN_33
+      - 🇨🇳 TW_90
+      - 🇭🇰 HK_48
+      - 🇭🇰 HK_49
+      - 🇭🇰 HK_50
+      - 🇭🇰 HK_51
+      - 🇭🇰 HK_52
+      - 🇭🇰 HK_53
+      - 🇯🇵 JP_69
+      - 🇯🇵 JP_70
+      - 🇯🇵 JP_71
+      - 🇰🇷 KR_72
+      - 🇷🇺 RU_83
+      - 🇷🇺 RU_84
+      - 🇷🇺 RU_85
+      - 🇷🇺 RU_86
+      - 🇷🇺 RU_87
+      - 🇷🇺 RU_88
+      - 🇸🇬 SG_89
       - DIRECT
   - name: 📺 巴哈姆特
     type: select
     proxies:
+      - 🇨🇳 TW_90
       - 🚀 节点选择
       - DIRECT
   - name: 📺 哔哩哔哩
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 HK_30
-      - 🇭🇰 Pool_🇭🇰HK_1735
+      - 🇨🇳 TW_90
+      - 🇭🇰 HK_48
+      - 🇭🇰 HK_49
+      - 🇭🇰 HK_50
+      - 🇭🇰 HK_51
+      - 🇭🇰 HK_52
+      - 🇭🇰 HK_53
       - 🚀 节点选择
   - name: 📺 爱奇艺
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 HK_30
-      - 🇭🇰 Pool_🇭🇰HK_1735
+      - 🇨🇳 TW_90
+      - 🇭🇰 HK_48
+      - 🇭🇰 HK_49
+      - 🇭🇰 HK_50
+      - 🇭🇰 HK_51
+      - 🇭🇰 HK_52
+      - 🇭🇰 HK_53
       - 🚀 节点选择
   - name: ⛩ 日韩媒体
     type: select
     proxies:
+      - 🇯🇵 JP_69
+      - 🇯🇵 JP_70
+      - 🇯🇵 JP_71
+      - 🇰🇷 KR_72
       - 🚀 节点选择
       - DIRECT
   - name: 🌍 国外媒体
@@ -132,8 +693,13 @@ proxy-groups:
   - name: 🌏 港台媒体
     type: select
     proxies:
-      - 🇭🇰 HK_30
-      - 🇭🇰 Pool_🇭🇰HK_1735
+      - 🇨🇳 TW_90
+      - 🇭🇰 HK_48
+      - 🇭🇰 HK_49
+      - 🇭🇰 HK_50
+      - 🇭🇰 HK_51
+      - 🇭🇰 HK_52
+      - 🇭🇰 HK_53
       - 🚀 节点选择
       - DIRECT
   - name: 📡 Emby公益服
@@ -248,6 +814,22 @@ rules:
  - DOMAIN-SUFFIX,routerlogin.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,tendawifi.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,zte.home,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,dizhensubao.getui.com,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🇨🇳 国内网站
+ - DOMAIN,origin-a.akamaihd.net,🇨🇳 国内网站
+ - DOMAIN,livew.l.qq.com,🇨🇳 国内网站
+ - DOMAIN,vd.l.qq.com,🇨🇳 国内网站
+ - DOMAIN,analytics.strava.com,🇨🇳 国内网站
+ - DOMAIN,msg.umeng.com,🇨🇳 国内网站
+ - DOMAIN,msg.umengcloud.com,🇨🇳 国内网站
+ - DOMAIN,tracking.miui.com,🇨🇳 国内网站
+ - DOMAIN,app.adjust.com,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,sellercentral.amazon.com,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,advertising.amazon.com,🇨🇳 国内网站
+ - DOMAIN,checkip.synology.com,🇨🇳 国内网站
+ - DOMAIN,checkipv6.synology.com,🇨🇳 国内网站
+ - DOMAIN,checkport.synology.com,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,ol.epicgames.com,🇨🇳 国内网站
  - DOMAIN-KEYWORD,admarvel,⛔ 全球拦截
  - DOMAIN-KEYWORD,admaster,⛔ 全球拦截
  - DOMAIN-KEYWORD,adsage,⛔ 全球拦截
