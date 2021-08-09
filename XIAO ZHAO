@@ -5,17 +5,13 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: FR_47, server: 51.195.62.223, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: Pool__05, server: 199.10.64.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: Pool__280, server: 137.59.52.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: Pool__97, server: 81.19.208.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
   - {name: 馃嚜馃嚫 ES_30, server: 212.102.48.10, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: 馃嚞馃嚙 GB_50, server: 81.19.223.189, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 馃嚠馃嚬 IT_67, server: 84.17.58.205, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 馃嚪馃嚧 RO_101, server: 89.37.95.15, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 馃嚪馃嚧 RO_104, server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇨🇳 馃嚚馃嚦 CN_17, server: cm-jm.okvpn.cc, port: 20001, type: vmess, uuid: 94a60d56-10ee-4796-a072-25fc8d9a52b8, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.cc}}
   - {name: 🇸🇬 馃嚫馃嚞 SG_115, server: 89.187.163.205, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
   - {name: 🇸🇬 馃嚫馃嚞 SG_116, server: 89.187.163.212, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇹🇼 馃嚬馃嚰 TW_120, server: 2.58.242.158, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 🇺🇸 馃嚭馃嚫 US_141, server: 156.146.33.75, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
 proxy-groups:
   - name: 🎯 总模式
     type: select
@@ -31,63 +27,47 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - FR_47
+      - Pool__05
+      - Pool__280
+      - Pool__97
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
-      - 馃嚠馃嚬 IT_67
-      - 馃嚪馃嚧 RO_101
-      - 馃嚪馃嚧 RO_104
-      - 🇨🇳 馃嚚馃嚦 CN_17
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
-      - 🇹🇼 馃嚬馃嚰 TW_120
-      - 🇺🇸 馃嚭馃嚫 US_141
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - FR_47
+      - Pool__05
+      - Pool__280
+      - Pool__97
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
-      - 馃嚠馃嚬 IT_67
-      - 馃嚪馃嚧 RO_101
-      - 馃嚪馃嚧 RO_104
-      - 🇨🇳 馃嚚馃嚦 CN_17
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
-      - 🇹🇼 馃嚬馃嚰 TW_120
-      - 🇺🇸 馃嚭馃嚫 US_141
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - FR_47
+      - Pool__05
+      - Pool__280
+      - Pool__97
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
-      - 馃嚠馃嚬 IT_67
-      - 馃嚪馃嚧 RO_101
-      - 馃嚪馃嚧 RO_104
-      - 🇨🇳 馃嚚馃嚦 CN_17
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
-      - 🇹🇼 馃嚬馃嚰 TW_120
-      - 🇺🇸 馃嚭馃嚫 US_141
   - name: 🚀 节点选择
     type: select
     proxies:
-      - FR_47
+      - Pool__05
+      - Pool__280
+      - Pool__97
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
-      - 馃嚠馃嚬 IT_67
-      - 馃嚪馃嚧 RO_101
-      - 馃嚪馃嚧 RO_104
-      - 🇨🇳 馃嚚馃嚦 CN_17
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
-      - 🇹🇼 馃嚬馃嚰 TW_120
-      - 🇺🇸 馃嚭馃嚫 US_141
   - name: ▶ YouTube
     type: select
     proxies:
@@ -102,35 +82,28 @@ proxy-groups:
     proxies:
       - 🎯 总模式
       - 🚀 节点选择
-      - FR_47
+      - Pool__05
+      - Pool__280
+      - Pool__97
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
-      - 馃嚠馃嚬 IT_67
-      - 馃嚪馃嚧 RO_101
-      - 馃嚪馃嚧 RO_104
-      - 🇨🇳 馃嚚馃嚦 CN_17
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
-      - 🇹🇼 馃嚬馃嚰 TW_120
-      - 🇺🇸 馃嚭馃嚫 US_141
       - DIRECT
   - name: 📺 巴哈姆特
     type: select
     proxies:
-      - 🇹🇼 馃嚬馃嚰 TW_120
       - 🚀 节点选择
       - DIRECT
   - name: 📺 哔哩哔哩
     type: select
     proxies:
       - DIRECT
-      - 🇹🇼 馃嚬馃嚰 TW_120
       - 🚀 节点选择
   - name: 📺 爱奇艺
     type: select
     proxies:
       - DIRECT
-      - 🇹🇼 馃嚬馃嚰 TW_120
       - 🚀 节点选择
   - name: ⛩ 日韩媒体
     type: select
@@ -149,7 +122,6 @@ proxy-groups:
   - name: 🌏 港台媒体
     type: select
     proxies:
-      - 🇹🇼 馃嚬馃嚰 TW_120
       - 🚀 节点选择
       - DIRECT
   - name: 📡 Emby公益服
