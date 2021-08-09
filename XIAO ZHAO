@@ -5,11 +5,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: FR_47, server: 51.195.62.223, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: Pool__05, server: 199.10.64.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: Pool__280, server: 137.59.52.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: Pool__1013, server: 138.199.16.137, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: Pool__962, server: 138.199.16.137, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: Pool__967, server: 138.199.16.137, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
   - {name: Pool__97, server: 81.19.208.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: Pool__970, server: 138.199.16.137, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: Pool__975, server: 138.199.16.137, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: Pool__980, server: 138.199.16.137, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
   - {name: 馃嚜馃嚫 ES_30, server: 212.102.48.10, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: 馃嚞馃嚙 GB_50, server: 81.19.223.189, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 馃嚠馃嚬 IT_67, server: 84.17.58.205, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
   - {name: 🇸🇬 馃嚫馃嚞 SG_115, server: 89.187.163.205, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
   - {name: 🇸🇬 馃嚫馃嚞 SG_116, server: 89.187.163.212, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
 proxy-groups:
@@ -27,11 +34,18 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - FR_47
       - Pool__05
-      - Pool__280
+      - Pool__1013
+      - Pool__962
+      - Pool__967
       - Pool__97
+      - Pool__970
+      - Pool__975
+      - Pool__980
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
+      - 馃嚠馃嚬 IT_67
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
   - name: 🔯 故障转移
@@ -39,11 +53,18 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - FR_47
       - Pool__05
-      - Pool__280
+      - Pool__1013
+      - Pool__962
+      - Pool__967
       - Pool__97
+      - Pool__970
+      - Pool__975
+      - Pool__980
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
+      - 馃嚠馃嚬 IT_67
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
   - name: 🔮 负载均衡
@@ -51,21 +72,35 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - FR_47
       - Pool__05
-      - Pool__280
+      - Pool__1013
+      - Pool__962
+      - Pool__967
       - Pool__97
+      - Pool__970
+      - Pool__975
+      - Pool__980
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
+      - 馃嚠馃嚬 IT_67
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
   - name: 🚀 节点选择
     type: select
     proxies:
+      - FR_47
       - Pool__05
-      - Pool__280
+      - Pool__1013
+      - Pool__962
+      - Pool__967
       - Pool__97
+      - Pool__970
+      - Pool__975
+      - Pool__980
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
+      - 馃嚠馃嚬 IT_67
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
   - name: ▶ YouTube
@@ -82,11 +117,18 @@ proxy-groups:
     proxies:
       - 🎯 总模式
       - 🚀 节点选择
+      - FR_47
       - Pool__05
-      - Pool__280
+      - Pool__1013
+      - Pool__962
+      - Pool__967
       - Pool__97
+      - Pool__970
+      - Pool__975
+      - Pool__980
       - 馃嚜馃嚫 ES_30
       - 馃嚞馃嚙 GB_50
+      - 馃嚠馃嚬 IT_67
       - 🇸🇬 馃嚫馃嚞 SG_115
       - 🇸🇬 馃嚫馃嚞 SG_116
       - DIRECT
