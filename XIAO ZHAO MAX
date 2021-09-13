@@ -5,71 +5,50 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 馃嚟馃嚢HK_5227, server: 52.175.63.55, port: 10010, type: vmess, uuid: eb95b3eb-ceeb-424b-b70f-986292144364, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /path, ws-headers: {Host: "http://ec2-54-223-120-161.cn-north-1.compute.amazonaws.com.cn,f932c3d98981b.download.microsoft.com"}}
-  - {name: 馃嚚馃嚲 CY_29, server: 195.47.194.40, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: "| 8.23Mb", server: sg01.cathayroute.com, port: 33099, type: ssr, cipher: rc4-md5, password: HdsrwE, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇰🇷 馃嚢馃嚪KR_6431, server: 103.249.31.26, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 馃弫 ZZ_317, server: 138.199.19.162, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 馃弫ZZ_14498, server: 138.199.17.130, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: Pool__97, server: 81.19.208.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇸🇬 馃嚫馃嚞 SG_200, server: 89.187.163.212, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 馃嚚馃嚳CZ_2560 |53.78Mb, server: 185.180.14.147, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 馃嚠馃嚬IT_5971 |56.13Mb, server: 84.17.58.190, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: Pool_馃嚠馃嚬IT_2030, server: 212.102.54.130, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇸🇬 馃嚫馃嚞 SG_201, server: 89.187.163.205, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 馃嚪馃嚧RO_7756, server: 91.90.123.163, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 馃嚭馃嚫 US_236, server: 143.244.57.99, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: Pool_馃嚠馃嚬IT_2053, server: 84.17.58.152, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: Pool_馃嚦馃嚤NL_2617, server: 89.46.223.189, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 馃嚪馃嚧RO_7747, server: 91.90.123.131, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: Pool_馃弫ZZ_4836, server: 138.199.17.130, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: Pool_馃嚠馃嚬IT_2034, server: 212.102.54.130, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 馃弫ZZ_14527, server: 138.199.17.130, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 馃嚪馃嚧 RO_185, server: 193.29.106.5, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 馃嚠馃嚬IT_5969 |57.67Mb, server: 84.17.58.190, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: Pool__967, server: 138.199.16.137, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: _1129 |31.43Mb, server: 91.90.123.187, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇸🇬 馃嚫馃嚞 SG_199, server: 89.187.163.210, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 馃嚪馃嚧RO_8728, server: 193.29.106.155, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 🇺🇸 馃嚭馃嚫US_13078, server: 84.17.41.77, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇺🇸 馃嚭馃嚫US_10817, server: 84.17.41.77, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 馃弫 ZZ_309, server: 138.199.16.137, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: Pool_馃嚠馃嚬IT_2184, server: 212.102.54.130, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 馃嚠馃嚬 IT_116, server: 84.17.58.205, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: Pool_ |51.10Mb, server: 91.90.123.187, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 馃弫 ZZ_316, server: 138.199.16.137, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 馃嚞馃嚙 GB_89, server: 81.19.223.189, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇷🇺 馃嚪馃嚭 RU_189, server: 5.189.202.16, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: 🇺🇸 Pool_馃嚭馃嚫US_3461, server: 199.10.64.131, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 馃嚭馃嚫US_11765, server: 104.244.208.205, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 馃嚛馃嚜DE_2818 |58.71Mb, server: 37.120.196.53, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇰🇷 馃嚢馃嚪KR_6434, server: 103.249.31.26, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 馃嚪馃嚧RO_7986, server: 45.83.91.131, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: 🇺🇸 馃嚭馃嚫US_11604, server: 199.10.64.131, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 馃嚪馃嚧 RO_165, server: 91.90.123.163, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: 馃嚚馃嚲 CY_32, server: 195.47.194.70, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: Pool_馃嚞馃嚙GB_1588, server: 185.44.76.55, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: Pool__970, server: 138.199.16.137, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 馃嚪馃嚧RO_8008, server: 193.29.106.179, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 馃嚭馃嚫 US_298, server: 66.115.182.82, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇷🇺 馃嚪馃嚭 RU_194, server: 5.189.202.16, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 馃嚪馃嚧 RO_176, server: 89.37.95.15, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 馃嚪馃嚧RO_7829 |48.36Mb, server: 194.110.115.77, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇺🇸 馃嚭馃嚫US_11763, server: 104.244.208.205, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 馃嚠馃嚦 IN_110, server: 103.94.27.229, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: _1156 | 8.08Mb, server: 5.253.205.229, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 馃嚙馃嚜BE_2058 |60.83Mb, server: 217.138.211.219, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇺🇸 馃嚭馃嚫 US_244, server: 198.147.22.167, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇺🇸 馃嚭馃嚫 US_226, server: 198.147.22.83, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 馃嚪馃嚧RO_7758, server: 91.90.123.187, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇷🇺 馃嚪馃嚭 RU_193, server: 5.189.202.16, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: 馃嚝馃嚪 FR_65, server: 51.195.62.223, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: _991 |57.98Mb, server: 143.244.57.99, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: 馃嚪馃嚧 RO_73, server: 193.29.106.29, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 馃嚪馃嚧 RO_75, server: 193.29.107.163, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 馃嚙馃嚜 BE_04, server: 217.138.211.219, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 馃嚠馃嚦 IN_40, server: 137.59.52.107, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 馃嚠馃嚬 IT_45, server: 212.102.54.181, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 馃嚙馃嚘 BA_02, server: 185.164.34.250, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 馃嚝馃嚪 FR_27, server: 185.166.84.19, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 馃嚪馃嚧 RO_70, server: 193.29.107.237, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 馃嚨馃嚬 PT_64, server: 5.154.174.67, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 馃嚪馃嚧 RO_72, server: 193.29.106.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 馃嚪馃嚫 RS_77, server: 152.89.160.213, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇺🇸 馃嚭馃嚫 US_93, server: 212.102.46.56, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 馃嚭馃嚫 US_91, server: 104.244.211.141, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 馃嚭馃嚫 US_95, server: 212.102.44.86, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 馃嚛馃嚜 DE_23, server: 37.120.217.149, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 馃嚞馃嚙 GB_33, server: 89.238.130.253, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 馃嚝馃嚪 FR_28, server: 185.108.106.146, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 馃嚝馃嚪 FR_29, server: 185.166.84.87, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 馃嚞馃嚙 GB_30, server: 146.70.27.37, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 馃嚨馃嚬 PT_62, server: 5.154.174.189, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 馃嚪馃嚧 RO_74, server: 89.37.95.23, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 馃嚪馃嚫 RS_78, server: 152.89.160.213, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 馃嚜馃嚫 ES_25, server: 185.188.61.119, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 馃弫 ZZ_110, server: 91.205.230.160, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 馃嚜馃嚫 ES_26, server: 194.150.167.28, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 馃嚞馃嚙 GB_31, server: 86.106.136.85, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 馃嚠馃嚬 IT_43, server: 37.120.207.5, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 馃嚪馃嚧 RO_67, server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 馃嚫馃嚠 SI_82, server: 195.158.249.36, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 馃嚫馃嚠 SI_83, server: 195.158.249.36, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 馃嚫馃嚢 SK_85, server: 37.120.221.5, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 馃嚚馃嚘 CA_06, server: ss2.ssrsub.one, port: 3443, type: ss, cipher: aes-128-gcm, password: https://dlj.tf/ssrsub}
+  - {name: 馃嚠馃嚬 IT_46, server: 217.138.219.229, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 馃嚫馃嚠 SI_84, server: 195.158.249.40, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 馃嚞馃嚙 GB_32, server: 195.181.171.233, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 馃嚟馃嚪 HR_39, server: 85.10.50.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 馃嚠馃嚬 IT_44, server: 217.138.219.227, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
@@ -81,132 +60,172 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇭🇰 馃嚟馃嚢HK_5227
-      - 馃嚚馃嚲 CY_29
-      - "| 8.23Mb"
-      - 🇰🇷 馃嚢馃嚪KR_6431
-      - 馃弫 ZZ_317
-      - 馃弫ZZ_14498
-      - Pool__97
-      - 🇸🇬 馃嚫馃嚞 SG_200
-      - 馃嚚馃嚳CZ_2560 |53.78Mb
-      - 馃嚠馃嚬IT_5971 |56.13Mb
-      - Pool_馃嚠馃嚬IT_2030
-      - 🇸🇬 馃嚫馃嚞 SG_201
-      - 馃嚪馃嚧RO_7756
-      - 🇺🇸 馃嚭馃嚫 US_236
-      - Pool_馃嚠馃嚬IT_2053
-      - Pool_馃嚦馃嚤NL_2617
-      - 馃嚪馃嚧RO_7747
-      - Pool_馃弫ZZ_4836
-      - Pool_馃嚠馃嚬IT_2034
-      - 馃弫ZZ_14527
-      - 馃嚪馃嚧 RO_185
-      - 馃嚠馃嚬IT_5969 |57.67Mb
-      - Pool__967
-      - _1129 |31.43Mb
-      - 🇸🇬 馃嚫馃嚞 SG_199
-      - 馃嚪馃嚧RO_8728
-      - 🇺🇸 馃嚭馃嚫US_13078
-      - 🇺🇸 馃嚭馃嚫US_10817
-      - 馃弫 ZZ_309
-      - Pool_馃嚠馃嚬IT_2184
-      - 馃嚠馃嚬 IT_116
-      - Pool_ |51.10Mb
-      - 馃弫 ZZ_316
-      - 馃嚞馃嚙 GB_89
-      - 🇷🇺 馃嚪馃嚭 RU_189
-      - 🇺🇸 Pool_馃嚭馃嚫US_3461
-      - 🇺🇸 馃嚭馃嚫US_11765
-      - 馃嚛馃嚜DE_2818 |58.71Mb
-      - 🇰🇷 馃嚢馃嚪KR_6434
-      - 馃嚪馃嚧RO_7986
-      - 🇺🇸 馃嚭馃嚫US_11604
-      - 馃嚪馃嚧 RO_165
-      - 馃嚚馃嚲 CY_32
-      - Pool_馃嚞馃嚙GB_1588
-      - Pool__970
-      - 馃嚪馃嚧RO_8008
-      - 🇺🇸 馃嚭馃嚫 US_298
-      - 🇷🇺 馃嚪馃嚭 RU_194
-      - 馃嚪馃嚧 RO_176
-      - 馃嚪馃嚧RO_7829 |48.36Mb
-      - 🇺🇸 馃嚭馃嚫US_11763
-      - 馃嚠馃嚦 IN_110
-      - _1156 | 8.08Mb
-      - 馃嚙馃嚜BE_2058 |60.83Mb
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - 🇺🇸 馃嚭馃嚫 US_226
-      - 馃嚪馃嚧RO_7758
-      - 🇷🇺 馃嚪馃嚭 RU_193
-      - 馃嚝馃嚪 FR_65
-      - _991 |57.98Mb
+      - 馃嚪馃嚧 RO_73
+      - 馃嚪馃嚧 RO_75
+      - 馃嚙馃嚜 BE_04
+      - 馃嚠馃嚦 IN_40
+      - 馃嚠馃嚬 IT_45
+      - 馃嚙馃嚘 BA_02
+      - 馃嚝馃嚪 FR_27
+      - 馃嚪馃嚧 RO_70
+      - 馃嚨馃嚬 PT_64
+      - 馃嚪馃嚧 RO_72
+      - 馃嚪馃嚫 RS_77
+      - 🇺🇸 馃嚭馃嚫 US_93
+      - 🇺🇸 馃嚭馃嚫 US_91
+      - 🇺🇸 馃嚭馃嚫 US_95
+      - 馃嚛馃嚜 DE_23
+      - 馃嚞馃嚙 GB_33
+      - 馃嚝馃嚪 FR_28
+      - 馃嚝馃嚪 FR_29
+      - 馃嚞馃嚙 GB_30
+      - 馃嚨馃嚬 PT_62
+      - 馃嚪馃嚧 RO_74
+      - 馃嚪馃嚫 RS_78
+      - 馃嚜馃嚫 ES_25
+      - 馃弫 ZZ_110
+      - 馃嚜馃嚫 ES_26
+      - 馃嚞馃嚙 GB_31
+      - 馃嚠馃嚬 IT_43
+      - 馃嚪馃嚧 RO_67
+      - 馃嚫馃嚠 SI_82
+      - 馃嚫馃嚠 SI_83
+      - 馃嚫馃嚢 SK_85
+      - 馃嚚馃嚘 CA_06
+      - 馃嚠馃嚬 IT_46
+      - 馃嚫馃嚠 SI_84
+      - 馃嚞馃嚙 GB_32
+      - 馃嚟馃嚪 HR_39
+      - 馃嚠馃嚬 IT_44
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 馃嚟馃嚢HK_5227
-      - 馃嚚馃嚲 CY_29
-      - "| 8.23Mb"
-      - 🇰🇷 馃嚢馃嚪KR_6431
-      - 馃弫 ZZ_317
-      - 馃弫ZZ_14498
-      - Pool__97
-      - 🇸🇬 馃嚫馃嚞 SG_200
-      - 馃嚚馃嚳CZ_2560 |53.78Mb
-      - 馃嚠馃嚬IT_5971 |56.13Mb
-      - Pool_馃嚠馃嚬IT_2030
-      - 🇸🇬 馃嚫馃嚞 SG_201
-      - 馃嚪馃嚧RO_7756
-      - 🇺🇸 馃嚭馃嚫 US_236
-      - Pool_馃嚠馃嚬IT_2053
-      - Pool_馃嚦馃嚤NL_2617
-      - 馃嚪馃嚧RO_7747
-      - Pool_馃弫ZZ_4836
-      - Pool_馃嚠馃嚬IT_2034
-      - 馃弫ZZ_14527
-      - 馃嚪馃嚧 RO_185
-      - 馃嚠馃嚬IT_5969 |57.67Mb
-      - Pool__967
-      - _1129 |31.43Mb
-      - 🇸🇬 馃嚫馃嚞 SG_199
-      - 馃嚪馃嚧RO_8728
-      - 🇺🇸 馃嚭馃嚫US_13078
-      - 🇺🇸 馃嚭馃嚫US_10817
-      - 馃弫 ZZ_309
-      - Pool_馃嚠馃嚬IT_2184
-      - 馃嚠馃嚬 IT_116
-      - Pool_ |51.10Mb
-      - 馃弫 ZZ_316
-      - 馃嚞馃嚙 GB_89
-      - 🇷🇺 馃嚪馃嚭 RU_189
-      - 🇺🇸 Pool_馃嚭馃嚫US_3461
-      - 🇺🇸 馃嚭馃嚫US_11765
-      - 馃嚛馃嚜DE_2818 |58.71Mb
-      - 🇰🇷 馃嚢馃嚪KR_6434
-      - 馃嚪馃嚧RO_7986
-      - 🇺🇸 馃嚭馃嚫US_11604
-      - 馃嚪馃嚧 RO_165
-      - 馃嚚馃嚲 CY_32
-      - Pool_馃嚞馃嚙GB_1588
-      - Pool__970
-      - 馃嚪馃嚧RO_8008
-      - 🇺🇸 馃嚭馃嚫 US_298
-      - 🇷🇺 馃嚪馃嚭 RU_194
-      - 馃嚪馃嚧 RO_176
-      - 馃嚪馃嚧RO_7829 |48.36Mb
-      - 🇺🇸 馃嚭馃嚫US_11763
-      - 馃嚠馃嚦 IN_110
-      - _1156 | 8.08Mb
-      - 馃嚙馃嚜BE_2058 |60.83Mb
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - 🇺🇸 馃嚭馃嚫 US_226
-      - 馃嚪馃嚧RO_7758
-      - 🇷🇺 馃嚪馃嚭 RU_193
-      - 馃嚝馃嚪 FR_65
-      - _991 |57.98Mb
+      - 馃嚪馃嚧 RO_73
+      - 馃嚪馃嚧 RO_75
+      - 馃嚙馃嚜 BE_04
+      - 馃嚠馃嚦 IN_40
+      - 馃嚠馃嚬 IT_45
+      - 馃嚙馃嚘 BA_02
+      - 馃嚝馃嚪 FR_27
+      - 馃嚪馃嚧 RO_70
+      - 馃嚨馃嚬 PT_64
+      - 馃嚪馃嚧 RO_72
+      - 馃嚪馃嚫 RS_77
+      - 🇺🇸 馃嚭馃嚫 US_93
+      - 🇺🇸 馃嚭馃嚫 US_91
+      - 🇺🇸 馃嚭馃嚫 US_95
+      - 馃嚛馃嚜 DE_23
+      - 馃嚞馃嚙 GB_33
+      - 馃嚝馃嚪 FR_28
+      - 馃嚝馃嚪 FR_29
+      - 馃嚞馃嚙 GB_30
+      - 馃嚨馃嚬 PT_62
+      - 馃嚪馃嚧 RO_74
+      - 馃嚪馃嚫 RS_78
+      - 馃嚜馃嚫 ES_25
+      - 馃弫 ZZ_110
+      - 馃嚜馃嚫 ES_26
+      - 馃嚞馃嚙 GB_31
+      - 馃嚠馃嚬 IT_43
+      - 馃嚪馃嚧 RO_67
+      - 馃嚫馃嚠 SI_82
+      - 馃嚫馃嚠 SI_83
+      - 馃嚫馃嚢 SK_85
+      - 馃嚚馃嚘 CA_06
+      - 馃嚠馃嚬 IT_46
+      - 馃嚫馃嚠 SI_84
+      - 馃嚞馃嚙 GB_32
+      - 馃嚟馃嚪 HR_39
+      - 馃嚠馃嚬 IT_44
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 馃嚪馃嚧 RO_73
+      - 馃嚪馃嚧 RO_75
+      - 馃嚙馃嚜 BE_04
+      - 馃嚠馃嚦 IN_40
+      - 馃嚠馃嚬 IT_45
+      - 馃嚙馃嚘 BA_02
+      - 馃嚝馃嚪 FR_27
+      - 馃嚪馃嚧 RO_70
+      - 馃嚨馃嚬 PT_64
+      - 馃嚪馃嚧 RO_72
+      - 馃嚪馃嚫 RS_77
+      - 🇺🇸 馃嚭馃嚫 US_93
+      - 🇺🇸 馃嚭馃嚫 US_91
+      - 🇺🇸 馃嚭馃嚫 US_95
+      - 馃嚛馃嚜 DE_23
+      - 馃嚞馃嚙 GB_33
+      - 馃嚝馃嚪 FR_28
+      - 馃嚝馃嚪 FR_29
+      - 馃嚞馃嚙 GB_30
+      - 馃嚨馃嚬 PT_62
+      - 馃嚪馃嚧 RO_74
+      - 馃嚪馃嚫 RS_78
+      - 馃嚜馃嚫 ES_25
+      - 馃弫 ZZ_110
+      - 馃嚜馃嚫 ES_26
+      - 馃嚞馃嚙 GB_31
+      - 馃嚠馃嚬 IT_43
+      - 馃嚪馃嚧 RO_67
+      - 馃嚫馃嚠 SI_82
+      - 馃嚫馃嚠 SI_83
+      - 馃嚫馃嚢 SK_85
+      - 馃嚚馃嚘 CA_06
+      - 馃嚠馃嚬 IT_46
+      - 馃嚫馃嚠 SI_84
+      - 馃嚞馃嚙 GB_32
+      - 馃嚟馃嚪 HR_39
+      - 馃嚠馃嚬 IT_44
+  - name: 🔮 负载均衡
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 馃嚪馃嚧 RO_73
+      - 馃嚪馃嚧 RO_75
+      - 馃嚙馃嚜 BE_04
+      - 馃嚠馃嚦 IN_40
+      - 馃嚠馃嚬 IT_45
+      - 馃嚙馃嚘 BA_02
+      - 馃嚝馃嚪 FR_27
+      - 馃嚪馃嚧 RO_70
+      - 馃嚨馃嚬 PT_64
+      - 馃嚪馃嚧 RO_72
+      - 馃嚪馃嚫 RS_77
+      - 🇺🇸 馃嚭馃嚫 US_93
+      - 🇺🇸 馃嚭馃嚫 US_91
+      - 🇺🇸 馃嚭馃嚫 US_95
+      - 馃嚛馃嚜 DE_23
+      - 馃嚞馃嚙 GB_33
+      - 馃嚝馃嚪 FR_28
+      - 馃嚝馃嚪 FR_29
+      - 馃嚞馃嚙 GB_30
+      - 馃嚨馃嚬 PT_62
+      - 馃嚪馃嚧 RO_74
+      - 馃嚪馃嚫 RS_78
+      - 馃嚜馃嚫 ES_25
+      - 馃弫 ZZ_110
+      - 馃嚜馃嚫 ES_26
+      - 馃嚞馃嚙 GB_31
+      - 馃嚠馃嚬 IT_43
+      - 馃嚪馃嚧 RO_67
+      - 馃嚫馃嚠 SI_82
+      - 馃嚫馃嚠 SI_83
+      - 馃嚫馃嚢 SK_85
+      - 馃嚚馃嚘 CA_06
+      - 馃嚠馃嚬 IT_46
+      - 馃嚫馃嚠 SI_84
+      - 馃嚞馃嚙 GB_32
+      - 馃嚟馃嚪 HR_39
+      - 馃嚠馃嚬 IT_44
   - name: 📲 电报消息
     type: select
     proxies:
@@ -383,7 +402,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 馃嚟馃嚢HK_5227
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -397,16 +416,9 @@ proxy-groups:
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇸 馃嚭馃嚫 US_236
-      - 🇺🇸 馃嚭馃嚫US_13078
-      - 🇺🇸 馃嚭馃嚫US_10817
-      - 🇺🇸 Pool_馃嚭馃嚫US_3461
-      - 🇺🇸 馃嚭馃嚫US_11765
-      - 🇺🇸 馃嚭馃嚫US_11604
-      - 🇺🇸 馃嚭馃嚫 US_298
-      - 🇺🇸 馃嚭馃嚫US_11763
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - 🇺🇸 馃嚭馃嚫 US_226
+      - 🇺🇸 馃嚭馃嚫 US_93
+      - 🇺🇸 馃嚭馃嚫 US_91
+      - 🇺🇸 馃嚭馃嚫 US_95
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -420,17 +432,14 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 馃嚫馃嚞 SG_200
-      - 🇸🇬 馃嚫馃嚞 SG_201
-      - 🇸🇬 馃嚫馃嚞 SG_199
+      - DIRECT
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 馃嚢馃嚪KR_6431
-      - 🇰🇷 馃嚢馃嚪KR_6434
+      - DIRECT
   - name: 🎥 奈飞节点
     type: select
     proxies:
@@ -2530,6 +2539,7 @@ rules:
  - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🌍 国外媒体
  - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
  - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
+ - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
  - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
