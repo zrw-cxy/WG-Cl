@@ -5,69 +5,69 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 馃嚚馃嚦 CN_88, server: 42.157.8.162, port: 46006, type: vmess, uuid: 3959477e-55c4-453f-bc80-3b13e64891ac, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 馃嚭馃嚫 US_142, server: 66.115.177.153, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: _03, server: 45.79.126.80, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 馃嚠馃嚦IN_65, server: 172.105.57.249, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 馃嚟馃嚢HK_50, server: 118.107.244.112, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 馃弫ZZ_234, server: 134.195.196.193, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 馃嚚馃嚦 CN_88
-      - 🇺🇸 馃嚭馃嚫 US_142
-      - _03
+      - 馃嚠馃嚦IN_65
+      - 🇭🇰 馃嚟馃嚢HK_50
+      - 馃弫ZZ_234
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 馃嚚馃嚦 CN_88
-      - 🇺🇸 馃嚭馃嚫 US_142
-      - _03
+      - 馃嚠馃嚦IN_65
+      - 🇭🇰 馃嚟馃嚢HK_50
+      - 馃弫ZZ_234
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 馃嚚馃嚦 CN_88
-      - 🇺🇸 馃嚭馃嚫 US_142
-      - _03
+      - 馃嚠馃嚦IN_65
+      - 🇭🇰 馃嚟馃嚢HK_50
+      - 馃弫ZZ_234
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 馃嚚馃嚦 CN_88
-      - 🇺🇸 馃嚭馃嚫 US_142
-      - _03
+      - 馃嚠馃嚦IN_65
+      - 🇭🇰 馃嚟馃嚢HK_50
+      - 馃弫ZZ_234
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 馃嚚馃嚦 CN_88
-      - 🇺🇸 馃嚭馃嚫 US_142
-      - _03
+      - 馃嚠馃嚦IN_65
+      - 🇭🇰 馃嚟馃嚢HK_50
+      - 馃弫ZZ_234
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 馃嚚馃嚦 CN_88
-      - 🇺🇸 馃嚭馃嚫 US_142
-      - _03
+      - 馃嚠馃嚦IN_65
+      - 🇭🇰 馃嚟馃嚢HK_50
+      - 馃弫ZZ_234
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 馃嚚馃嚦 CN_88
-      - 🇺🇸 馃嚭馃嚫 US_142
-      - _03
+      - 馃嚠馃嚦IN_65
+      - 🇭🇰 馃嚟馃嚢HK_50
+      - 馃弫ZZ_234
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,9 +90,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 馃嚚馃嚦 CN_88
-      - 🇺🇸 馃嚭馃嚫 US_142
-      - _03
+      - 馃嚠馃嚦IN_65
+      - 🇭🇰 馃嚟馃嚢HK_50
+      - 馃弫ZZ_234
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -126,6 +126,8 @@ rules:
  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
+ - DOMAIN,xivanalysis.com,🎯 全球直连
+ - DOMAIN,picanalysis.vivo.com.cn,🎯 全球直连
  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
  - DOMAIN,livew.l.qq.com,🎯 全球直连
  - DOMAIN,vd.l.qq.com,🎯 全球直连
@@ -1890,6 +1892,7 @@ rules:
  - DOMAIN-SUFFIX,msftauthimages.net,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,msftidentity.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,msidentity.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msn.cn,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,msn.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,msocdn.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,msocsp.com,Ⓜ️ 微软服务
@@ -2678,6 +2681,8 @@ rules:
  - DOMAIN-SUFFIX,kaikeba.com,🎯 全球直连
  - DOMAIN-SUFFIX,laomo.me,🎯 全球直连
  - DOMAIN-SUFFIX,mpyit.com,🎯 全球直连
+ - DOMAIN-SUFFIX,msftconnecttest.com,🎯 全球直连
+ - DOMAIN-SUFFIX,msftncsi.com,🎯 全球直连
  - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
  - DOMAIN-SUFFIX,cn,🎯 全球直连
  - DOMAIN-SUFFIX,中国,🎯 全球直连
@@ -3142,6 +3147,8 @@ rules:
  - DOMAIN-SUFFIX,lancdns.com,🎯 全球直连
  - DOMAIN-SUFFIX,landiannews.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzou.com,🎯 全球直连
+ - DOMAIN-SUFFIX,lanzoui.com,🎯 全球直连
+ - DOMAIN-SUFFIX,lanzoux.com,🎯 全球直连
  - DOMAIN-SUFFIX,lemicp.com,🎯 全球直连
  - DOMAIN-SUFFIX,letitfly.me,🎯 全球直连
  - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
@@ -3211,6 +3218,7 @@ rules:
  - DOMAIN-SUFFIX,sspai.com,🎯 全球直连
  - DOMAIN-SUFFIX,startssl.com,🎯 全球直连
  - DOMAIN-SUFFIX,suning.com,🎯 全球直连
+ - DOMAIN-SUFFIX,synology.com,🎯 全球直连
  - DOMAIN-SUFFIX,taihe.com,🎯 全球直连
  - DOMAIN-SUFFIX,th-sjy.com,🎯 全球直连
  - DOMAIN-SUFFIX,tianqi.com,🎯 全球直连
