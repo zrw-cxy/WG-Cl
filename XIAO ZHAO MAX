@@ -5,165 +5,149 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇷🇺 馃嚪馃嚭RU_680, server: 45.140.169.176, port: 10055, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_975, server: 23.226.131.146, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
-  - {name: Relay_馃嚪馃嚧RO-馃嚫馃嚜SE_658, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1725, server: aezee4ea.nodeinfo.icu, port: 6011, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1727, server: aemoo9wi.nodeinfo.icu, port: 7008, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1729, server: iqu5ujio.nodeinfo.icu, port: 7006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: Relay_馃嚥馃嚱MX-馃嚥馃嚱MX_571, server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
-  - {name: Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_573, server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
-  - {name: 馃嚚馃嚘CA_174, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1730, server: quaex7oo.nodeinfo.icu, port: 7005, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1726, server: ahheil5u.nodeinfo.icu, port: 6012, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1723, server: inu8azei.nodeinfo.icu, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: "|46.19Mb", server: vieghei0.nodeinfo.icu, port: 6018, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1724, server: jaibio5c.nodeinfo.icu, port: 7007, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1728, server: koo3cuiz.nodeinfo.icu, port: 6013, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇺🇸 馃嚭馃嚫 US_244, server: 192.46.209.215, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "|50.17Mb", server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540, server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
+  - {name: Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224, server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
+  - {name: Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431, server: 185.128.26.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: GU3kqh2ZSkzFkRBp4hxy}
+  - {name: 🇺🇸 馃嚭馃嚫US_1168, server: 172.107.233.230, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 馃嚭馃嚫US_1249, server: 172.107.233.230, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08, server: 37.120.212.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2XtmwMEgsVJYKWF4VjkL}
+  - {name: 🇺🇸 馃嚭馃嚫 US_244 2, server: 192.46.209.215, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇳 馃嚚馃嚦CN_273, server: 00.cn2.rocketdns.xyz, port: 65001, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb, server: 00.cn3.rocketdns.xyz, port: 65007, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
+  - {name: 馃嚦馃嚤NL_628, server: 85.208.108.146, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 馃嚦馃嚤 NL_142, server: 85.208.108.146, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇷🇺 馃嚪馃嚭RU_680
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_975
-      - Relay_馃嚪馃嚧RO-馃嚫馃嚜SE_658
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1725
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1727
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1729
-      - Relay_馃嚥馃嚱MX-馃嚥馃嚱MX_571
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_573
-      - 馃嚚馃嚘CA_174
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1730
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1726
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1723
-      - "|46.19Mb"
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1724
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1728
+      - 🇺🇸 馃嚭馃嚫 US_244
+      - "|50.17Mb"
+      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
+      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
+      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
+      - 🇺🇸 馃嚭馃嚫US_1168
+      - 🇺🇸 馃嚭馃嚫US_1249
+      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
+      - 🇺🇸 馃嚭馃嚫 US_244 2
+      - 🇨🇳 馃嚚馃嚦CN_273
+      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
+      - 馃嚦馃嚤NL_628
+      - 馃嚦馃嚤 NL_142
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇷🇺 馃嚪馃嚭RU_680
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_975
-      - Relay_馃嚪馃嚧RO-馃嚫馃嚜SE_658
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1725
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1727
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1729
-      - Relay_馃嚥馃嚱MX-馃嚥馃嚱MX_571
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_573
-      - 馃嚚馃嚘CA_174
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1730
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1726
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1723
-      - "|46.19Mb"
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1724
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1728
+      - 🇺🇸 馃嚭馃嚫 US_244
+      - "|50.17Mb"
+      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
+      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
+      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
+      - 🇺🇸 馃嚭馃嚫US_1168
+      - 🇺🇸 馃嚭馃嚫US_1249
+      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
+      - 🇺🇸 馃嚭馃嚫 US_244 2
+      - 🇨🇳 馃嚚馃嚦CN_273
+      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
+      - 馃嚦馃嚤NL_628
+      - 馃嚦馃嚤 NL_142
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺 馃嚪馃嚭RU_680
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_975
-      - Relay_馃嚪馃嚧RO-馃嚫馃嚜SE_658
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1725
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1727
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1729
-      - Relay_馃嚥馃嚱MX-馃嚥馃嚱MX_571
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_573
-      - 馃嚚馃嚘CA_174
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1730
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1726
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1723
-      - "|46.19Mb"
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1724
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1728
+      - 🇺🇸 馃嚭馃嚫 US_244
+      - "|50.17Mb"
+      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
+      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
+      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
+      - 🇺🇸 馃嚭馃嚫US_1168
+      - 🇺🇸 馃嚭馃嚫US_1249
+      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
+      - 🇺🇸 馃嚭馃嚫 US_244 2
+      - 🇨🇳 馃嚚馃嚦CN_273
+      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
+      - 馃嚦馃嚤NL_628
+      - 馃嚦馃嚤 NL_142
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇷🇺 馃嚪馃嚭RU_680
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_975
-      - Relay_馃嚪馃嚧RO-馃嚫馃嚜SE_658
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1725
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1727
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1729
-      - Relay_馃嚥馃嚱MX-馃嚥馃嚱MX_571
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_573
-      - 馃嚚馃嚘CA_174
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1730
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1726
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1723
-      - "|46.19Mb"
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1724
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1728
+      - 🇺🇸 馃嚭馃嚫 US_244
+      - "|50.17Mb"
+      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
+      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
+      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
+      - 🇺🇸 馃嚭馃嚫US_1168
+      - 🇺🇸 馃嚭馃嚫US_1249
+      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
+      - 🇺🇸 馃嚭馃嚫 US_244 2
+      - 🇨🇳 馃嚚馃嚦CN_273
+      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
+      - 馃嚦馃嚤NL_628
+      - 馃嚦馃嚤 NL_142
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇷🇺 馃嚪馃嚭RU_680
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_975
-      - Relay_馃嚪馃嚧RO-馃嚫馃嚜SE_658
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1725
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1727
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1729
-      - Relay_馃嚥馃嚱MX-馃嚥馃嚱MX_571
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_573
-      - 馃嚚馃嚘CA_174
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1730
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1726
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1723
-      - "|46.19Mb"
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1724
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1728
+      - 🇺🇸 馃嚭馃嚫 US_244
+      - "|50.17Mb"
+      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
+      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
+      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
+      - 🇺🇸 馃嚭馃嚫US_1168
+      - 🇺🇸 馃嚭馃嚫US_1249
+      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
+      - 🇺🇸 馃嚭馃嚫 US_244 2
+      - 🇨🇳 馃嚚馃嚦CN_273
+      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
+      - 馃嚦馃嚤NL_628
+      - 馃嚦馃嚤 NL_142
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇷🇺 馃嚪馃嚭RU_680
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_975
-      - Relay_馃嚪馃嚧RO-馃嚫馃嚜SE_658
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1725
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1727
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1729
-      - Relay_馃嚥馃嚱MX-馃嚥馃嚱MX_571
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_573
-      - 馃嚚馃嚘CA_174
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1730
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1726
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1723
-      - "|46.19Mb"
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1724
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1728
+      - 🇺🇸 馃嚭馃嚫 US_244
+      - "|50.17Mb"
+      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
+      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
+      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
+      - 🇺🇸 馃嚭馃嚫US_1168
+      - 🇺🇸 馃嚭馃嚫US_1249
+      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
+      - 🇺🇸 馃嚭馃嚫 US_244 2
+      - 🇨🇳 馃嚚馃嚦CN_273
+      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
+      - 馃嚦馃嚤NL_628
+      - 馃嚦馃嚤 NL_142
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 馃嚪馃嚭RU_680
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_975
-      - Relay_馃嚪馃嚧RO-馃嚫馃嚜SE_658
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1725
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1727
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1729
-      - Relay_馃嚥馃嚱MX-馃嚥馃嚱MX_571
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_573
-      - 馃嚚馃嚘CA_174
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1730
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1726
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1723
-      - "|46.19Mb"
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1724
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1728
+      - 🇺🇸 馃嚭馃嚫 US_244
+      - "|50.17Mb"
+      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
+      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
+      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
+      - 🇺🇸 馃嚭馃嚫US_1168
+      - 🇺🇸 馃嚭馃嚫US_1249
+      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
+      - 🇺🇸 馃嚭馃嚫 US_244 2
+      - 🇨🇳 馃嚚馃嚦CN_273
+      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
+      - 馃嚦馃嚤NL_628
+      - 馃嚦馃嚤 NL_142
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -186,21 +170,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 馃嚪馃嚭RU_680
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_975
-      - Relay_馃嚪馃嚧RO-馃嚫馃嚜SE_658
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1725
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1727
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1729
-      - Relay_馃嚥馃嚱MX-馃嚥馃嚱MX_571
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_573
-      - 馃嚚馃嚘CA_174
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1730
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1726
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1723
-      - "|46.19Mb"
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1724
-      - 🇺🇸 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_1728
+      - 🇺🇸 馃嚭馃嚫 US_244
+      - "|50.17Mb"
+      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
+      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
+      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
+      - 🇺🇸 馃嚭馃嚫US_1168
+      - 🇺🇸 馃嚭馃嚫US_1249
+      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
+      - 🇺🇸 馃嚭馃嚫 US_244 2
+      - 🇨🇳 馃嚚馃嚦CN_273
+      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
+      - 馃嚦馃嚤NL_628
+      - 馃嚦馃嚤 NL_142
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
