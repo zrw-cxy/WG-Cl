@@ -5,149 +5,85 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 馃嚭馃嚫 US_244, server: 192.46.209.215, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: "|50.17Mb", server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540, server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
-  - {name: Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224, server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
-  - {name: Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431, server: 185.128.26.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: GU3kqh2ZSkzFkRBp4hxy}
-  - {name: 🇺🇸 馃嚭馃嚫US_1168, server: 172.107.233.230, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 馃嚭馃嚫US_1249, server: 172.107.233.230, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08, server: 37.120.212.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2XtmwMEgsVJYKWF4VjkL}
-  - {name: 🇺🇸 馃嚭馃嚫 US_244 2, server: 192.46.209.215, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇨🇳 馃嚚馃嚦CN_273, server: 00.cn2.rocketdns.xyz, port: 65001, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb, server: 00.cn3.rocketdns.xyz, port: 65007, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: 馃嚦馃嚤NL_628, server: 85.208.108.146, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 馃嚦馃嚤 NL_142, server: 85.208.108.146, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: Relay_ |27.79Mb, server: 183.232.56.110, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: Relay_ |68.98Mb, server: 183.232.56.110, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: ""}
+  - {name: Relay_ |27.19Mb, server: 183.232.56.110, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇯🇵 馃嚡馃嚨JP_584, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: www.gov.hk}}
+  - {name: 馃弫 ZZ_1998, server: 169.197.143.157, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - "|50.17Mb"
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
-      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
-      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
-      - 🇺🇸 馃嚭馃嚫US_1168
-      - 🇺🇸 馃嚭馃嚫US_1249
-      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
-      - 🇺🇸 馃嚭馃嚫 US_244 2
-      - 🇨🇳 馃嚚馃嚦CN_273
-      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
-      - 馃嚦馃嚤NL_628
-      - 馃嚦馃嚤 NL_142
+      - Relay_ |27.79Mb
+      - Relay_ |68.98Mb
+      - Relay_ |27.19Mb
+      - 🇯🇵 馃嚡馃嚨JP_584
+      - 馃弫 ZZ_1998
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - "|50.17Mb"
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
-      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
-      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
-      - 🇺🇸 馃嚭馃嚫US_1168
-      - 🇺🇸 馃嚭馃嚫US_1249
-      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
-      - 🇺🇸 馃嚭馃嚫 US_244 2
-      - 🇨🇳 馃嚚馃嚦CN_273
-      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
-      - 馃嚦馃嚤NL_628
-      - 馃嚦馃嚤 NL_142
+      - Relay_ |27.79Mb
+      - Relay_ |68.98Mb
+      - Relay_ |27.19Mb
+      - 🇯🇵 馃嚡馃嚨JP_584
+      - 馃弫 ZZ_1998
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - "|50.17Mb"
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
-      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
-      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
-      - 🇺🇸 馃嚭馃嚫US_1168
-      - 🇺🇸 馃嚭馃嚫US_1249
-      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
-      - 🇺🇸 馃嚭馃嚫 US_244 2
-      - 🇨🇳 馃嚚馃嚦CN_273
-      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
-      - 馃嚦馃嚤NL_628
-      - 馃嚦馃嚤 NL_142
+      - Relay_ |27.79Mb
+      - Relay_ |68.98Mb
+      - Relay_ |27.19Mb
+      - 🇯🇵 馃嚡馃嚨JP_584
+      - 馃弫 ZZ_1998
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - "|50.17Mb"
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
-      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
-      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
-      - 🇺🇸 馃嚭馃嚫US_1168
-      - 🇺🇸 馃嚭馃嚫US_1249
-      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
-      - 🇺🇸 馃嚭馃嚫 US_244 2
-      - 🇨🇳 馃嚚馃嚦CN_273
-      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
-      - 馃嚦馃嚤NL_628
-      - 馃嚦馃嚤 NL_142
+      - Relay_ |27.79Mb
+      - Relay_ |68.98Mb
+      - Relay_ |27.19Mb
+      - 🇯🇵 馃嚡馃嚨JP_584
+      - 馃弫 ZZ_1998
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - "|50.17Mb"
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
-      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
-      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
-      - 🇺🇸 馃嚭馃嚫US_1168
-      - 🇺🇸 馃嚭馃嚫US_1249
-      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
-      - 🇺🇸 馃嚭馃嚫 US_244 2
-      - 🇨🇳 馃嚚馃嚦CN_273
-      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
-      - 馃嚦馃嚤NL_628
-      - 馃嚦馃嚤 NL_142
+      - Relay_ |27.79Mb
+      - Relay_ |68.98Mb
+      - Relay_ |27.19Mb
+      - 🇯🇵 馃嚡馃嚨JP_584
+      - 馃弫 ZZ_1998
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - "|50.17Mb"
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
-      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
-      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
-      - 🇺🇸 馃嚭馃嚫US_1168
-      - 🇺🇸 馃嚭馃嚫US_1249
-      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
-      - 🇺🇸 馃嚭馃嚫 US_244 2
-      - 🇨🇳 馃嚚馃嚦CN_273
-      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
-      - 馃嚦馃嚤NL_628
-      - 馃嚦馃嚤 NL_142
+      - Relay_ |27.79Mb
+      - Relay_ |68.98Mb
+      - Relay_ |27.19Mb
+      - 🇯🇵 馃嚡馃嚨JP_584
+      - 馃弫 ZZ_1998
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - "|50.17Mb"
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
-      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
-      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
-      - 🇺🇸 馃嚭馃嚫US_1168
-      - 🇺🇸 馃嚭馃嚫US_1249
-      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
-      - 🇺🇸 馃嚭馃嚫 US_244 2
-      - 🇨🇳 馃嚚馃嚦CN_273
-      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
-      - 馃嚦馃嚤NL_628
-      - 馃嚦馃嚤 NL_142
+      - Relay_ |27.79Mb
+      - Relay_ |68.98Mb
+      - Relay_ |27.19Mb
+      - 🇯🇵 馃嚡馃嚨JP_584
+      - 馃弫 ZZ_1998
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -170,19 +106,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 馃嚭馃嚫 US_244
-      - "|50.17Mb"
-      - Relay_馃嚥馃嚲MY-馃嚥馃嚲MY_540
-      - Relay_馃嚚馃嚟CH-馃嚚馃嚟CH_224
-      - Relay_馃嚟馃嚭HU-馃嚟馃嚭HU_431
-      - 🇺🇸 馃嚭馃嚫US_1168
-      - 🇺🇸 馃嚭馃嚫US_1249
-      - Relay_馃嚘馃嚬AT-馃嚘馃嚬AT_08
-      - 🇺🇸 馃嚭馃嚫 US_244 2
-      - 🇨🇳 馃嚚馃嚦CN_273
-      - 🇨🇳 馃嚚馃嚦CN_307 | 8.66Mb
-      - 馃嚦馃嚤NL_628
-      - 馃嚦馃嚤 NL_142
+      - Relay_ |27.79Mb
+      - Relay_ |68.98Mb
+      - Relay_ |27.19Mb
+      - 🇯🇵 馃嚡馃嚨JP_584
+      - 馃弫 ZZ_1998
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2074,15 +2002,22 @@ rules:
  - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
  - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
  - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
- - DOMAIN, atv-ps.amazon.com,🌍 国外媒体
- - DOMAIN, fls-na.amazon.com,🌍 国外媒体
- - DOMAIN-SUFFIX, media-amazon.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
+ - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
+ - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
+ - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d1xfray82862hr.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d3196yreox78o9.cloudfront.net,🌍 国外媒体
+ - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
+ - DOMAIN,ktpx.amazon.com,🌍 国外媒体
  - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,amazonaws.co.uk,🌍 国外媒体
- - DOMAIN-SUFFIX,amazonaws.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
  - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,llnwd.net,🌍 国外媒体
- - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
  - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
  - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
@@ -2105,45 +2040,17 @@ rules:
  - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
- - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
- - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
- - DOMAIN-KEYWORD,vod2dazn,🌍 国外媒体
  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
  - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
- - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
- - DOMAIN,players.brightcove.net,🌍 国外媒体
- - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
- - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
  - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dc1-voddash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dc1live21715dazn.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dc2-live2dash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dc2-live2hls-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-livedash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-voddash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-vodhls-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dcb-livedash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dcb-voddash-perform.secure.footprint.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
- - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
- - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,s.llnwi.net,🌍 国外媒体
- - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,secure.footprint.net,🌍 国外媒体
  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
- - DOMAIN-SUFFIX,urbanairship.com,🌍 国外媒体
- - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,widevine.entitlement.us.theplatform.com,🌍 国外媒体
- - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
@@ -2174,25 +2081,13 @@ rules:
  - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
  - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
  - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
- - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
- - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
- - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
- - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
- - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,players.brightcove.net,🌍 国外媒体
- - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
  - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
  - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
+ - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
  - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
@@ -2208,6 +2103,7 @@ rules:
  - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
  - DOMAIN,players.brightcove.net,🌍 国外媒体
  - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
  - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
@@ -2255,6 +2151,8 @@ rules:
  - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
  - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
+ - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
+ - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
  - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
  - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
  - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
@@ -2364,6 +2262,7 @@ rules:
  - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+ - DOMAIN,music.youtube.com,🌍 国外媒体
  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
  - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
  - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
@@ -2376,6 +2275,7 @@ rules:
  - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
  - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
  - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
  - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
  - DOMAIN-SUFFIX,notion.so,🚀 节点选择
  - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
@@ -2384,8 +2284,6 @@ rules:
  - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
  - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
  - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
- - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 节点选择
- - DOMAIN-SUFFIX,yunpanjingling.com,🚀 节点选择
  - DOMAIN-SUFFIX,eu,🚀 节点选择
  - DOMAIN-SUFFIX,hk,🚀 节点选择
  - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -2773,6 +2671,7 @@ rules:
  - DOMAIN-SUFFIX,msftconnecttest.com,🎯 全球直连
  - DOMAIN-SUFFIX,msftncsi.com,🎯 全球直连
  - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
+ - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,cn,🎯 全球直连
  - DOMAIN-SUFFIX,中国,🎯 全球直连
  - DOMAIN-SUFFIX,公司,🎯 全球直连
@@ -2864,7 +2763,6 @@ rules:
  - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
  - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
  - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
- - DOMAIN-SUFFIX,bilibili.tv,🎯 全球直连
  - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
  - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
  - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -3118,7 +3016,6 @@ rules:
  - DOMAIN-SUFFIX,baomitu.com,🎯 全球直连
  - DOMAIN-SUFFIX,bootcss.com,🎯 全球直连
  - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
- - DOMAIN-SUFFIX,jsdelivr.net,🎯 全球直连
  - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
  - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
  - DOMAIN-SUFFIX,10010.com,🎯 全球直连
@@ -3240,7 +3137,6 @@ rules:
  - DOMAIN-SUFFIX,lanzoux.com,🎯 全球直连
  - DOMAIN-SUFFIX,lemicp.com,🎯 全球直连
  - DOMAIN-SUFFIX,letitfly.me,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,lizhi.fm,🎯 全球直连
  - DOMAIN-SUFFIX,lizhi.io,🎯 全球直连
  - DOMAIN-SUFFIX,lizhifm.com,🎯 全球直连
@@ -3586,4 +3482,4 @@ rules:
  - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
  - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
  - GEOIP,CN,🎯 全球直连
- - MATCH,🐟 漏网之鱼 
+ - MATCH,🐟 漏网之鱼
