@@ -5,59 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_1891 |10.62Mb, server: 38.143.66.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: RU_111, server: 82.202.220.242, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr, udp: true}
-  - {name: JP_674 | 3.94Mb, server: 141.164.57.134, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1624 | 2.71Mb, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1781 |44.50Mb, server: 70.39.71.2, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
+  - {name: CN_340+|12.11Mb, server: 211.99.96.13, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: CN_339+|+7.91Mb, server: 211.99.96.16, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: "", server: 178.62.224.119, port: 8888, type: vmess, uuid: aeaaff19-bb0b-434d-b206-0f2a3f4d90e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 178.62.224.119}, udp: true}
   - {name: LU_94, server: 5.253.204.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qLzS7DF9qRYxJTHfckhC, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_222 |41.45Mb, server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
-  - {name: JP_653 |17.61Mb, server: 172.105.232.147, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_229 | 4.49Mb, server: 139.99.62.207, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: HK_126, server: 118.107.244.112, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_206, server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
+  - {name: US_1891 |10.62Mb, server: 38.143.66.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1891 |10.62Mb
-      - RU_111
-      - JP_674 | 3.94Mb
-      - US_1624 | 2.71Mb
-      - US_1781 |44.50Mb
+      - CN_340+|12.11Mb
+      - CN_339+|+7.91Mb
+      - ""
       - LU_94
-      - Relay_🇺🇸US-🇺🇸US_222 |41.45Mb
-      - JP_653 |17.61Mb
-      - CA_229 | 4.49Mb
+      - HK_126
+      - US_206
+      - US_1891 |10.62Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_1891 |10.62Mb
-      - RU_111
-      - JP_674 | 3.94Mb
-      - US_1624 | 2.71Mb
-      - US_1781 |44.50Mb
+      - CN_340+|12.11Mb
+      - CN_339+|+7.91Mb
+      - ""
       - LU_94
-      - Relay_🇺🇸US-🇺🇸US_222 |41.45Mb
-      - JP_653 |17.61Mb
-      - CA_229 | 4.49Mb
+      - HK_126
+      - US_206
+      - US_1891 |10.62Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1891 |10.62Mb
-      - RU_111
-      - JP_674 | 3.94Mb
-      - US_1624 | 2.71Mb
-      - US_1781 |44.50Mb
+      - CN_340+|12.11Mb
+      - CN_339+|+7.91Mb
+      - ""
       - LU_94
-      - Relay_🇺🇸US-🇺🇸US_222 |41.45Mb
-      - JP_653 |17.61Mb
-      - CA_229 | 4.49Mb
+      - HK_126
+      - US_206
+      - US_1891 |10.62Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,15 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1891 |10.62Mb
-      - RU_111
-      - JP_674 | 3.94Mb
-      - US_1624 | 2.71Mb
-      - US_1781 |44.50Mb
+      - CN_340+|12.11Mb
+      - CN_339+|+7.91Mb
+      - ""
       - LU_94
-      - Relay_🇺🇸US-🇺🇸US_222 |41.45Mb
-      - JP_653 |17.61Mb
-      - CA_229 | 4.49Mb
+      - HK_126
+      - US_206
+      - US_1891 |10.62Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -95,44 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_1891 |10.62Mb
-      - RU_111
-      - JP_674 | 3.94Mb
-      - US_1624 | 2.71Mb
-      - US_1781 |44.50Mb
+      - CN_340+|12.11Mb
+      - CN_339+|+7.91Mb
+      - ""
       - LU_94
-      - Relay_🇺🇸US-🇺🇸US_222 |41.45Mb
-      - JP_653 |17.61Mb
-      - CA_229 | 4.49Mb
+      - HK_126
+      - US_206
+      - US_1891 |10.62Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_1891 |10.62Mb
-      - RU_111
-      - JP_674 | 3.94Mb
-      - US_1624 | 2.71Mb
-      - US_1781 |44.50Mb
+      - CN_340+|12.11Mb
+      - CN_339+|+7.91Mb
+      - ""
       - LU_94
-      - Relay_🇺🇸US-🇺🇸US_222 |41.45Mb
-      - JP_653 |17.61Mb
-      - CA_229 | 4.49Mb
+      - HK_126
+      - US_206
+      - US_1891 |10.62Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1891 |10.62Mb
-      - RU_111
-      - JP_674 | 3.94Mb
-      - US_1624 | 2.71Mb
-      - US_1781 |44.50Mb
+      - CN_340+|12.11Mb
+      - CN_339+|+7.91Mb
+      - ""
       - LU_94
-      - Relay_🇺🇸US-🇺🇸US_222 |41.45Mb
-      - JP_653 |17.61Mb
-      - CA_229 | 4.49Mb
+      - HK_126
+      - US_206
+      - US_1891 |10.62Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,15 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1891 |10.62Mb
-      - RU_111
-      - JP_674 | 3.94Mb
-      - US_1624 | 2.71Mb
-      - US_1781 |44.50Mb
+      - CN_340+|12.11Mb
+      - CN_339+|+7.91Mb
+      - ""
       - LU_94
-      - Relay_🇺🇸US-🇺🇸US_222 |41.45Mb
-      - JP_653 |17.61Mb
-      - CA_229 | 4.49Mb
+      - HK_126
+      - US_206
+      - US_1891 |10.62Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
