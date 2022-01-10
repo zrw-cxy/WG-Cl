@@ -5,35 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇹🇼TW_272 | 6.52Mb, server: 120.197.130.73, port: 39065, type: vmess, uuid: bb16b3af-518c-3b80-b589-6fa807cefb8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_308, server: 120.197.130.73, port: 39065, type: vmess, uuid: bb16b3af-518c-3b80-b589-6fa807cefb8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_342, server: 120.197.130.73, port: 39065, type: vmess, uuid: bb16b3af-518c-3b80-b589-6fa807cefb8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_734+|18.04Mb, server: 85.208.108.194, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: RO_1218 |22.71Mb, server: 62.216.92.179, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: HK_543+|15.30Mb, server: 118.107.244.110, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_1472+|+3.05Mb, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: HK_541+|13.09Mb, server: 118.107.244.110, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: SG_874+|10.39Mb, server: 139.162.56.155, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: HK_566+|+5.68Mb, server: 118.107.244.112, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: RO_1215 |11.27Mb, server: 62.216.92.179, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_272 | 6.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_308
-      - Relay_🇨🇳CN-🇹🇼TW_342
+      - NL_734+|18.04Mb
+      - RO_1218 |22.71Mb
+      - HK_543+|15.30Mb
+      - US_1472+|+3.05Mb
+      - HK_541+|13.09Mb
+      - SG_874+|10.39Mb
+      - HK_566+|+5.68Mb
+      - RO_1215 |11.27Mb
+      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇹🇼TW_272 | 6.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_308
-      - Relay_🇨🇳CN-🇹🇼TW_342
+      - NL_734+|18.04Mb
+      - RO_1218 |22.71Mb
+      - HK_543+|15.30Mb
+      - US_1472+|+3.05Mb
+      - HK_541+|13.09Mb
+      - SG_874+|10.39Mb
+      - HK_566+|+5.68Mb
+      - RO_1215 |11.27Mb
+      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_272 | 6.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_308
-      - Relay_🇨🇳CN-🇹🇼TW_342
+      - NL_734+|18.04Mb
+      - RO_1218 |22.71Mb
+      - HK_543+|15.30Mb
+      - US_1472+|+3.05Mb
+      - HK_541+|13.09Mb
+      - SG_874+|10.39Mb
+      - HK_566+|+5.68Mb
+      - RO_1215 |11.27Mb
+      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,9 +76,15 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_272 | 6.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_308
-      - Relay_🇨🇳CN-🇹🇼TW_342
+      - NL_734+|18.04Mb
+      - RO_1218 |22.71Mb
+      - HK_543+|15.30Mb
+      - US_1472+|+3.05Mb
+      - HK_541+|13.09Mb
+      - SG_874+|10.39Mb
+      - HK_566+|+5.68Mb
+      - RO_1215 |11.27Mb
+      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -65,26 +95,44 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇹🇼TW_272 | 6.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_308
-      - Relay_🇨🇳CN-🇹🇼TW_342
+      - NL_734+|18.04Mb
+      - RO_1218 |22.71Mb
+      - HK_543+|15.30Mb
+      - US_1472+|+3.05Mb
+      - HK_541+|13.09Mb
+      - SG_874+|10.39Mb
+      - HK_566+|+5.68Mb
+      - RO_1215 |11.27Mb
+      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_272 | 6.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_308
-      - Relay_🇨🇳CN-🇹🇼TW_342
+      - NL_734+|18.04Mb
+      - RO_1218 |22.71Mb
+      - HK_543+|15.30Mb
+      - US_1472+|+3.05Mb
+      - HK_541+|13.09Mb
+      - SG_874+|10.39Mb
+      - HK_566+|+5.68Mb
+      - RO_1215 |11.27Mb
+      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇹🇼TW_272 | 6.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_308
-      - Relay_🇨🇳CN-🇹🇼TW_342
+      - NL_734+|18.04Mb
+      - RO_1218 |22.71Mb
+      - HK_543+|15.30Mb
+      - US_1472+|+3.05Mb
+      - HK_541+|13.09Mb
+      - SG_874+|10.39Mb
+      - HK_566+|+5.68Mb
+      - RO_1215 |11.27Mb
+      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +148,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇹🇼TW_272 | 6.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_308
-      - Relay_🇨🇳CN-🇹🇼TW_342
+      - NL_734+|18.04Mb
+      - RO_1218 |22.71Mb
+      - HK_543+|15.30Mb
+      - US_1472+|+3.05Mb
+      - HK_541+|13.09Mb
+      - SG_874+|10.39Mb
+      - HK_566+|+5.68Mb
+      - RO_1215 |11.27Mb
+      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
