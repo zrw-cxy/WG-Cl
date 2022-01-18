@@ -5,59 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: NL_734+|18.04Mb, server: 85.208.108.194, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: RO_1218 |22.71Mb, server: 62.216.92.179, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: HK_543+|15.30Mb, server: 118.107.244.110, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1472+|+3.05Mb, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: HK_541+|13.09Mb, server: 118.107.244.110, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: SG_874+|10.39Mb, server: 139.162.56.155, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: HK_566+|+5.68Mb, server: 118.107.244.112, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: RO_1215 |11.27Mb, server: 62.216.92.179, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇯🇵JP_268 |11.13Mb, server: gza8.v2bees.net, port: 25159, type: vmess, uuid: 5fc772de-8f22-4c0d-8f31-26d8206400cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: gza8.v2bees.net}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_240 | 8.50Mb, server: gza8.v2bees.net, port: 45214, type: ss, cipher: chacha20-ietf-poly1305, password: 5fc772de-8f22-4c0d-8f31-26d8206400cd, udp: true}
+  - {name: US_1123, server: 38.75.136.102, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_2102, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 64c3ab43-dc1b-401c-9437-9adf7bcf4a28, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: CA_201, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: HK_544, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1127, server: 38.68.135.19, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: JP_725 |13.82Mb, server: 141.164.62.67, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: IN_575, server: 172.105.59.32, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: SG_836, server: 172.104.168.83, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1113, server: 167.88.61.130, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_998, server: 38.68.134.85, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NL_734+|18.04Mb
-      - RO_1218 |22.71Mb
-      - HK_543+|15.30Mb
-      - US_1472+|+3.05Mb
-      - HK_541+|13.09Mb
-      - SG_874+|10.39Mb
-      - HK_566+|+5.68Mb
-      - RO_1215 |11.27Mb
-      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
+      - Relay_🇨🇳CN-🇯🇵JP_268 |11.13Mb
+      - Relay_🇨🇳CN-🇭🇰HK_240 | 8.50Mb
+      - US_1123
+      - US_2102
+      - CA_201
+      - HK_544
+      - US_1127
+      - JP_725 |13.82Mb
+      - IN_575
+      - SG_836
+      - US_1113
+      - US_998
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - NL_734+|18.04Mb
-      - RO_1218 |22.71Mb
-      - HK_543+|15.30Mb
-      - US_1472+|+3.05Mb
-      - HK_541+|13.09Mb
-      - SG_874+|10.39Mb
-      - HK_566+|+5.68Mb
-      - RO_1215 |11.27Mb
-      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
+      - Relay_🇨🇳CN-🇯🇵JP_268 |11.13Mb
+      - Relay_🇨🇳CN-🇭🇰HK_240 | 8.50Mb
+      - US_1123
+      - US_2102
+      - CA_201
+      - HK_544
+      - US_1127
+      - JP_725 |13.82Mb
+      - IN_575
+      - SG_836
+      - US_1113
+      - US_998
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NL_734+|18.04Mb
-      - RO_1218 |22.71Mb
-      - HK_543+|15.30Mb
-      - US_1472+|+3.05Mb
-      - HK_541+|13.09Mb
-      - SG_874+|10.39Mb
-      - HK_566+|+5.68Mb
-      - RO_1215 |11.27Mb
-      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
+      - Relay_🇨🇳CN-🇯🇵JP_268 |11.13Mb
+      - Relay_🇨🇳CN-🇭🇰HK_240 | 8.50Mb
+      - US_1123
+      - US_2102
+      - CA_201
+      - HK_544
+      - US_1127
+      - JP_725 |13.82Mb
+      - IN_575
+      - SG_836
+      - US_1113
+      - US_998
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,15 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NL_734+|18.04Mb
-      - RO_1218 |22.71Mb
-      - HK_543+|15.30Mb
-      - US_1472+|+3.05Mb
-      - HK_541+|13.09Mb
-      - SG_874+|10.39Mb
-      - HK_566+|+5.68Mb
-      - RO_1215 |11.27Mb
-      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
+      - Relay_🇨🇳CN-🇯🇵JP_268 |11.13Mb
+      - Relay_🇨🇳CN-🇭🇰HK_240 | 8.50Mb
+      - US_1123
+      - US_2102
+      - CA_201
+      - HK_544
+      - US_1127
+      - JP_725 |13.82Mb
+      - IN_575
+      - SG_836
+      - US_1113
+      - US_998
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -95,44 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - NL_734+|18.04Mb
-      - RO_1218 |22.71Mb
-      - HK_543+|15.30Mb
-      - US_1472+|+3.05Mb
-      - HK_541+|13.09Mb
-      - SG_874+|10.39Mb
-      - HK_566+|+5.68Mb
-      - RO_1215 |11.27Mb
-      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
+      - Relay_🇨🇳CN-🇯🇵JP_268 |11.13Mb
+      - Relay_🇨🇳CN-🇭🇰HK_240 | 8.50Mb
+      - US_1123
+      - US_2102
+      - CA_201
+      - HK_544
+      - US_1127
+      - JP_725 |13.82Mb
+      - IN_575
+      - SG_836
+      - US_1113
+      - US_998
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - NL_734+|18.04Mb
-      - RO_1218 |22.71Mb
-      - HK_543+|15.30Mb
-      - US_1472+|+3.05Mb
-      - HK_541+|13.09Mb
-      - SG_874+|10.39Mb
-      - HK_566+|+5.68Mb
-      - RO_1215 |11.27Mb
-      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
+      - Relay_🇨🇳CN-🇯🇵JP_268 |11.13Mb
+      - Relay_🇨🇳CN-🇭🇰HK_240 | 8.50Mb
+      - US_1123
+      - US_2102
+      - CA_201
+      - HK_544
+      - US_1127
+      - JP_725 |13.82Mb
+      - IN_575
+      - SG_836
+      - US_1113
+      - US_998
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NL_734+|18.04Mb
-      - RO_1218 |22.71Mb
-      - HK_543+|15.30Mb
-      - US_1472+|+3.05Mb
-      - HK_541+|13.09Mb
-      - SG_874+|10.39Mb
-      - HK_566+|+5.68Mb
-      - RO_1215 |11.27Mb
-      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
+      - Relay_🇨🇳CN-🇯🇵JP_268 |11.13Mb
+      - Relay_🇨🇳CN-🇭🇰HK_240 | 8.50Mb
+      - US_1123
+      - US_2102
+      - CA_201
+      - HK_544
+      - US_1127
+      - JP_725 |13.82Mb
+      - IN_575
+      - SG_836
+      - US_1113
+      - US_998
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,15 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NL_734+|18.04Mb
-      - RO_1218 |22.71Mb
-      - HK_543+|15.30Mb
-      - US_1472+|+3.05Mb
-      - HK_541+|13.09Mb
-      - SG_874+|10.39Mb
-      - HK_566+|+5.68Mb
-      - RO_1215 |11.27Mb
-      - Relay_🇷🇴RO-🇷🇴RO_1212 |28.11Mb
+      - Relay_🇨🇳CN-🇯🇵JP_268 |11.13Mb
+      - Relay_🇨🇳CN-🇭🇰HK_240 | 8.50Mb
+      - US_1123
+      - US_2102
+      - CA_201
+      - HK_544
+      - US_1127
+      - JP_725 |13.82Mb
+      - IN_575
+      - SG_836
+      - US_1113
+      - US_998
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
