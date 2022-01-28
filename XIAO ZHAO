@@ -5,55 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇸🇬SG_85 | 9.22Mb, server: 112.14.22.104, port: 19079, type: vmess, uuid: b1f64afe-67ae-3b44-bcb3-5ff2bc913170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: 112.14.22.104}, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_94 | 2.78Mb, server: 120.232.208.195, port: 19079, type: vmess, uuid: b1f64afe-67ae-3b44-bcb3-5ff2bc913170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: 120.232.208.195}, udp: true}
-  - {name: Relay_🇧🇬BG-🇧🇬BG_114+|31.31Mb, server: 217.138.221.42, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw, udp: true}
-  - {name: JP |22.85Mb, server: 54.199.71.126, port: 80, type: vmess, uuid: 8f40889c-1c25-43c0-b31b-c05f106ddf06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index.html, ws-headers: {Host: 54.199.71.126}, udp: true}
-  - {name: CA_63, server: 198.57.27.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_349, server: 167.88.63.28, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CN_346 |11.42Mb, server: 120.233.150.200, port: 50301, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
+  - {name: CN_348 | 3.61Mb, server: 120.233.150.200, port: 50302, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
   - {name: CA_201, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "", server: zj.haojiahuo.club, port: 60038, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /videos, ws-headers: {Host: zj.haojiahuo.club}, udp: true}
+  - {name: US_191, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_216, server: 167.88.63.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "", server: zj.haojiahuo.club, port: 30077, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /videos, ws-headers: {Host: zj.haojiahuo.club}, udp: true}
+  - {name: Relay_🇨🇳CN-🇩🇪DE_262 | 8.81Mb, server: ddns04.r8o8c8k.xyz, port: 65009, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: ddns04.r8o8c8k.xyz}, udp: true}
+  - {name: "|37.54Mb", server: 38.91.100.200, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_349, server: 167.88.63.28, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1974 |124.70Mb, server: 38.75.136.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_221, server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_278, server: 167.88.63.61, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: PH_181, server: 188.214.125.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG, udp: true}
+  - {name: CN_69, server: 117.28.243.220, port: 8076, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: CA_32, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "|50.73Mb", server: 38.114.114.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Relay_ |32.51Mb, server: v1.ssrsub.com, port: 166, type: vmess, uuid: 50a90339-8afa-4579-832d-f5d608a6f569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: "|10.57Mb", server: 45.79.121.236, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_208, server: 167.88.61.130, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_217, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: RU_182, server: 82.202.220.242, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr, udp: true}
+  - {name: Earth_117, server: 169.197.142.39, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Relay_ |33.09Mb, server: v1.ssrsub.com, port: 166, type: vmess, uuid: a56903b7-e983-4cd5-99a6-94d62c79b128, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: Relay_ |30.99Mb, server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇸🇬SG_85 | 9.22Mb
-      - Relay_🇨🇳CN-🇸🇬SG_94 | 2.78Mb
-      - Relay_🇧🇬BG-🇧🇬BG_114+|31.31Mb
-      - JP |22.85Mb
-      - CA_63
-      - US_349
+      - CN_346 |11.42Mb
+      - CN_348 | 3.61Mb
       - CA_201
+      - US_191
+      - US_216
       - ""
+      - Relay_🇨🇳CN-🇩🇪DE_262 | 8.81Mb
+      - "|37.54Mb"
+      - US_349
+      - US_1974 |124.70Mb
+      - US_221
+      - US_278
+      - PH_181
+      - CN_69
+      - CA_32
+      - "|50.73Mb"
+      - Relay_ |32.51Mb
+      - "|10.57Mb"
+      - US_208
+      - US_217
+      - RU_182
+      - Earth_117
+      - Relay_ |33.09Mb
+      - Relay_ |30.99Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇸🇬SG_85 | 9.22Mb
-      - Relay_🇨🇳CN-🇸🇬SG_94 | 2.78Mb
-      - Relay_🇧🇬BG-🇧🇬BG_114+|31.31Mb
-      - JP |22.85Mb
-      - CA_63
-      - US_349
+      - CN_346 |11.42Mb
+      - CN_348 | 3.61Mb
       - CA_201
+      - US_191
+      - US_216
       - ""
+      - Relay_🇨🇳CN-🇩🇪DE_262 | 8.81Mb
+      - "|37.54Mb"
+      - US_349
+      - US_1974 |124.70Mb
+      - US_221
+      - US_278
+      - PH_181
+      - CN_69
+      - CA_32
+      - "|50.73Mb"
+      - Relay_ |32.51Mb
+      - "|10.57Mb"
+      - US_208
+      - US_217
+      - RU_182
+      - Earth_117
+      - Relay_ |33.09Mb
+      - Relay_ |30.99Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇸🇬SG_85 | 9.22Mb
-      - Relay_🇨🇳CN-🇸🇬SG_94 | 2.78Mb
-      - Relay_🇧🇬BG-🇧🇬BG_114+|31.31Mb
-      - JP |22.85Mb
-      - CA_63
-      - US_349
+      - CN_346 |11.42Mb
+      - CN_348 | 3.61Mb
       - CA_201
+      - US_191
+      - US_216
       - ""
+      - Relay_🇨🇳CN-🇩🇪DE_262 | 8.81Mb
+      - "|37.54Mb"
+      - US_349
+      - US_1974 |124.70Mb
+      - US_221
+      - US_278
+      - PH_181
+      - CN_69
+      - CA_32
+      - "|50.73Mb"
+      - Relay_ |32.51Mb
+      - "|10.57Mb"
+      - US_208
+      - US_217
+      - RU_182
+      - Earth_117
+      - Relay_ |33.09Mb
+      - Relay_ |30.99Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +136,30 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇸🇬SG_85 | 9.22Mb
-      - Relay_🇨🇳CN-🇸🇬SG_94 | 2.78Mb
-      - Relay_🇧🇬BG-🇧🇬BG_114+|31.31Mb
-      - JP |22.85Mb
-      - CA_63
-      - US_349
+      - CN_346 |11.42Mb
+      - CN_348 | 3.61Mb
       - CA_201
+      - US_191
+      - US_216
       - ""
+      - Relay_🇨🇳CN-🇩🇪DE_262 | 8.81Mb
+      - "|37.54Mb"
+      - US_349
+      - US_1974 |124.70Mb
+      - US_221
+      - US_278
+      - PH_181
+      - CN_69
+      - CA_32
+      - "|50.73Mb"
+      - Relay_ |32.51Mb
+      - "|10.57Mb"
+      - US_208
+      - US_217
+      - RU_182
+      - Earth_117
+      - Relay_ |33.09Mb
+      - Relay_ |30.99Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +170,89 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇸🇬SG_85 | 9.22Mb
-      - Relay_🇨🇳CN-🇸🇬SG_94 | 2.78Mb
-      - Relay_🇧🇬BG-🇧🇬BG_114+|31.31Mb
-      - JP |22.85Mb
-      - CA_63
-      - US_349
+      - CN_346 |11.42Mb
+      - CN_348 | 3.61Mb
       - CA_201
+      - US_191
+      - US_216
       - ""
+      - Relay_🇨🇳CN-🇩🇪DE_262 | 8.81Mb
+      - "|37.54Mb"
+      - US_349
+      - US_1974 |124.70Mb
+      - US_221
+      - US_278
+      - PH_181
+      - CN_69
+      - CA_32
+      - "|50.73Mb"
+      - Relay_ |32.51Mb
+      - "|10.57Mb"
+      - US_208
+      - US_217
+      - RU_182
+      - Earth_117
+      - Relay_ |33.09Mb
+      - Relay_ |30.99Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇸🇬SG_85 | 9.22Mb
-      - Relay_🇨🇳CN-🇸🇬SG_94 | 2.78Mb
-      - Relay_🇧🇬BG-🇧🇬BG_114+|31.31Mb
-      - JP |22.85Mb
-      - CA_63
-      - US_349
+      - CN_346 |11.42Mb
+      - CN_348 | 3.61Mb
       - CA_201
+      - US_191
+      - US_216
       - ""
+      - Relay_🇨🇳CN-🇩🇪DE_262 | 8.81Mb
+      - "|37.54Mb"
+      - US_349
+      - US_1974 |124.70Mb
+      - US_221
+      - US_278
+      - PH_181
+      - CN_69
+      - CA_32
+      - "|50.73Mb"
+      - Relay_ |32.51Mb
+      - "|10.57Mb"
+      - US_208
+      - US_217
+      - RU_182
+      - Earth_117
+      - Relay_ |33.09Mb
+      - Relay_ |30.99Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇸🇬SG_85 | 9.22Mb
-      - Relay_🇨🇳CN-🇸🇬SG_94 | 2.78Mb
-      - Relay_🇧🇬BG-🇧🇬BG_114+|31.31Mb
-      - JP |22.85Mb
-      - CA_63
-      - US_349
+      - CN_346 |11.42Mb
+      - CN_348 | 3.61Mb
       - CA_201
+      - US_191
+      - US_216
       - ""
+      - Relay_🇨🇳CN-🇩🇪DE_262 | 8.81Mb
+      - "|37.54Mb"
+      - US_349
+      - US_1974 |124.70Mb
+      - US_221
+      - US_278
+      - PH_181
+      - CN_69
+      - CA_32
+      - "|50.73Mb"
+      - Relay_ |32.51Mb
+      - "|10.57Mb"
+      - US_208
+      - US_217
+      - RU_182
+      - Earth_117
+      - Relay_ |33.09Mb
+      - Relay_ |30.99Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +268,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇸🇬SG_85 | 9.22Mb
-      - Relay_🇨🇳CN-🇸🇬SG_94 | 2.78Mb
-      - Relay_🇧🇬BG-🇧🇬BG_114+|31.31Mb
-      - JP |22.85Mb
-      - CA_63
-      - US_349
+      - CN_346 |11.42Mb
+      - CN_348 | 3.61Mb
       - CA_201
+      - US_191
+      - US_216
       - ""
+      - Relay_🇨🇳CN-🇩🇪DE_262 | 8.81Mb
+      - "|37.54Mb"
+      - US_349
+      - US_1974 |124.70Mb
+      - US_221
+      - US_278
+      - PH_181
+      - CN_69
+      - CA_32
+      - "|50.73Mb"
+      - Relay_ |32.51Mb
+      - "|10.57Mb"
+      - US_208
+      - US_217
+      - RU_182
+      - Earth_117
+      - Relay_ |33.09Mb
+      - Relay_ |30.99Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
