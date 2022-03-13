@@ -5,51 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇪🇪EE-🇯🇵JP_395, server: os2-7.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-7.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_392, server: os2-2.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-2.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_394, server: os2-6.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-6.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_350, server: os2-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_401, server: os2-4.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-4.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_393, server: os2-8.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-8.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇪🇪EE-🇯🇵JP_352, server: os2-1.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-1.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_799, server: lijp.scsevers.cf, port: 443, type: trojan, password: sharecentre, sni: lijp.scsevers.cf, skip-cert-verify: true, udp: true}
+  - {name: US_2296, server: 030.NA.POP.BIGAIRPORT.NET, port: 12356, type: vmess, uuid: cdda042c-0efd-4e49-9550-d8a6fc9f2254, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 030.NA.POP.BIGAIRPORT.NET}, udp: true}
+  - {name: IR_727, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
+  - {name: US_2573, server: 104.160.43.43, port: 443, type: vmess, uuid: a307a6f7-b697-400e-bc7e-e6356de877c2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /asdfaszzsdfa, ws-headers: {Host: 104.160.43.43}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇪🇪EE-🇯🇵JP_395
-      - Relay_🇪🇪EE-🇯🇵JP_392
-      - Relay_🇪🇪EE-🇯🇵JP_394
-      - Relay_🇪🇪EE-🇯🇵JP_350
-      - Relay_🇪🇪EE-🇯🇵JP_401
-      - Relay_🇪🇪EE-🇯🇵JP_393
-      - Relay_🇪🇪EE-🇯🇵JP_352
+      - JP_799
+      - US_2296
+      - IR_727
+      - US_2573
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇪🇪EE-🇯🇵JP_395
-      - Relay_🇪🇪EE-🇯🇵JP_392
-      - Relay_🇪🇪EE-🇯🇵JP_394
-      - Relay_🇪🇪EE-🇯🇵JP_350
-      - Relay_🇪🇪EE-🇯🇵JP_401
-      - Relay_🇪🇪EE-🇯🇵JP_393
-      - Relay_🇪🇪EE-🇯🇵JP_352
+      - JP_799
+      - US_2296
+      - IR_727
+      - US_2573
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇪🇪EE-🇯🇵JP_395
-      - Relay_🇪🇪EE-🇯🇵JP_392
-      - Relay_🇪🇪EE-🇯🇵JP_394
-      - Relay_🇪🇪EE-🇯🇵JP_350
-      - Relay_🇪🇪EE-🇯🇵JP_401
-      - Relay_🇪🇪EE-🇯🇵JP_393
-      - Relay_🇪🇪EE-🇯🇵JP_352
+      - JP_799
+      - US_2296
+      - IR_727
+      - US_2573
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +56,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇪🇪EE-🇯🇵JP_395
-      - Relay_🇪🇪EE-🇯🇵JP_392
-      - Relay_🇪🇪EE-🇯🇵JP_394
-      - Relay_🇪🇪EE-🇯🇵JP_350
-      - Relay_🇪🇪EE-🇯🇵JP_401
-      - Relay_🇪🇪EE-🇯🇵JP_393
-      - Relay_🇪🇪EE-🇯🇵JP_352
+      - JP_799
+      - US_2296
+      - IR_727
+      - US_2573
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +70,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇪🇪EE-🇯🇵JP_395
-      - Relay_🇪🇪EE-🇯🇵JP_392
-      - Relay_🇪🇪EE-🇯🇵JP_394
-      - Relay_🇪🇪EE-🇯🇵JP_350
-      - Relay_🇪🇪EE-🇯🇵JP_401
-      - Relay_🇪🇪EE-🇯🇵JP_393
-      - Relay_🇪🇪EE-🇯🇵JP_352
+      - JP_799
+      - US_2296
+      - IR_727
+      - US_2573
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇪🇪EE-🇯🇵JP_395
-      - Relay_🇪🇪EE-🇯🇵JP_392
-      - Relay_🇪🇪EE-🇯🇵JP_394
-      - Relay_🇪🇪EE-🇯🇵JP_350
-      - Relay_🇪🇪EE-🇯🇵JP_401
-      - Relay_🇪🇪EE-🇯🇵JP_393
-      - Relay_🇪🇪EE-🇯🇵JP_352
+      - JP_799
+      - US_2296
+      - IR_727
+      - US_2573
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇪🇪EE-🇯🇵JP_395
-      - Relay_🇪🇪EE-🇯🇵JP_392
-      - Relay_🇪🇪EE-🇯🇵JP_394
-      - Relay_🇪🇪EE-🇯🇵JP_350
-      - Relay_🇪🇪EE-🇯🇵JP_401
-      - Relay_🇪🇪EE-🇯🇵JP_393
-      - Relay_🇪🇪EE-🇯🇵JP_352
+      - JP_799
+      - US_2296
+      - IR_727
+      - US_2573
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇪🇪EE-🇯🇵JP_395
-      - Relay_🇪🇪EE-🇯🇵JP_392
-      - Relay_🇪🇪EE-🇯🇵JP_394
-      - Relay_🇪🇪EE-🇯🇵JP_350
-      - Relay_🇪🇪EE-🇯🇵JP_401
-      - Relay_🇪🇪EE-🇯🇵JP_393
-      - Relay_🇪🇪EE-🇯🇵JP_352
+      - JP_799
+      - US_2296
+      - IR_727
+      - US_2573
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
