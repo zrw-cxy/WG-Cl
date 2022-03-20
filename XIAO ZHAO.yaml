@@ -5,39 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP_799, server: lijp.scsevers.cf, port: 443, type: trojan, password: sharecentre, sni: lijp.scsevers.cf, skip-cert-verify: true, udp: true}
-  - {name: US_2296, server: 030.NA.POP.BIGAIRPORT.NET, port: 12356, type: vmess, uuid: cdda042c-0efd-4e49-9550-d8a6fc9f2254, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 030.NA.POP.BIGAIRPORT.NET}, udp: true}
-  - {name: IR_727, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
-  - {name: US_2573, server: 104.160.43.43, port: 443, type: vmess, uuid: a307a6f7-b697-400e-bc7e-e6356de877c2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /asdfaszzsdfa, ws-headers: {Host: 104.160.43.43}, udp: true}
+  - {name: Relay_🇨🇳CN |16.78Mb, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_21 |13.40Mb, server: 36.158.228.185, port: 36788, type: ss, cipher: aes-256-gcm, password: lPxslz4G4n, udp: true}
+  - {name: US |16.01Mb, server: 167.88.61.175, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Relay_🇺🇸US |20.75Mb, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US |20.67Mb, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN | 9.63Mb, server: 117.28.243.173, port: 2173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: Relay_🇺🇸US |19.81Mb, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_111, server: s162.s2022.xyz, port: 23802, type: trojan, password: 770c9e92-f51b-3e52-b932-eba13fb56801, sni: s162.s2022.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_799
-      - US_2296
-      - IR_727
-      - US_2573
+      - Relay_🇨🇳CN |16.78Mb
+      - Relay_🇨🇳CN-🇺🇸US_21 |13.40Mb
+      - US |16.01Mb
+      - Relay_🇺🇸US |20.75Mb
+      - Relay_🇺🇸US |20.67Mb
+      - Relay_🇨🇳CN | 9.63Mb
+      - Relay_🇺🇸US |19.81Mb
+      - Relay_🇺🇸US-🇺🇸US_111
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP_799
-      - US_2296
-      - IR_727
-      - US_2573
+      - Relay_🇨🇳CN |16.78Mb
+      - Relay_🇨🇳CN-🇺🇸US_21 |13.40Mb
+      - US |16.01Mb
+      - Relay_🇺🇸US |20.75Mb
+      - Relay_🇺🇸US |20.67Mb
+      - Relay_🇨🇳CN | 9.63Mb
+      - Relay_🇺🇸US |19.81Mb
+      - Relay_🇺🇸US-🇺🇸US_111
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_799
-      - US_2296
-      - IR_727
-      - US_2573
+      - Relay_🇨🇳CN |16.78Mb
+      - Relay_🇨🇳CN-🇺🇸US_21 |13.40Mb
+      - US |16.01Mb
+      - Relay_🇺🇸US |20.75Mb
+      - Relay_🇺🇸US |20.67Mb
+      - Relay_🇨🇳CN | 9.63Mb
+      - Relay_🇺🇸US |19.81Mb
+      - Relay_🇺🇸US-🇺🇸US_111
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,10 +72,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_799
-      - US_2296
-      - IR_727
-      - US_2573
+      - Relay_🇨🇳CN |16.78Mb
+      - Relay_🇨🇳CN-🇺🇸US_21 |13.40Mb
+      - US |16.01Mb
+      - Relay_🇺🇸US |20.75Mb
+      - Relay_🇺🇸US |20.67Mb
+      - Relay_🇨🇳CN | 9.63Mb
+      - Relay_🇺🇸US |19.81Mb
+      - Relay_🇺🇸US-🇺🇸US_111
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -70,29 +90,41 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP_799
-      - US_2296
-      - IR_727
-      - US_2573
+      - Relay_🇨🇳CN |16.78Mb
+      - Relay_🇨🇳CN-🇺🇸US_21 |13.40Mb
+      - US |16.01Mb
+      - Relay_🇺🇸US |20.75Mb
+      - Relay_🇺🇸US |20.67Mb
+      - Relay_🇨🇳CN | 9.63Mb
+      - Relay_🇺🇸US |19.81Mb
+      - Relay_🇺🇸US-🇺🇸US_111
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP_799
-      - US_2296
-      - IR_727
-      - US_2573
+      - Relay_🇨🇳CN |16.78Mb
+      - Relay_🇨🇳CN-🇺🇸US_21 |13.40Mb
+      - US |16.01Mb
+      - Relay_🇺🇸US |20.75Mb
+      - Relay_🇺🇸US |20.67Mb
+      - Relay_🇨🇳CN | 9.63Mb
+      - Relay_🇺🇸US |19.81Mb
+      - Relay_🇺🇸US-🇺🇸US_111
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_799
-      - US_2296
-      - IR_727
-      - US_2573
+      - Relay_🇨🇳CN |16.78Mb
+      - Relay_🇨🇳CN-🇺🇸US_21 |13.40Mb
+      - US |16.01Mb
+      - Relay_🇺🇸US |20.75Mb
+      - Relay_🇺🇸US |20.67Mb
+      - Relay_🇨🇳CN | 9.63Mb
+      - Relay_🇺🇸US |19.81Mb
+      - Relay_🇺🇸US-🇺🇸US_111
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_799
-      - US_2296
-      - IR_727
-      - US_2573
+      - Relay_🇨🇳CN |16.78Mb
+      - Relay_🇨🇳CN-🇺🇸US_21 |13.40Mb
+      - US |16.01Mb
+      - Relay_🇺🇸US |20.75Mb
+      - Relay_🇺🇸US |20.67Mb
+      - Relay_🇨🇳CN | 9.63Mb
+      - Relay_🇺🇸US |19.81Mb
+      - Relay_🇺🇸US-🇺🇸US_111
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
