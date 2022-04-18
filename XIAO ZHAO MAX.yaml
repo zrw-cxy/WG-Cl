@@ -5,331 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇺🇸US_176 |40.75Mb, server: 120.232.173.119, port: 20003, type: trojan, password: e511e8c9-fa7a-3441-82ad-5219e9d47213, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_137 |30.36Mb, server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_108 |13.94Mb, server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_60 |56.53Mb, server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_132 | 2.86Mb, server: csdynhkt.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_141 |17.92Mb, server: shcris02stand.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_66 |32.97Mb, server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_134 |19.01Mb, server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_113 |11.60Mb, server: cusouthcmhk.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_126 |30.32Mb, server: shcris02stand.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_102 |142.07Mb, server: cstwrelay.onlineto.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_103 |17.73Mb, server: cstwrelay.onlineto.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_128 |50.19Mb, server: csdynhkt.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇳🇱NL_175 |11.78Mb, server: 116.129.253.128, port: 20001, type: trojan, password: e511e8c9-fa7a-3441-82ad-5219e9d47213, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_62 |34.14Mb, server: shonlinesandcu02.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_133 |14.97Mb, server: cncusouth.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_139 |69.25Mb, server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_122 |31.60Mb, server: cncusouth.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_68 | 8.28Mb, server: cncusouth.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_143 |17.84Mb, server: cusouthcmhk.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_55 |29.11Mb, server: shallaz2.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_107 |25.29Mb, server: shallaz2.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_101 |54.54Mb, server: cusouthcmhk.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_57 |37.04Mb, server: shallaz2.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_111 |14.27Mb, server: shonlinesandcu02.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_78 |37.89Mb, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_131 |69.17Mb, server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_77 |30.91Mb, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_89 |23.96Mb, server: cusouthcmhk.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_100 |33.77Mb, server: shallaz2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_95 |34.46Mb, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_112 |37.18Mb, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_97 |31.85Mb, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_56 |39.79Mb, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_65 |45.37Mb, server: shallaz2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_76 |36.48Mb, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_116 |22.87Mb, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: US_314 |31.21Mb, server: 45.9.10.56, port: 14994, type: vmess, uuid: 01b663ce-ae56-47e3-a455-01944f4e1a42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_98 |24.09Mb, server: shallaz2.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_92 |38.82Mb, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_123 |36.65Mb, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_114 |37.86Mb, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_81 | 8.72Mb, server: cstwrelay.onlineto.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_105 |37.32Mb, server: shallaz2.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_130 |37.93Mb, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_127 |36.30Mb, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_74 | 1.88Mb, server: csdynhkt.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_93 |37.23Mb, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_109 |20.06Mb, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_64 |16.30Mb, server: shallaz2.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_63 |29.68Mb, server: shallaz2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_90 |36.00Mb, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_99 |14.63Mb, server: shallaz2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: US_307 |12.95Mb, server: 65.49.214.110, port: 59750, type: vmess, uuid: 32531e8d-8ca7-443a-d6d8-9a5e091bdf4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_181, server: y118s2gt.ted1.xyz, port: 26522, type: trojan, password: dc838a4f-4b2d-3cca-a82f-8f1f0963929e, sni: y118s2gt.ted1.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_58 |22.42Mb, server: shcris03.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_91 |35.84Mb, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_79 | 2.06Mb, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_54 | 1.90Mb, server: shallaz2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_59 |39.66Mb, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_136 |44.02Mb, server: shcris03.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_84, server: cstwrelay.onlineto.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_86 | 7.24Mb, server: cstwrelay.onlineto.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_73 | 4.42Mb, server: csdynhkt.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_69 |17.50Mb, server: cstwrelay.onlineto.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_135 | 6.25Mb, server: shonlinesandcu02.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_87 |60.14Mb, server: csdynhkt.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_85 |24.96Mb, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_125 | 3.85Mb, server: cstwrelay.onlineto.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_121 |67.43Mb, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 58185:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_178 |72.89Mb, server: y117s1gt.ted1.xyz, port: 26521, type: trojan, password: dc838a4f-4b2d-3cca-a82f-8f1f0963929e, sni: y117s1gt.ted1.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_82 |69.95Mb, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_61 |19.01Mb, server: cstwrelay.onlineto.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_72 |27.49Mb, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_67 |13.78Mb, server: shallaz2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
-  - {name: Pool_🇺🇸US_320 | 3.01Mb, server: 172.247.127.175, port: 51692, type: vmess, uuid: a5aa4fad-3cc3-484f-f170-9cec7a347819, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_75 |30.76Mb, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 59022:tyson.cool, obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_77 |36.20Mb, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: 912ebb9f-7c7a-4ee2-b9c9-5c2a87280c2e, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇲🇴MO_74 |15.84Mb, server: 223.166.80.206, port: 60012, type: vmess, uuid: 4ea8c14c-b0af-359d-b846-4eb19b31739d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.80.206}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_205 |32.07Mb, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, sni: jgwcc3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_75 |43.50Mb, server: gy-node.csccdd.xyz, port: 20356, type: vmess, uuid: 380640bb-201f-4903-9aab-a6418bc40563, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy-node.csccdd.xyz}, udp: true}
+  - {name: US_10084 TG@peekfun, server: 138.2.75.101, port: 18888, type: vmess, uuid: 6731a7a4-cac0-4218-d3e7-a4fe8c933b5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog, ws-headers: {Host: 138.2.75.101}, udp: true}
+  - {name: US_194 | 4.16Mb, server: 45.76.168.79, port: 62969, type: vmess, uuid: 14c7249a-bda0-11ec-9317-560003f3536b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /W40anfFp/, ws-headers: {Host: 45.76.168.79}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_206 | 3.22Mb, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: AU_18 |29.43Mb, server: 43.129.227.60, port: 27727, type: vmess, uuid: d00f5ea9-4658-4f0a-a6c3-e29ef711cf3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.129.227.60]}}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_193, server: 138.197.236.77, port: 443, type: vmess, uuid: 3579436c-b37e-11eb-8529-0242ac130003, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 138.197.236.77}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_213 | 7.90Mb, server: misaka1433.tk, port: 443, type: trojan, password: YcQgIbGZNNd1PwsF, sni: misaka1433.tk, skip-cert-verify: true, udp: true}
+  - {name: US_10343 TG@peekfun, server: us-ny-rn.licom.ga, port: 62007, type: trojan, password: f81e990e-1283-48f9-9eff-acacad6fb661, sni: us-ny-rn.licom.ga, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_209 |18.98Mb, server: trojan1.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, sni: trojan1.free4444.xyz, skip-cert-verify: true, udp: true}
+  - {name: AU_22 |37.61Mb, server: 43.154.46.228, port: 49930, type: vmess, uuid: 051088e3-f62e-4cf6-a199-ab98adcb822b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.154.46.228]}}, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_25, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: AU_21 | 5.42Mb, server: 43.154.72.145, port: 27091, type: vmess, uuid: 2f1e82e4-5319-4278-92aa-74d49c04683f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.154.72.145]}}, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇺RU_68 |13.28Mb, server: 223.166.157.41, port: 60021, type: vmess, uuid: 4ea8c14c-b0af-359d-b846-4eb19b31739d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.41}, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇺RU_69 |23.94Mb, server: 223.166.81.66, port: 60021, type: vmess, uuid: 4ea8c14c-b0af-359d-b846-4eb19b31739d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.81.66}, udp: true}
+  - {name: AU_24 |10.65Mb, server: 43.135.70.192, port: 24740, type: vmess, uuid: 3749de34-a1a9-44db-b72a-510712a52d11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.135.70.192]}}, udp: true}
+  - {name: AU_20 | 6.71Mb, server: 43.132.109.14, port: 24886, type: vmess, uuid: 55711bf8-4785-4e86-9f5e-2fa64466c233, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.132.109.14]}}, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇦UA_61 | 8.31Mb, server: gz2.52168.xyz, port: 2110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇺🇸US_176 |40.75Mb
-      - Relay_🇨🇳CN-🇭🇰HK_137 |30.36Mb
-      - Relay_🇨🇳CN-🇭🇰HK_108 |13.94Mb
-      - Relay_🇨🇳CN-🇭🇰HK_60 |56.53Mb
-      - Relay_🇨🇳CN-🇭🇰HK_132 | 2.86Mb
-      - Relay_🇨🇳CN-🇭🇰HK_141 |17.92Mb
-      - Relay_🇨🇳CN-🇭🇰HK_66 |32.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_134 |19.01Mb
-      - Relay_🇨🇳CN-🇭🇰HK_113 |11.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |30.32Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |142.07Mb
-      - Relay_🇨🇳CN-🇹🇼TW_103 |17.73Mb
-      - Relay_🇨🇳CN-🇭🇰HK_128 |50.19Mb
-      - Relay_🇨🇳CN-🇳🇱NL_175 |11.78Mb
-      - Relay_🇨🇳CN-🇭🇰HK_62 |34.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_133 |14.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_139 |69.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_122 |31.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_68 | 8.28Mb
-      - Relay_🇨🇳CN-🇭🇰HK_143 |17.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_55 |29.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_107 |25.29Mb
-      - Relay_🇨🇳CN-🇭🇰HK_101 |54.54Mb
-      - Relay_🇨🇳CN-🇹🇼TW_57 |37.04Mb
-      - Relay_🇨🇳CN-🇭🇰HK_111 |14.27Mb
-      - Relay_🇨🇳CN-🇭🇰HK_78 |37.89Mb
-      - Relay_🇨🇳CN-🇭🇰HK_131 |69.17Mb
-      - Relay_🇨🇳CN-🇭🇰HK_77 |30.91Mb
-      - Relay_🇨🇳CN-🇭🇰HK_89 |23.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_100 |33.77Mb
-      - Relay_🇨🇳CN-🇭🇰HK_95 |34.46Mb
-      - Relay_🇨🇳CN-🇭🇰HK_112 |37.18Mb
-      - Relay_🇨🇳CN-🇭🇰HK_97 |31.85Mb
-      - Relay_🇨🇳CN-🇭🇰HK_56 |39.79Mb
-      - Relay_🇨🇳CN-🇹🇼TW_65 |45.37Mb
-      - Relay_🇨🇳CN-🇭🇰HK_76 |36.48Mb
-      - Relay_🇨🇳CN-🇭🇰HK_116 |22.87Mb
-      - US_314 |31.21Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |24.09Mb
-      - Relay_🇨🇳CN-🇭🇰HK_92 |38.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_123 |36.65Mb
-      - Relay_🇨🇳CN-🇭🇰HK_114 |37.86Mb
-      - Relay_🇨🇳CN-🇹🇼TW_81 | 8.72Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |37.32Mb
-      - Relay_🇨🇳CN-🇭🇰HK_130 |37.93Mb
-      - Relay_🇨🇳CN-🇭🇰HK_127 |36.30Mb
-      - Relay_🇨🇳CN-🇭🇰HK_74 | 1.88Mb
-      - Relay_🇨🇳CN-🇭🇰HK_93 |37.23Mb
-      - Relay_🇨🇳CN-🇭🇰HK_109 |20.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_64 |16.30Mb
-      - Relay_🇨🇳CN-🇹🇼TW_63 |29.68Mb
-      - Relay_🇨🇳CN-🇭🇰HK_90 |36.00Mb
-      - Relay_🇨🇳CN-🇹🇼TW_99 |14.63Mb
-      - US_307 |12.95Mb
-      - Relay_🇨🇳CN-🇸🇬SG_181
-      - Relay_🇨🇳CN-🇭🇰HK_58 |22.42Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 |35.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_79 | 2.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_54 | 1.90Mb
-      - Relay_🇨🇳CN-🇭🇰HK_59 |39.66Mb
-      - Relay_🇨🇳CN-🇭🇰HK_136 |44.02Mb
-      - Relay_🇨🇳CN-🇹🇼TW_84
-      - Relay_🇨🇳CN-🇹🇼TW_86 | 7.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_73 | 4.42Mb
-      - Relay_🇨🇳CN-🇹🇼TW_69 |17.50Mb
-      - Relay_🇨🇳CN-🇭🇰HK_135 | 6.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_87 |60.14Mb
-      - Relay_🇨🇳CN-🇹🇼TW_85 |24.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_125 | 3.85Mb
-      - Relay_🇨🇳CN-🇺🇸US_121 |67.43Mb
-      - Relay_🇨🇳CN-🇸🇬SG_178 |72.89Mb
-      - Relay_🇨🇳CN-🇺🇸US_82 |69.95Mb
-      - Relay_🇨🇳CN-🇹🇼TW_61 |19.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_72 |27.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_67 |13.78Mb
-      - Pool_🇺🇸US_320 | 3.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_75 |30.76Mb
+      - Relay_🇨🇳CN-🇭🇰HK_77 |36.20Mb
+      - Relay_🇨🇳CN-🇲🇴MO_74 |15.84Mb
+      - Relay_🇺🇸US-🇺🇸US_205 |32.07Mb
+      - Relay_🇨🇳CN-🇹🇼TW_75 |43.50Mb
+      - US_10084 TG@peekfun
+      - US_194 | 4.16Mb
+      - Relay_🇺🇸US-🇺🇸US_206 | 3.22Mb
+      - AU_18 |29.43Mb
+      - Relay_🇺🇸US-🇺🇸US_193
+      - Relay_🇺🇸US-🇺🇸US_213 | 7.90Mb
+      - US_10343 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_209 |18.98Mb
+      - AU_22 |37.61Mb
+      - Relay_🇦🇺AU-🇦🇺AU_25
+      - AU_21 | 5.42Mb
+      - Relay_🇨🇳CN-🇷🇺RU_68 |13.28Mb
+      - Relay_🇨🇳CN-🇷🇺RU_69 |23.94Mb
+      - AU_24 |10.65Mb
+      - AU_20 | 6.71Mb
+      - Relay_🇨🇳CN-🇺🇦UA_61 | 8.31Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇺🇸US_176 |40.75Mb
-      - Relay_🇨🇳CN-🇭🇰HK_137 |30.36Mb
-      - Relay_🇨🇳CN-🇭🇰HK_108 |13.94Mb
-      - Relay_🇨🇳CN-🇭🇰HK_60 |56.53Mb
-      - Relay_🇨🇳CN-🇭🇰HK_132 | 2.86Mb
-      - Relay_🇨🇳CN-🇭🇰HK_141 |17.92Mb
-      - Relay_🇨🇳CN-🇭🇰HK_66 |32.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_134 |19.01Mb
-      - Relay_🇨🇳CN-🇭🇰HK_113 |11.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |30.32Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |142.07Mb
-      - Relay_🇨🇳CN-🇹🇼TW_103 |17.73Mb
-      - Relay_🇨🇳CN-🇭🇰HK_128 |50.19Mb
-      - Relay_🇨🇳CN-🇳🇱NL_175 |11.78Mb
-      - Relay_🇨🇳CN-🇭🇰HK_62 |34.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_133 |14.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_139 |69.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_122 |31.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_68 | 8.28Mb
-      - Relay_🇨🇳CN-🇭🇰HK_143 |17.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_55 |29.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_107 |25.29Mb
-      - Relay_🇨🇳CN-🇭🇰HK_101 |54.54Mb
-      - Relay_🇨🇳CN-🇹🇼TW_57 |37.04Mb
-      - Relay_🇨🇳CN-🇭🇰HK_111 |14.27Mb
-      - Relay_🇨🇳CN-🇭🇰HK_78 |37.89Mb
-      - Relay_🇨🇳CN-🇭🇰HK_131 |69.17Mb
-      - Relay_🇨🇳CN-🇭🇰HK_77 |30.91Mb
-      - Relay_🇨🇳CN-🇭🇰HK_89 |23.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_100 |33.77Mb
-      - Relay_🇨🇳CN-🇭🇰HK_95 |34.46Mb
-      - Relay_🇨🇳CN-🇭🇰HK_112 |37.18Mb
-      - Relay_🇨🇳CN-🇭🇰HK_97 |31.85Mb
-      - Relay_🇨🇳CN-🇭🇰HK_56 |39.79Mb
-      - Relay_🇨🇳CN-🇹🇼TW_65 |45.37Mb
-      - Relay_🇨🇳CN-🇭🇰HK_76 |36.48Mb
-      - Relay_🇨🇳CN-🇭🇰HK_116 |22.87Mb
-      - US_314 |31.21Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |24.09Mb
-      - Relay_🇨🇳CN-🇭🇰HK_92 |38.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_123 |36.65Mb
-      - Relay_🇨🇳CN-🇭🇰HK_114 |37.86Mb
-      - Relay_🇨🇳CN-🇹🇼TW_81 | 8.72Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |37.32Mb
-      - Relay_🇨🇳CN-🇭🇰HK_130 |37.93Mb
-      - Relay_🇨🇳CN-🇭🇰HK_127 |36.30Mb
-      - Relay_🇨🇳CN-🇭🇰HK_74 | 1.88Mb
-      - Relay_🇨🇳CN-🇭🇰HK_93 |37.23Mb
-      - Relay_🇨🇳CN-🇭🇰HK_109 |20.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_64 |16.30Mb
-      - Relay_🇨🇳CN-🇹🇼TW_63 |29.68Mb
-      - Relay_🇨🇳CN-🇭🇰HK_90 |36.00Mb
-      - Relay_🇨🇳CN-🇹🇼TW_99 |14.63Mb
-      - US_307 |12.95Mb
-      - Relay_🇨🇳CN-🇸🇬SG_181
-      - Relay_🇨🇳CN-🇭🇰HK_58 |22.42Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 |35.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_79 | 2.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_54 | 1.90Mb
-      - Relay_🇨🇳CN-🇭🇰HK_59 |39.66Mb
-      - Relay_🇨🇳CN-🇭🇰HK_136 |44.02Mb
-      - Relay_🇨🇳CN-🇹🇼TW_84
-      - Relay_🇨🇳CN-🇹🇼TW_86 | 7.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_73 | 4.42Mb
-      - Relay_🇨🇳CN-🇹🇼TW_69 |17.50Mb
-      - Relay_🇨🇳CN-🇭🇰HK_135 | 6.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_87 |60.14Mb
-      - Relay_🇨🇳CN-🇹🇼TW_85 |24.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_125 | 3.85Mb
-      - Relay_🇨🇳CN-🇺🇸US_121 |67.43Mb
-      - Relay_🇨🇳CN-🇸🇬SG_178 |72.89Mb
-      - Relay_🇨🇳CN-🇺🇸US_82 |69.95Mb
-      - Relay_🇨🇳CN-🇹🇼TW_61 |19.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_72 |27.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_67 |13.78Mb
-      - Pool_🇺🇸US_320 | 3.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_75 |30.76Mb
+      - Relay_🇨🇳CN-🇭🇰HK_77 |36.20Mb
+      - Relay_🇨🇳CN-🇲🇴MO_74 |15.84Mb
+      - Relay_🇺🇸US-🇺🇸US_205 |32.07Mb
+      - Relay_🇨🇳CN-🇹🇼TW_75 |43.50Mb
+      - US_10084 TG@peekfun
+      - US_194 | 4.16Mb
+      - Relay_🇺🇸US-🇺🇸US_206 | 3.22Mb
+      - AU_18 |29.43Mb
+      - Relay_🇺🇸US-🇺🇸US_193
+      - Relay_🇺🇸US-🇺🇸US_213 | 7.90Mb
+      - US_10343 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_209 |18.98Mb
+      - AU_22 |37.61Mb
+      - Relay_🇦🇺AU-🇦🇺AU_25
+      - AU_21 | 5.42Mb
+      - Relay_🇨🇳CN-🇷🇺RU_68 |13.28Mb
+      - Relay_🇨🇳CN-🇷🇺RU_69 |23.94Mb
+      - AU_24 |10.65Mb
+      - AU_20 | 6.71Mb
+      - Relay_🇨🇳CN-🇺🇦UA_61 | 8.31Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇺🇸US_176 |40.75Mb
-      - Relay_🇨🇳CN-🇭🇰HK_137 |30.36Mb
-      - Relay_🇨🇳CN-🇭🇰HK_108 |13.94Mb
-      - Relay_🇨🇳CN-🇭🇰HK_60 |56.53Mb
-      - Relay_🇨🇳CN-🇭🇰HK_132 | 2.86Mb
-      - Relay_🇨🇳CN-🇭🇰HK_141 |17.92Mb
-      - Relay_🇨🇳CN-🇭🇰HK_66 |32.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_134 |19.01Mb
-      - Relay_🇨🇳CN-🇭🇰HK_113 |11.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |30.32Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |142.07Mb
-      - Relay_🇨🇳CN-🇹🇼TW_103 |17.73Mb
-      - Relay_🇨🇳CN-🇭🇰HK_128 |50.19Mb
-      - Relay_🇨🇳CN-🇳🇱NL_175 |11.78Mb
-      - Relay_🇨🇳CN-🇭🇰HK_62 |34.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_133 |14.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_139 |69.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_122 |31.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_68 | 8.28Mb
-      - Relay_🇨🇳CN-🇭🇰HK_143 |17.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_55 |29.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_107 |25.29Mb
-      - Relay_🇨🇳CN-🇭🇰HK_101 |54.54Mb
-      - Relay_🇨🇳CN-🇹🇼TW_57 |37.04Mb
-      - Relay_🇨🇳CN-🇭🇰HK_111 |14.27Mb
-      - Relay_🇨🇳CN-🇭🇰HK_78 |37.89Mb
-      - Relay_🇨🇳CN-🇭🇰HK_131 |69.17Mb
-      - Relay_🇨🇳CN-🇭🇰HK_77 |30.91Mb
-      - Relay_🇨🇳CN-🇭🇰HK_89 |23.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_100 |33.77Mb
-      - Relay_🇨🇳CN-🇭🇰HK_95 |34.46Mb
-      - Relay_🇨🇳CN-🇭🇰HK_112 |37.18Mb
-      - Relay_🇨🇳CN-🇭🇰HK_97 |31.85Mb
-      - Relay_🇨🇳CN-🇭🇰HK_56 |39.79Mb
-      - Relay_🇨🇳CN-🇹🇼TW_65 |45.37Mb
-      - Relay_🇨🇳CN-🇭🇰HK_76 |36.48Mb
-      - Relay_🇨🇳CN-🇭🇰HK_116 |22.87Mb
-      - US_314 |31.21Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |24.09Mb
-      - Relay_🇨🇳CN-🇭🇰HK_92 |38.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_123 |36.65Mb
-      - Relay_🇨🇳CN-🇭🇰HK_114 |37.86Mb
-      - Relay_🇨🇳CN-🇹🇼TW_81 | 8.72Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |37.32Mb
-      - Relay_🇨🇳CN-🇭🇰HK_130 |37.93Mb
-      - Relay_🇨🇳CN-🇭🇰HK_127 |36.30Mb
-      - Relay_🇨🇳CN-🇭🇰HK_74 | 1.88Mb
-      - Relay_🇨🇳CN-🇭🇰HK_93 |37.23Mb
-      - Relay_🇨🇳CN-🇭🇰HK_109 |20.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_64 |16.30Mb
-      - Relay_🇨🇳CN-🇹🇼TW_63 |29.68Mb
-      - Relay_🇨🇳CN-🇭🇰HK_90 |36.00Mb
-      - Relay_🇨🇳CN-🇹🇼TW_99 |14.63Mb
-      - US_307 |12.95Mb
-      - Relay_🇨🇳CN-🇸🇬SG_181
-      - Relay_🇨🇳CN-🇭🇰HK_58 |22.42Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 |35.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_79 | 2.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_54 | 1.90Mb
-      - Relay_🇨🇳CN-🇭🇰HK_59 |39.66Mb
-      - Relay_🇨🇳CN-🇭🇰HK_136 |44.02Mb
-      - Relay_🇨🇳CN-🇹🇼TW_84
-      - Relay_🇨🇳CN-🇹🇼TW_86 | 7.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_73 | 4.42Mb
-      - Relay_🇨🇳CN-🇹🇼TW_69 |17.50Mb
-      - Relay_🇨🇳CN-🇭🇰HK_135 | 6.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_87 |60.14Mb
-      - Relay_🇨🇳CN-🇹🇼TW_85 |24.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_125 | 3.85Mb
-      - Relay_🇨🇳CN-🇺🇸US_121 |67.43Mb
-      - Relay_🇨🇳CN-🇸🇬SG_178 |72.89Mb
-      - Relay_🇨🇳CN-🇺🇸US_82 |69.95Mb
-      - Relay_🇨🇳CN-🇹🇼TW_61 |19.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_72 |27.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_67 |13.78Mb
-      - Pool_🇺🇸US_320 | 3.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_75 |30.76Mb
+      - Relay_🇨🇳CN-🇭🇰HK_77 |36.20Mb
+      - Relay_🇨🇳CN-🇲🇴MO_74 |15.84Mb
+      - Relay_🇺🇸US-🇺🇸US_205 |32.07Mb
+      - Relay_🇨🇳CN-🇹🇼TW_75 |43.50Mb
+      - US_10084 TG@peekfun
+      - US_194 | 4.16Mb
+      - Relay_🇺🇸US-🇺🇸US_206 | 3.22Mb
+      - AU_18 |29.43Mb
+      - Relay_🇺🇸US-🇺🇸US_193
+      - Relay_🇺🇸US-🇺🇸US_213 | 7.90Mb
+      - US_10343 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_209 |18.98Mb
+      - AU_22 |37.61Mb
+      - Relay_🇦🇺AU-🇦🇺AU_25
+      - AU_21 | 5.42Mb
+      - Relay_🇨🇳CN-🇷🇺RU_68 |13.28Mb
+      - Relay_🇨🇳CN-🇷🇺RU_69 |23.94Mb
+      - AU_24 |10.65Mb
+      - AU_20 | 6.71Mb
+      - Relay_🇨🇳CN-🇺🇦UA_61 | 8.31Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -348,83 +120,26 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇺🇸US_176 |40.75Mb
-      - Relay_🇨🇳CN-🇭🇰HK_137 |30.36Mb
-      - Relay_🇨🇳CN-🇭🇰HK_108 |13.94Mb
-      - Relay_🇨🇳CN-🇭🇰HK_60 |56.53Mb
-      - Relay_🇨🇳CN-🇭🇰HK_132 | 2.86Mb
-      - Relay_🇨🇳CN-🇭🇰HK_141 |17.92Mb
-      - Relay_🇨🇳CN-🇭🇰HK_66 |32.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_134 |19.01Mb
-      - Relay_🇨🇳CN-🇭🇰HK_113 |11.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |30.32Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |142.07Mb
-      - Relay_🇨🇳CN-🇹🇼TW_103 |17.73Mb
-      - Relay_🇨🇳CN-🇭🇰HK_128 |50.19Mb
-      - Relay_🇨🇳CN-🇳🇱NL_175 |11.78Mb
-      - Relay_🇨🇳CN-🇭🇰HK_62 |34.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_133 |14.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_139 |69.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_122 |31.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_68 | 8.28Mb
-      - Relay_🇨🇳CN-🇭🇰HK_143 |17.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_55 |29.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_107 |25.29Mb
-      - Relay_🇨🇳CN-🇭🇰HK_101 |54.54Mb
-      - Relay_🇨🇳CN-🇹🇼TW_57 |37.04Mb
-      - Relay_🇨🇳CN-🇭🇰HK_111 |14.27Mb
-      - Relay_🇨🇳CN-🇭🇰HK_78 |37.89Mb
-      - Relay_🇨🇳CN-🇭🇰HK_131 |69.17Mb
-      - Relay_🇨🇳CN-🇭🇰HK_77 |30.91Mb
-      - Relay_🇨🇳CN-🇭🇰HK_89 |23.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_100 |33.77Mb
-      - Relay_🇨🇳CN-🇭🇰HK_95 |34.46Mb
-      - Relay_🇨🇳CN-🇭🇰HK_112 |37.18Mb
-      - Relay_🇨🇳CN-🇭🇰HK_97 |31.85Mb
-      - Relay_🇨🇳CN-🇭🇰HK_56 |39.79Mb
-      - Relay_🇨🇳CN-🇹🇼TW_65 |45.37Mb
-      - Relay_🇨🇳CN-🇭🇰HK_76 |36.48Mb
-      - Relay_🇨🇳CN-🇭🇰HK_116 |22.87Mb
-      - US_314 |31.21Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |24.09Mb
-      - Relay_🇨🇳CN-🇭🇰HK_92 |38.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_123 |36.65Mb
-      - Relay_🇨🇳CN-🇭🇰HK_114 |37.86Mb
-      - Relay_🇨🇳CN-🇹🇼TW_81 | 8.72Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |37.32Mb
-      - Relay_🇨🇳CN-🇭🇰HK_130 |37.93Mb
-      - Relay_🇨🇳CN-🇭🇰HK_127 |36.30Mb
-      - Relay_🇨🇳CN-🇭🇰HK_74 | 1.88Mb
-      - Relay_🇨🇳CN-🇭🇰HK_93 |37.23Mb
-      - Relay_🇨🇳CN-🇭🇰HK_109 |20.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_64 |16.30Mb
-      - Relay_🇨🇳CN-🇹🇼TW_63 |29.68Mb
-      - Relay_🇨🇳CN-🇭🇰HK_90 |36.00Mb
-      - Relay_🇨🇳CN-🇹🇼TW_99 |14.63Mb
-      - US_307 |12.95Mb
-      - Relay_🇨🇳CN-🇸🇬SG_181
-      - Relay_🇨🇳CN-🇭🇰HK_58 |22.42Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 |35.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_79 | 2.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_54 | 1.90Mb
-      - Relay_🇨🇳CN-🇭🇰HK_59 |39.66Mb
-      - Relay_🇨🇳CN-🇭🇰HK_136 |44.02Mb
-      - Relay_🇨🇳CN-🇹🇼TW_84
-      - Relay_🇨🇳CN-🇹🇼TW_86 | 7.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_73 | 4.42Mb
-      - Relay_🇨🇳CN-🇹🇼TW_69 |17.50Mb
-      - Relay_🇨🇳CN-🇭🇰HK_135 | 6.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_87 |60.14Mb
-      - Relay_🇨🇳CN-🇹🇼TW_85 |24.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_125 | 3.85Mb
-      - Relay_🇨🇳CN-🇺🇸US_121 |67.43Mb
-      - Relay_🇨🇳CN-🇸🇬SG_178 |72.89Mb
-      - Relay_🇨🇳CN-🇺🇸US_82 |69.95Mb
-      - Relay_🇨🇳CN-🇹🇼TW_61 |19.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_72 |27.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_67 |13.78Mb
-      - Pool_🇺🇸US_320 | 3.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_75 |30.76Mb
+      - Relay_🇨🇳CN-🇭🇰HK_77 |36.20Mb
+      - Relay_🇨🇳CN-🇲🇴MO_74 |15.84Mb
+      - Relay_🇺🇸US-🇺🇸US_205 |32.07Mb
+      - Relay_🇨🇳CN-🇹🇼TW_75 |43.50Mb
+      - US_10084 TG@peekfun
+      - US_194 | 4.16Mb
+      - Relay_🇺🇸US-🇺🇸US_206 | 3.22Mb
+      - AU_18 |29.43Mb
+      - Relay_🇺🇸US-🇺🇸US_193
+      - Relay_🇺🇸US-🇺🇸US_213 | 7.90Mb
+      - US_10343 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_209 |18.98Mb
+      - AU_22 |37.61Mb
+      - Relay_🇦🇺AU-🇦🇺AU_25
+      - AU_21 | 5.42Mb
+      - Relay_🇨🇳CN-🇷🇺RU_68 |13.28Mb
+      - Relay_🇨🇳CN-🇷🇺RU_69 |23.94Mb
+      - AU_24 |10.65Mb
+      - AU_20 | 6.71Mb
+      - Relay_🇨🇳CN-🇺🇦UA_61 | 8.31Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -435,248 +150,77 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇺🇸US_176 |40.75Mb
-      - Relay_🇨🇳CN-🇭🇰HK_137 |30.36Mb
-      - Relay_🇨🇳CN-🇭🇰HK_108 |13.94Mb
-      - Relay_🇨🇳CN-🇭🇰HK_60 |56.53Mb
-      - Relay_🇨🇳CN-🇭🇰HK_132 | 2.86Mb
-      - Relay_🇨🇳CN-🇭🇰HK_141 |17.92Mb
-      - Relay_🇨🇳CN-🇭🇰HK_66 |32.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_134 |19.01Mb
-      - Relay_🇨🇳CN-🇭🇰HK_113 |11.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |30.32Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |142.07Mb
-      - Relay_🇨🇳CN-🇹🇼TW_103 |17.73Mb
-      - Relay_🇨🇳CN-🇭🇰HK_128 |50.19Mb
-      - Relay_🇨🇳CN-🇳🇱NL_175 |11.78Mb
-      - Relay_🇨🇳CN-🇭🇰HK_62 |34.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_133 |14.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_139 |69.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_122 |31.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_68 | 8.28Mb
-      - Relay_🇨🇳CN-🇭🇰HK_143 |17.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_55 |29.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_107 |25.29Mb
-      - Relay_🇨🇳CN-🇭🇰HK_101 |54.54Mb
-      - Relay_🇨🇳CN-🇹🇼TW_57 |37.04Mb
-      - Relay_🇨🇳CN-🇭🇰HK_111 |14.27Mb
-      - Relay_🇨🇳CN-🇭🇰HK_78 |37.89Mb
-      - Relay_🇨🇳CN-🇭🇰HK_131 |69.17Mb
-      - Relay_🇨🇳CN-🇭🇰HK_77 |30.91Mb
-      - Relay_🇨🇳CN-🇭🇰HK_89 |23.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_100 |33.77Mb
-      - Relay_🇨🇳CN-🇭🇰HK_95 |34.46Mb
-      - Relay_🇨🇳CN-🇭🇰HK_112 |37.18Mb
-      - Relay_🇨🇳CN-🇭🇰HK_97 |31.85Mb
-      - Relay_🇨🇳CN-🇭🇰HK_56 |39.79Mb
-      - Relay_🇨🇳CN-🇹🇼TW_65 |45.37Mb
-      - Relay_🇨🇳CN-🇭🇰HK_76 |36.48Mb
-      - Relay_🇨🇳CN-🇭🇰HK_116 |22.87Mb
-      - US_314 |31.21Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |24.09Mb
-      - Relay_🇨🇳CN-🇭🇰HK_92 |38.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_123 |36.65Mb
-      - Relay_🇨🇳CN-🇭🇰HK_114 |37.86Mb
-      - Relay_🇨🇳CN-🇹🇼TW_81 | 8.72Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |37.32Mb
-      - Relay_🇨🇳CN-🇭🇰HK_130 |37.93Mb
-      - Relay_🇨🇳CN-🇭🇰HK_127 |36.30Mb
-      - Relay_🇨🇳CN-🇭🇰HK_74 | 1.88Mb
-      - Relay_🇨🇳CN-🇭🇰HK_93 |37.23Mb
-      - Relay_🇨🇳CN-🇭🇰HK_109 |20.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_64 |16.30Mb
-      - Relay_🇨🇳CN-🇹🇼TW_63 |29.68Mb
-      - Relay_🇨🇳CN-🇭🇰HK_90 |36.00Mb
-      - Relay_🇨🇳CN-🇹🇼TW_99 |14.63Mb
-      - US_307 |12.95Mb
-      - Relay_🇨🇳CN-🇸🇬SG_181
-      - Relay_🇨🇳CN-🇭🇰HK_58 |22.42Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 |35.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_79 | 2.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_54 | 1.90Mb
-      - Relay_🇨🇳CN-🇭🇰HK_59 |39.66Mb
-      - Relay_🇨🇳CN-🇭🇰HK_136 |44.02Mb
-      - Relay_🇨🇳CN-🇹🇼TW_84
-      - Relay_🇨🇳CN-🇹🇼TW_86 | 7.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_73 | 4.42Mb
-      - Relay_🇨🇳CN-🇹🇼TW_69 |17.50Mb
-      - Relay_🇨🇳CN-🇭🇰HK_135 | 6.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_87 |60.14Mb
-      - Relay_🇨🇳CN-🇹🇼TW_85 |24.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_125 | 3.85Mb
-      - Relay_🇨🇳CN-🇺🇸US_121 |67.43Mb
-      - Relay_🇨🇳CN-🇸🇬SG_178 |72.89Mb
-      - Relay_🇨🇳CN-🇺🇸US_82 |69.95Mb
-      - Relay_🇨🇳CN-🇹🇼TW_61 |19.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_72 |27.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_67 |13.78Mb
-      - Pool_🇺🇸US_320 | 3.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_75 |30.76Mb
+      - Relay_🇨🇳CN-🇭🇰HK_77 |36.20Mb
+      - Relay_🇨🇳CN-🇲🇴MO_74 |15.84Mb
+      - Relay_🇺🇸US-🇺🇸US_205 |32.07Mb
+      - Relay_🇨🇳CN-🇹🇼TW_75 |43.50Mb
+      - US_10084 TG@peekfun
+      - US_194 | 4.16Mb
+      - Relay_🇺🇸US-🇺🇸US_206 | 3.22Mb
+      - AU_18 |29.43Mb
+      - Relay_🇺🇸US-🇺🇸US_193
+      - Relay_🇺🇸US-🇺🇸US_213 | 7.90Mb
+      - US_10343 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_209 |18.98Mb
+      - AU_22 |37.61Mb
+      - Relay_🇦🇺AU-🇦🇺AU_25
+      - AU_21 | 5.42Mb
+      - Relay_🇨🇳CN-🇷🇺RU_68 |13.28Mb
+      - Relay_🇨🇳CN-🇷🇺RU_69 |23.94Mb
+      - AU_24 |10.65Mb
+      - AU_20 | 6.71Mb
+      - Relay_🇨🇳CN-🇺🇦UA_61 | 8.31Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇺🇸US_176 |40.75Mb
-      - Relay_🇨🇳CN-🇭🇰HK_137 |30.36Mb
-      - Relay_🇨🇳CN-🇭🇰HK_108 |13.94Mb
-      - Relay_🇨🇳CN-🇭🇰HK_60 |56.53Mb
-      - Relay_🇨🇳CN-🇭🇰HK_132 | 2.86Mb
-      - Relay_🇨🇳CN-🇭🇰HK_141 |17.92Mb
-      - Relay_🇨🇳CN-🇭🇰HK_66 |32.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_134 |19.01Mb
-      - Relay_🇨🇳CN-🇭🇰HK_113 |11.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |30.32Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |142.07Mb
-      - Relay_🇨🇳CN-🇹🇼TW_103 |17.73Mb
-      - Relay_🇨🇳CN-🇭🇰HK_128 |50.19Mb
-      - Relay_🇨🇳CN-🇳🇱NL_175 |11.78Mb
-      - Relay_🇨🇳CN-🇭🇰HK_62 |34.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_133 |14.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_139 |69.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_122 |31.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_68 | 8.28Mb
-      - Relay_🇨🇳CN-🇭🇰HK_143 |17.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_55 |29.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_107 |25.29Mb
-      - Relay_🇨🇳CN-🇭🇰HK_101 |54.54Mb
-      - Relay_🇨🇳CN-🇹🇼TW_57 |37.04Mb
-      - Relay_🇨🇳CN-🇭🇰HK_111 |14.27Mb
-      - Relay_🇨🇳CN-🇭🇰HK_78 |37.89Mb
-      - Relay_🇨🇳CN-🇭🇰HK_131 |69.17Mb
-      - Relay_🇨🇳CN-🇭🇰HK_77 |30.91Mb
-      - Relay_🇨🇳CN-🇭🇰HK_89 |23.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_100 |33.77Mb
-      - Relay_🇨🇳CN-🇭🇰HK_95 |34.46Mb
-      - Relay_🇨🇳CN-🇭🇰HK_112 |37.18Mb
-      - Relay_🇨🇳CN-🇭🇰HK_97 |31.85Mb
-      - Relay_🇨🇳CN-🇭🇰HK_56 |39.79Mb
-      - Relay_🇨🇳CN-🇹🇼TW_65 |45.37Mb
-      - Relay_🇨🇳CN-🇭🇰HK_76 |36.48Mb
-      - Relay_🇨🇳CN-🇭🇰HK_116 |22.87Mb
-      - US_314 |31.21Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |24.09Mb
-      - Relay_🇨🇳CN-🇭🇰HK_92 |38.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_123 |36.65Mb
-      - Relay_🇨🇳CN-🇭🇰HK_114 |37.86Mb
-      - Relay_🇨🇳CN-🇹🇼TW_81 | 8.72Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |37.32Mb
-      - Relay_🇨🇳CN-🇭🇰HK_130 |37.93Mb
-      - Relay_🇨🇳CN-🇭🇰HK_127 |36.30Mb
-      - Relay_🇨🇳CN-🇭🇰HK_74 | 1.88Mb
-      - Relay_🇨🇳CN-🇭🇰HK_93 |37.23Mb
-      - Relay_🇨🇳CN-🇭🇰HK_109 |20.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_64 |16.30Mb
-      - Relay_🇨🇳CN-🇹🇼TW_63 |29.68Mb
-      - Relay_🇨🇳CN-🇭🇰HK_90 |36.00Mb
-      - Relay_🇨🇳CN-🇹🇼TW_99 |14.63Mb
-      - US_307 |12.95Mb
-      - Relay_🇨🇳CN-🇸🇬SG_181
-      - Relay_🇨🇳CN-🇭🇰HK_58 |22.42Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 |35.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_79 | 2.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_54 | 1.90Mb
-      - Relay_🇨🇳CN-🇭🇰HK_59 |39.66Mb
-      - Relay_🇨🇳CN-🇭🇰HK_136 |44.02Mb
-      - Relay_🇨🇳CN-🇹🇼TW_84
-      - Relay_🇨🇳CN-🇹🇼TW_86 | 7.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_73 | 4.42Mb
-      - Relay_🇨🇳CN-🇹🇼TW_69 |17.50Mb
-      - Relay_🇨🇳CN-🇭🇰HK_135 | 6.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_87 |60.14Mb
-      - Relay_🇨🇳CN-🇹🇼TW_85 |24.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_125 | 3.85Mb
-      - Relay_🇨🇳CN-🇺🇸US_121 |67.43Mb
-      - Relay_🇨🇳CN-🇸🇬SG_178 |72.89Mb
-      - Relay_🇨🇳CN-🇺🇸US_82 |69.95Mb
-      - Relay_🇨🇳CN-🇹🇼TW_61 |19.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_72 |27.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_67 |13.78Mb
-      - Pool_🇺🇸US_320 | 3.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_75 |30.76Mb
+      - Relay_🇨🇳CN-🇭🇰HK_77 |36.20Mb
+      - Relay_🇨🇳CN-🇲🇴MO_74 |15.84Mb
+      - Relay_🇺🇸US-🇺🇸US_205 |32.07Mb
+      - Relay_🇨🇳CN-🇹🇼TW_75 |43.50Mb
+      - US_10084 TG@peekfun
+      - US_194 | 4.16Mb
+      - Relay_🇺🇸US-🇺🇸US_206 | 3.22Mb
+      - AU_18 |29.43Mb
+      - Relay_🇺🇸US-🇺🇸US_193
+      - Relay_🇺🇸US-🇺🇸US_213 | 7.90Mb
+      - US_10343 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_209 |18.98Mb
+      - AU_22 |37.61Mb
+      - Relay_🇦🇺AU-🇦🇺AU_25
+      - AU_21 | 5.42Mb
+      - Relay_🇨🇳CN-🇷🇺RU_68 |13.28Mb
+      - Relay_🇨🇳CN-🇷🇺RU_69 |23.94Mb
+      - AU_24 |10.65Mb
+      - AU_20 | 6.71Mb
+      - Relay_🇨🇳CN-🇺🇦UA_61 | 8.31Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇺🇸US_176 |40.75Mb
-      - Relay_🇨🇳CN-🇭🇰HK_137 |30.36Mb
-      - Relay_🇨🇳CN-🇭🇰HK_108 |13.94Mb
-      - Relay_🇨🇳CN-🇭🇰HK_60 |56.53Mb
-      - Relay_🇨🇳CN-🇭🇰HK_132 | 2.86Mb
-      - Relay_🇨🇳CN-🇭🇰HK_141 |17.92Mb
-      - Relay_🇨🇳CN-🇭🇰HK_66 |32.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_134 |19.01Mb
-      - Relay_🇨🇳CN-🇭🇰HK_113 |11.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |30.32Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |142.07Mb
-      - Relay_🇨🇳CN-🇹🇼TW_103 |17.73Mb
-      - Relay_🇨🇳CN-🇭🇰HK_128 |50.19Mb
-      - Relay_🇨🇳CN-🇳🇱NL_175 |11.78Mb
-      - Relay_🇨🇳CN-🇭🇰HK_62 |34.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_133 |14.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_139 |69.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_122 |31.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_68 | 8.28Mb
-      - Relay_🇨🇳CN-🇭🇰HK_143 |17.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_55 |29.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_107 |25.29Mb
-      - Relay_🇨🇳CN-🇭🇰HK_101 |54.54Mb
-      - Relay_🇨🇳CN-🇹🇼TW_57 |37.04Mb
-      - Relay_🇨🇳CN-🇭🇰HK_111 |14.27Mb
-      - Relay_🇨🇳CN-🇭🇰HK_78 |37.89Mb
-      - Relay_🇨🇳CN-🇭🇰HK_131 |69.17Mb
-      - Relay_🇨🇳CN-🇭🇰HK_77 |30.91Mb
-      - Relay_🇨🇳CN-🇭🇰HK_89 |23.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_100 |33.77Mb
-      - Relay_🇨🇳CN-🇭🇰HK_95 |34.46Mb
-      - Relay_🇨🇳CN-🇭🇰HK_112 |37.18Mb
-      - Relay_🇨🇳CN-🇭🇰HK_97 |31.85Mb
-      - Relay_🇨🇳CN-🇭🇰HK_56 |39.79Mb
-      - Relay_🇨🇳CN-🇹🇼TW_65 |45.37Mb
-      - Relay_🇨🇳CN-🇭🇰HK_76 |36.48Mb
-      - Relay_🇨🇳CN-🇭🇰HK_116 |22.87Mb
-      - US_314 |31.21Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |24.09Mb
-      - Relay_🇨🇳CN-🇭🇰HK_92 |38.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_123 |36.65Mb
-      - Relay_🇨🇳CN-🇭🇰HK_114 |37.86Mb
-      - Relay_🇨🇳CN-🇹🇼TW_81 | 8.72Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |37.32Mb
-      - Relay_🇨🇳CN-🇭🇰HK_130 |37.93Mb
-      - Relay_🇨🇳CN-🇭🇰HK_127 |36.30Mb
-      - Relay_🇨🇳CN-🇭🇰HK_74 | 1.88Mb
-      - Relay_🇨🇳CN-🇭🇰HK_93 |37.23Mb
-      - Relay_🇨🇳CN-🇭🇰HK_109 |20.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_64 |16.30Mb
-      - Relay_🇨🇳CN-🇹🇼TW_63 |29.68Mb
-      - Relay_🇨🇳CN-🇭🇰HK_90 |36.00Mb
-      - Relay_🇨🇳CN-🇹🇼TW_99 |14.63Mb
-      - US_307 |12.95Mb
-      - Relay_🇨🇳CN-🇸🇬SG_181
-      - Relay_🇨🇳CN-🇭🇰HK_58 |22.42Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 |35.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_79 | 2.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_54 | 1.90Mb
-      - Relay_🇨🇳CN-🇭🇰HK_59 |39.66Mb
-      - Relay_🇨🇳CN-🇭🇰HK_136 |44.02Mb
-      - Relay_🇨🇳CN-🇹🇼TW_84
-      - Relay_🇨🇳CN-🇹🇼TW_86 | 7.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_73 | 4.42Mb
-      - Relay_🇨🇳CN-🇹🇼TW_69 |17.50Mb
-      - Relay_🇨🇳CN-🇭🇰HK_135 | 6.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_87 |60.14Mb
-      - Relay_🇨🇳CN-🇹🇼TW_85 |24.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_125 | 3.85Mb
-      - Relay_🇨🇳CN-🇺🇸US_121 |67.43Mb
-      - Relay_🇨🇳CN-🇸🇬SG_178 |72.89Mb
-      - Relay_🇨🇳CN-🇺🇸US_82 |69.95Mb
-      - Relay_🇨🇳CN-🇹🇼TW_61 |19.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_72 |27.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_67 |13.78Mb
-      - Pool_🇺🇸US_320 | 3.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_75 |30.76Mb
+      - Relay_🇨🇳CN-🇭🇰HK_77 |36.20Mb
+      - Relay_🇨🇳CN-🇲🇴MO_74 |15.84Mb
+      - Relay_🇺🇸US-🇺🇸US_205 |32.07Mb
+      - Relay_🇨🇳CN-🇹🇼TW_75 |43.50Mb
+      - US_10084 TG@peekfun
+      - US_194 | 4.16Mb
+      - Relay_🇺🇸US-🇺🇸US_206 | 3.22Mb
+      - AU_18 |29.43Mb
+      - Relay_🇺🇸US-🇺🇸US_193
+      - Relay_🇺🇸US-🇺🇸US_213 | 7.90Mb
+      - US_10343 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_209 |18.98Mb
+      - AU_22 |37.61Mb
+      - Relay_🇦🇺AU-🇦🇺AU_25
+      - AU_21 | 5.42Mb
+      - Relay_🇨🇳CN-🇷🇺RU_68 |13.28Mb
+      - Relay_🇨🇳CN-🇷🇺RU_69 |23.94Mb
+      - AU_24 |10.65Mb
+      - AU_20 | 6.71Mb
+      - Relay_🇨🇳CN-🇺🇦UA_61 | 8.31Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -692,83 +236,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇺🇸US_176 |40.75Mb
-      - Relay_🇨🇳CN-🇭🇰HK_137 |30.36Mb
-      - Relay_🇨🇳CN-🇭🇰HK_108 |13.94Mb
-      - Relay_🇨🇳CN-🇭🇰HK_60 |56.53Mb
-      - Relay_🇨🇳CN-🇭🇰HK_132 | 2.86Mb
-      - Relay_🇨🇳CN-🇭🇰HK_141 |17.92Mb
-      - Relay_🇨🇳CN-🇭🇰HK_66 |32.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_134 |19.01Mb
-      - Relay_🇨🇳CN-🇭🇰HK_113 |11.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_126 |30.32Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |142.07Mb
-      - Relay_🇨🇳CN-🇹🇼TW_103 |17.73Mb
-      - Relay_🇨🇳CN-🇭🇰HK_128 |50.19Mb
-      - Relay_🇨🇳CN-🇳🇱NL_175 |11.78Mb
-      - Relay_🇨🇳CN-🇭🇰HK_62 |34.14Mb
-      - Relay_🇨🇳CN-🇭🇰HK_133 |14.97Mb
-      - Relay_🇨🇳CN-🇭🇰HK_139 |69.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_122 |31.60Mb
-      - Relay_🇨🇳CN-🇭🇰HK_68 | 8.28Mb
-      - Relay_🇨🇳CN-🇭🇰HK_143 |17.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_55 |29.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_107 |25.29Mb
-      - Relay_🇨🇳CN-🇭🇰HK_101 |54.54Mb
-      - Relay_🇨🇳CN-🇹🇼TW_57 |37.04Mb
-      - Relay_🇨🇳CN-🇭🇰HK_111 |14.27Mb
-      - Relay_🇨🇳CN-🇭🇰HK_78 |37.89Mb
-      - Relay_🇨🇳CN-🇭🇰HK_131 |69.17Mb
-      - Relay_🇨🇳CN-🇭🇰HK_77 |30.91Mb
-      - Relay_🇨🇳CN-🇭🇰HK_89 |23.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_100 |33.77Mb
-      - Relay_🇨🇳CN-🇭🇰HK_95 |34.46Mb
-      - Relay_🇨🇳CN-🇭🇰HK_112 |37.18Mb
-      - Relay_🇨🇳CN-🇭🇰HK_97 |31.85Mb
-      - Relay_🇨🇳CN-🇭🇰HK_56 |39.79Mb
-      - Relay_🇨🇳CN-🇹🇼TW_65 |45.37Mb
-      - Relay_🇨🇳CN-🇭🇰HK_76 |36.48Mb
-      - Relay_🇨🇳CN-🇭🇰HK_116 |22.87Mb
-      - US_314 |31.21Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |24.09Mb
-      - Relay_🇨🇳CN-🇭🇰HK_92 |38.82Mb
-      - Relay_🇨🇳CN-🇭🇰HK_123 |36.65Mb
-      - Relay_🇨🇳CN-🇭🇰HK_114 |37.86Mb
-      - Relay_🇨🇳CN-🇹🇼TW_81 | 8.72Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |37.32Mb
-      - Relay_🇨🇳CN-🇭🇰HK_130 |37.93Mb
-      - Relay_🇨🇳CN-🇭🇰HK_127 |36.30Mb
-      - Relay_🇨🇳CN-🇭🇰HK_74 | 1.88Mb
-      - Relay_🇨🇳CN-🇭🇰HK_93 |37.23Mb
-      - Relay_🇨🇳CN-🇭🇰HK_109 |20.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_64 |16.30Mb
-      - Relay_🇨🇳CN-🇹🇼TW_63 |29.68Mb
-      - Relay_🇨🇳CN-🇭🇰HK_90 |36.00Mb
-      - Relay_🇨🇳CN-🇹🇼TW_99 |14.63Mb
-      - US_307 |12.95Mb
-      - Relay_🇨🇳CN-🇸🇬SG_181
-      - Relay_🇨🇳CN-🇭🇰HK_58 |22.42Mb
-      - Relay_🇨🇳CN-🇭🇰HK_91 |35.84Mb
-      - Relay_🇨🇳CN-🇹🇼TW_79 | 2.06Mb
-      - Relay_🇨🇳CN-🇹🇼TW_54 | 1.90Mb
-      - Relay_🇨🇳CN-🇭🇰HK_59 |39.66Mb
-      - Relay_🇨🇳CN-🇭🇰HK_136 |44.02Mb
-      - Relay_🇨🇳CN-🇹🇼TW_84
-      - Relay_🇨🇳CN-🇹🇼TW_86 | 7.24Mb
-      - Relay_🇨🇳CN-🇭🇰HK_73 | 4.42Mb
-      - Relay_🇨🇳CN-🇹🇼TW_69 |17.50Mb
-      - Relay_🇨🇳CN-🇭🇰HK_135 | 6.25Mb
-      - Relay_🇨🇳CN-🇭🇰HK_87 |60.14Mb
-      - Relay_🇨🇳CN-🇹🇼TW_85 |24.96Mb
-      - Relay_🇨🇳CN-🇹🇼TW_125 | 3.85Mb
-      - Relay_🇨🇳CN-🇺🇸US_121 |67.43Mb
-      - Relay_🇨🇳CN-🇸🇬SG_178 |72.89Mb
-      - Relay_🇨🇳CN-🇺🇸US_82 |69.95Mb
-      - Relay_🇨🇳CN-🇹🇼TW_61 |19.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_72 |27.49Mb
-      - Relay_🇨🇳CN-🇹🇼TW_67 |13.78Mb
-      - Pool_🇺🇸US_320 | 3.01Mb
-      - Relay_🇨🇳CN-🇺🇸US_75 |30.76Mb
+      - Relay_🇨🇳CN-🇭🇰HK_77 |36.20Mb
+      - Relay_🇨🇳CN-🇲🇴MO_74 |15.84Mb
+      - Relay_🇺🇸US-🇺🇸US_205 |32.07Mb
+      - Relay_🇨🇳CN-🇹🇼TW_75 |43.50Mb
+      - US_10084 TG@peekfun
+      - US_194 | 4.16Mb
+      - Relay_🇺🇸US-🇺🇸US_206 | 3.22Mb
+      - AU_18 |29.43Mb
+      - Relay_🇺🇸US-🇺🇸US_193
+      - Relay_🇺🇸US-🇺🇸US_213 | 7.90Mb
+      - US_10343 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_209 |18.98Mb
+      - AU_22 |37.61Mb
+      - Relay_🇦🇺AU-🇦🇺AU_25
+      - AU_21 | 5.42Mb
+      - Relay_🇨🇳CN-🇷🇺RU_68 |13.28Mb
+      - Relay_🇨🇳CN-🇷🇺RU_69 |23.94Mb
+      - AU_24 |10.65Mb
+      - AU_20 | 6.71Mb
+      - Relay_🇨🇳CN-🇺🇦UA_61 | 8.31Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
