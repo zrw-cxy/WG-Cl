@@ -5,51 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇯🇵JP-🇯🇵JP_155 | 8.15Mb, server: tt6.tjvpn.top, port: 443, type: trojan, password: 0cb2cd1f-870b-485c-914a-60aba39eed39, sni: tt6.tjvpn.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_132 |16.84Mb, server: gzydddns.xyz, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
-  - {name: Relay_🇨🇳 CN-🇭🇰HK_07 | 5.60Mb, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
-  - {name: TW_166 |71.18Mb, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: TW_165 |72.12Mb, server: 211.72.35.153, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇺🇸US_163 | 9.57Mb, server: tt1.tjvpn.top, port: 2022, type: trojan, password: 0cb2cd1f-870b-485c-914a-60aba39eed39, sni: tt1.tjvpn.top, skip-cert-verify: true, udp: true}
-  - {name: US_179 | 8.62Mb, server: 159.203.73.153, port: 4396, type: vmess, uuid: 7ef93298-6931-4d0e-a9c1-98005ab374df, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2rayhunter0122, ws-headers: {Host: 159.203.73.153}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_209 | 6.01Mb, server: vt.71137223.xyz, port: 443, type: trojan, password: 1a68a299-568f-40af-b274-1ae29b3e7a80, sni: vt.71137223.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_27 | 7.45Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: JP_83 | 3.27Mb, server: 207.148.106.145, port: 8650, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 207.148.106.145}, udp: true}
+  - {name: US_201, server: 45.77.96.175, port: 8650, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 45.77.96.175}, udp: true}
+  - {name: CN_265, server: in04.dns2333.xyz, port: 64078, type: vmess, uuid: a34d6fe7-7ab0-3071-81f7-e24c8edd2acb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: in04.dns2333.xyz}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_202 | 6.14Mb, server: freestarway.tk, port: 443, type: vmess, uuid: 68de58a5-2f9f-45e9-cb64-2d87fdf5f031, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: freestarway.tk}, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_86 |61.58Mb, server: 1.hmykr1.tk, port: 42045, type: trojan, password: ynr804OK7t, sni: 1.hmykr1.tk, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_155 | 8.15Mb
-      - Relay_🇨🇳CN-🇺🇸US_132 |16.84Mb
-      - Relay_🇨🇳 CN-🇭🇰HK_07 | 5.60Mb
-      - TW_166 |71.18Mb
-      - TW_165 |72.12Mb
-      - Relay_🇸🇬SG-🇺🇸US_163 | 9.57Mb
-      - US_179 | 8.62Mb
+      - Relay_🇺🇸US-🇺🇸US_209 | 6.01Mb
+      - CN_27 | 7.45Mb
+      - JP_83 | 3.27Mb
+      - US_201
+      - CN_265
+      - Relay_🇺🇸US-🇺🇸US_202 | 6.14Mb
+      - Relay_🇯🇵JP-🇯🇵JP_86 |61.58Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇯🇵JP-🇯🇵JP_155 | 8.15Mb
-      - Relay_🇨🇳CN-🇺🇸US_132 |16.84Mb
-      - Relay_🇨🇳 CN-🇭🇰HK_07 | 5.60Mb
-      - TW_166 |71.18Mb
-      - TW_165 |72.12Mb
-      - Relay_🇸🇬SG-🇺🇸US_163 | 9.57Mb
-      - US_179 | 8.62Mb
+      - Relay_🇺🇸US-🇺🇸US_209 | 6.01Mb
+      - CN_27 | 7.45Mb
+      - JP_83 | 3.27Mb
+      - US_201
+      - CN_265
+      - Relay_🇺🇸US-🇺🇸US_202 | 6.14Mb
+      - Relay_🇯🇵JP-🇯🇵JP_86 |61.58Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_155 | 8.15Mb
-      - Relay_🇨🇳CN-🇺🇸US_132 |16.84Mb
-      - Relay_🇨🇳 CN-🇭🇰HK_07 | 5.60Mb
-      - TW_166 |71.18Mb
-      - TW_165 |72.12Mb
-      - Relay_🇸🇬SG-🇺🇸US_163 | 9.57Mb
-      - US_179 | 8.62Mb
+      - Relay_🇺🇸US-🇺🇸US_209 | 6.01Mb
+      - CN_27 | 7.45Mb
+      - JP_83 | 3.27Mb
+      - US_201
+      - CN_265
+      - Relay_🇺🇸US-🇺🇸US_202 | 6.14Mb
+      - Relay_🇯🇵JP-🇯🇵JP_86 |61.58Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_155 | 8.15Mb
-      - Relay_🇨🇳CN-🇺🇸US_132 |16.84Mb
-      - Relay_🇨🇳 CN-🇭🇰HK_07 | 5.60Mb
-      - TW_166 |71.18Mb
-      - TW_165 |72.12Mb
-      - Relay_🇸🇬SG-🇺🇸US_163 | 9.57Mb
-      - US_179 | 8.62Mb
+      - Relay_🇺🇸US-🇺🇸US_209 | 6.01Mb
+      - CN_27 | 7.45Mb
+      - JP_83 | 3.27Mb
+      - US_201
+      - CN_265
+      - Relay_🇺🇸US-🇺🇸US_202 | 6.14Mb
+      - Relay_🇯🇵JP-🇯🇵JP_86 |61.58Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇯🇵JP-🇯🇵JP_155 | 8.15Mb
-      - Relay_🇨🇳CN-🇺🇸US_132 |16.84Mb
-      - Relay_🇨🇳 CN-🇭🇰HK_07 | 5.60Mb
-      - TW_166 |71.18Mb
-      - TW_165 |72.12Mb
-      - Relay_🇸🇬SG-🇺🇸US_163 | 9.57Mb
-      - US_179 | 8.62Mb
+      - Relay_🇺🇸US-🇺🇸US_209 | 6.01Mb
+      - CN_27 | 7.45Mb
+      - JP_83 | 3.27Mb
+      - US_201
+      - CN_265
+      - Relay_🇺🇸US-🇺🇸US_202 | 6.14Mb
+      - Relay_🇯🇵JP-🇯🇵JP_86 |61.58Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_155 | 8.15Mb
-      - Relay_🇨🇳CN-🇺🇸US_132 |16.84Mb
-      - Relay_🇨🇳 CN-🇭🇰HK_07 | 5.60Mb
-      - TW_166 |71.18Mb
-      - TW_165 |72.12Mb
-      - Relay_🇸🇬SG-🇺🇸US_163 | 9.57Mb
-      - US_179 | 8.62Mb
+      - Relay_🇺🇸US-🇺🇸US_209 | 6.01Mb
+      - CN_27 | 7.45Mb
+      - JP_83 | 3.27Mb
+      - US_201
+      - CN_265
+      - Relay_🇺🇸US-🇺🇸US_202 | 6.14Mb
+      - Relay_🇯🇵JP-🇯🇵JP_86 |61.58Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵JP-🇯🇵JP_155 | 8.15Mb
-      - Relay_🇨🇳CN-🇺🇸US_132 |16.84Mb
-      - Relay_🇨🇳 CN-🇭🇰HK_07 | 5.60Mb
-      - TW_166 |71.18Mb
-      - TW_165 |72.12Mb
-      - Relay_🇸🇬SG-🇺🇸US_163 | 9.57Mb
-      - US_179 | 8.62Mb
+      - Relay_🇺🇸US-🇺🇸US_209 | 6.01Mb
+      - CN_27 | 7.45Mb
+      - JP_83 | 3.27Mb
+      - US_201
+      - CN_265
+      - Relay_🇺🇸US-🇺🇸US_202 | 6.14Mb
+      - Relay_🇯🇵JP-🇯🇵JP_86 |61.58Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵JP-🇯🇵JP_155 | 8.15Mb
-      - Relay_🇨🇳CN-🇺🇸US_132 |16.84Mb
-      - Relay_🇨🇳 CN-🇭🇰HK_07 | 5.60Mb
-      - TW_166 |71.18Mb
-      - TW_165 |72.12Mb
-      - Relay_🇸🇬SG-🇺🇸US_163 | 9.57Mb
-      - US_179 | 8.62Mb
+      - Relay_🇺🇸US-🇺🇸US_209 | 6.01Mb
+      - CN_27 | 7.45Mb
+      - JP_83 | 3.27Mb
+      - US_201
+      - CN_265
+      - Relay_🇺🇸US-🇺🇸US_202 | 6.14Mb
+      - Relay_🇯🇵JP-🇯🇵JP_86 |61.58Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
