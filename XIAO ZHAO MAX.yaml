@@ -5,115 +5,423 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_4910 TG@peekfun, server: 116.129.253.191, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: Relay_ | 3.51Mb, server: 116.129.253.187, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_206 |24.09Mb, server: 116.129.253.201, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇹🇼TW_22 |51.09Mb, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_105 |14.53Mb, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_209 |23.42Mb, server: 116.129.253.245, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_4881 TG@peekfun, server: 116.129.253.201, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |11.52Mb, server: 116.129.253.187, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_102 |53.08Mb, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_221 |13.34Mb, server: 116.129.253.201, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: CN_4865 TG@peekfun, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_99 |46.25Mb, server: 116.129.253.177, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_98 |23.11Mb, server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_106 |42.69Mb, server: 116.129.253.177, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇹🇼TW_21 |30.85Mb, server: 116.129.253.177, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇹🇼TW_20 |44.73Mb, server: 116.129.253.177, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_93 |24.72Mb, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_4895 TG@peekfun, server: 116.129.253.187, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_101 |45.08Mb, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_97 |35.39Mb, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_4914 TG@peekfun, server: 116.129.253.227, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_100 |53.01Mb, server: 116.129.253.177, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_104 |36.67Mb, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: US_9329 TG@peekfun, server: 167.88.63.82, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_8685 TG@peekfun, server: 38.75.136.21, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_9361 TG@peekfun, server: 172.99.190.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_10697 TG@peekfun, server: a2.centaur.network, port: 8081, type: trojan, password: cdcf03f6-5326-4496-a1d1-03bb098ad56f, sni: a2.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: US_9117 TG@peekfun, server: 172.99.190.149, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_9714 TG@peekfun, server: 172.99.190.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8556 TG@peekfun, server: 172.99.190.188, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_10709 TG@peekfun, server: usd.scsevers.cf, port: 443, type: trojan, password: sharecentretest, sni: usd.scsevers.cf, skip-cert-verify: true, udp: true}
+  - {name: US_9039 TG@peekfun, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_9286 TG@peekfun, server: 38.75.136.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_10687 TG@peekfun, server: misaka1433.tk, port: 443, type: trojan, password: YcQgIbGZNNd1PwsF, sni: misaka1433.tk, skip-cert-verify: true, udp: true}
+  - {name: US_10683 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: US_8725 TG@peekfun, server: 38.114.114.69, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8988 TG@peekfun, server: 172.99.190.158, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_8627 TG@peekfun, server: 172.99.190.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_8644 TG@peekfun, server: 38.75.136.21, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_10654 TG@peekfun, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_8911 TG@peekfun, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_8945 TG@peekfun, server: 38.75.136.21, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_9330 TG@peekfun, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_10675 TG@peekfun, server: us01.straycloud.icu, port: 442, type: trojan, password: 0ac65136-5962-49d6-91f0-138957f6dec9, sni: us01.straycloud.icu, skip-cert-verify: true, udp: true}
+  - {name: US_9031 TG@peekfun, server: 172.99.190.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8836 TG@peekfun, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_9575 TG@peekfun, server: 172.99.190.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_10606 TG@peekfun, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 23115_5a451f03, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
+  - {name: US_10663 TG@peekfun, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, sni: www.tokyo2023.ga, skip-cert-verify: true, udp: true}
+  - {name: US_8732 TG@peekfun, server: 167.88.61.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_9269 TG@peekfun, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_9711 TG@peekfun, server: 172.99.190.149, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_10672 TG@peekfun, server: 184.168.127.50, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: US_9364 TG@peekfun, server: 172.99.190.39, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_9095 TG@peekfun, server: 38.114.114.19, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8594 TG@peekfun, server: 172.99.190.188, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8828 TG@peekfun, server: 38.114.114.19, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8422 TG@peekfun, server: 167.88.63.82, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8625 TG@peekfun, server: 172.99.190.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_8826 TG@peekfun, server: 38.114.114.19, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8555 TG@peekfun, server: 172.99.190.188, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_9378 TG@peekfun, server: 172.99.190.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_9707 TG@peekfun, server: 172.99.190.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_10644 TG@peekfun, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: US_8881 TG@peekfun, server: 172.99.190.153, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_9517 TG@peekfun, server: 172.99.190.188, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8630 TG@peekfun, server: 172.99.190.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8829 TG@peekfun, server: 38.114.114.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_8983 TG@peekfun, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_9318 TG@peekfun, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_10592 TG@peekfun, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_10696 TG@peekfun, server: us-trojan.bonds.id, port: 443, type: trojan, password: ccf1ee40-b4ab-11eb-b421-1239d0255272, sni: us-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: US_9447 TG@peekfun, server: 172.99.190.158, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_10690 TG@peekfun, server: 173.82.192.61, port: 443, type: trojan, password: 7NzqVeVxSEsrdvgsdvsdsafcsdgvdfbgSDGFVDGVDSG, skip-cert-verify: true, udp: true}
+  - {name: US_9484 TG@peekfun, server: 172.99.190.35, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_9521 TG@peekfun, server: 38.114.114.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8806 TG@peekfun, server: 38.114.114.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_9719 TG@peekfun, server: 172.99.190.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_9120 TG@peekfun, server: 38.114.114.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_10608 TG@peekfun, server: s162.s2022.xyz, port: 23802, type: trojan, password: 770c9e92-f51b-3e52-b932-eba13fb56801, sni: s162.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_10595 TG@peekfun, server: xioix.gq, port: 443, type: trojan, password: 9b7195ba-f029-4d7d-a728-ece6e0fdc363, sni: xioix.gq, skip-cert-verify: true, udp: true}
+  - {name: US_9213 TG@peekfun, server: 172.99.190.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_9709 TG@peekfun, server: 172.99.190.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_9715 TG@peekfun, server: 172.99.190.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_9713 TG@peekfun, server: 172.99.190.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_8814 TG@peekfun, server: 38.114.114.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_9720 TG@peekfun, server: 172.99.190.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_8876 TG@peekfun, server: 38.68.134.190, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_10629 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: US_10727 TG@peekfun, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_9706 TG@peekfun, server: 172.99.190.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_9387 TG@peekfun, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_9615 TG@peekfun, server: 172.99.190.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8843 TG@peekfun, server: 38.114.114.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8558 TG@peekfun, server: 172.99.190.188, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8629 TG@peekfun, server: 172.99.190.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_9402 TG@peekfun, server: 38.68.134.190, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_10583 TG@peekfun, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_9625 TG@peekfun, server: 172.99.190.153, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_8802 TG@peekfun, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_8810 TG@peekfun, server: 38.114.114.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_8974 TG@peekfun, server: 172.99.190.188, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_10643 TG@peekfun, server: v2losdmit1.doubledou.win, port: 6674, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: v2losdmit1.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: US_8969 TG@peekfun, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_9384 TG@peekfun, server: 172.99.190.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_10589 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: US_8812 TG@peekfun, server: 38.114.114.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_8760 TG@peekfun, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8329 TG@peekfun, server: 38.114.114.19, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_9729 TG@peekfun, server: 172.99.190.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_9576 TG@peekfun, server: 172.99.190.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_10579 TG@peekfun, server: us-trojan.bonds.id, port: 443, type: trojan, password: 38239dd0-902b-11eb-afc1-1239d0255272, sni: us-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: US_9669 TG@peekfun, server: 38.75.136.21, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_9694 TG@peekfun, server: 38.75.136.21, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8799 TG@peekfun, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_8968 TG@peekfun, server: 172.99.190.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_9581 TG@peekfun, server: 172.99.190.39, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8553 TG@peekfun, server: 172.99.190.188, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_9571 TG@peekfun, server: 172.104.206.165, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_9723 TG@peekfun, server: 172.99.190.39, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_9642 TG@peekfun, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_9668 TG@peekfun, server: 38.75.136.21, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8305 TG@peekfun, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_4910 TG@peekfun
-      - Relay_ | 3.51Mb
-      - Relay_🇨🇳CN-🇹🇼TW_206 |24.09Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_22 |51.09Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |14.53Mb
-      - Relay_🇨🇳CN-🇹🇼TW_209 |23.42Mb
-      - CN_4881 TG@peekfun
-      - Relay_ |11.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |53.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_221 |13.34Mb
-      - CN_4865 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_99 |46.25Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |23.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_106 |42.69Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_21 |30.85Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_20 |44.73Mb
-      - Relay_🇨🇳CN-🇹🇼TW_93 |24.72Mb
-      - CN_4895 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_101 |45.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_97 |35.39Mb
-      - CN_4914 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_100 |53.01Mb
-      - Relay_🇨🇳CN-🇹🇼TW_104 |36.67Mb
+      - US_9329 TG@peekfun
+      - US_8685 TG@peekfun
+      - US_9361 TG@peekfun
+      - US_10697 TG@peekfun
+      - US_9117 TG@peekfun
+      - US_9714 TG@peekfun
+      - US_8556 TG@peekfun
+      - US_10709 TG@peekfun
+      - US_9039 TG@peekfun
+      - US_9286 TG@peekfun
+      - US_10687 TG@peekfun
+      - US_10683 TG@peekfun
+      - US_8725 TG@peekfun
+      - US_8988 TG@peekfun
+      - US_8627 TG@peekfun
+      - US_8644 TG@peekfun
+      - US_10654 TG@peekfun
+      - US_8911 TG@peekfun
+      - US_8945 TG@peekfun
+      - US_9330 TG@peekfun
+      - US_10675 TG@peekfun
+      - US_9031 TG@peekfun
+      - US_8836 TG@peekfun
+      - US_9575 TG@peekfun
+      - US_10606 TG@peekfun
+      - US_10663 TG@peekfun
+      - US_8732 TG@peekfun
+      - US_9269 TG@peekfun
+      - US_9711 TG@peekfun
+      - US_10672 TG@peekfun
+      - US_9364 TG@peekfun
+      - US_9095 TG@peekfun
+      - US_8594 TG@peekfun
+      - US_8828 TG@peekfun
+      - US_8422 TG@peekfun
+      - US_8625 TG@peekfun
+      - US_8826 TG@peekfun
+      - US_8555 TG@peekfun
+      - US_9378 TG@peekfun
+      - US_9707 TG@peekfun
+      - US_10644 TG@peekfun
+      - US_8881 TG@peekfun
+      - US_9517 TG@peekfun
+      - US_8630 TG@peekfun
+      - US_8829 TG@peekfun
+      - US_8983 TG@peekfun
+      - US_9318 TG@peekfun
+      - US_10592 TG@peekfun
+      - US_10696 TG@peekfun
+      - US_9447 TG@peekfun
+      - US_10690 TG@peekfun
+      - US_9484 TG@peekfun
+      - US_9521 TG@peekfun
+      - US_8806 TG@peekfun
+      - US_9719 TG@peekfun
+      - US_9120 TG@peekfun
+      - US_10608 TG@peekfun
+      - US_10595 TG@peekfun
+      - US_9213 TG@peekfun
+      - US_9709 TG@peekfun
+      - US_9715 TG@peekfun
+      - US_9713 TG@peekfun
+      - US_8814 TG@peekfun
+      - US_9720 TG@peekfun
+      - US_8876 TG@peekfun
+      - US_10629 TG@peekfun
+      - US_10727 TG@peekfun
+      - US_9706 TG@peekfun
+      - US_9387 TG@peekfun
+      - US_9615 TG@peekfun
+      - US_8843 TG@peekfun
+      - US_8558 TG@peekfun
+      - US_8629 TG@peekfun
+      - US_9402 TG@peekfun
+      - US_10583 TG@peekfun
+      - US_9625 TG@peekfun
+      - US_8802 TG@peekfun
+      - US_8810 TG@peekfun
+      - US_8974 TG@peekfun
+      - US_10643 TG@peekfun
+      - US_8969 TG@peekfun
+      - US_9384 TG@peekfun
+      - US_10589 TG@peekfun
+      - US_8812 TG@peekfun
+      - US_8760 TG@peekfun
+      - US_8329 TG@peekfun
+      - US_9729 TG@peekfun
+      - US_9576 TG@peekfun
+      - US_10579 TG@peekfun
+      - US_9669 TG@peekfun
+      - US_9694 TG@peekfun
+      - US_8799 TG@peekfun
+      - US_8968 TG@peekfun
+      - US_9581 TG@peekfun
+      - US_8553 TG@peekfun
+      - US_9571 TG@peekfun
+      - US_9723 TG@peekfun
+      - US_9642 TG@peekfun
+      - US_9668 TG@peekfun
+      - US_8305 TG@peekfun
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_4910 TG@peekfun
-      - Relay_ | 3.51Mb
-      - Relay_🇨🇳CN-🇹🇼TW_206 |24.09Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_22 |51.09Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |14.53Mb
-      - Relay_🇨🇳CN-🇹🇼TW_209 |23.42Mb
-      - CN_4881 TG@peekfun
-      - Relay_ |11.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |53.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_221 |13.34Mb
-      - CN_4865 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_99 |46.25Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |23.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_106 |42.69Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_21 |30.85Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_20 |44.73Mb
-      - Relay_🇨🇳CN-🇹🇼TW_93 |24.72Mb
-      - CN_4895 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_101 |45.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_97 |35.39Mb
-      - CN_4914 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_100 |53.01Mb
-      - Relay_🇨🇳CN-🇹🇼TW_104 |36.67Mb
+      - US_9329 TG@peekfun
+      - US_8685 TG@peekfun
+      - US_9361 TG@peekfun
+      - US_10697 TG@peekfun
+      - US_9117 TG@peekfun
+      - US_9714 TG@peekfun
+      - US_8556 TG@peekfun
+      - US_10709 TG@peekfun
+      - US_9039 TG@peekfun
+      - US_9286 TG@peekfun
+      - US_10687 TG@peekfun
+      - US_10683 TG@peekfun
+      - US_8725 TG@peekfun
+      - US_8988 TG@peekfun
+      - US_8627 TG@peekfun
+      - US_8644 TG@peekfun
+      - US_10654 TG@peekfun
+      - US_8911 TG@peekfun
+      - US_8945 TG@peekfun
+      - US_9330 TG@peekfun
+      - US_10675 TG@peekfun
+      - US_9031 TG@peekfun
+      - US_8836 TG@peekfun
+      - US_9575 TG@peekfun
+      - US_10606 TG@peekfun
+      - US_10663 TG@peekfun
+      - US_8732 TG@peekfun
+      - US_9269 TG@peekfun
+      - US_9711 TG@peekfun
+      - US_10672 TG@peekfun
+      - US_9364 TG@peekfun
+      - US_9095 TG@peekfun
+      - US_8594 TG@peekfun
+      - US_8828 TG@peekfun
+      - US_8422 TG@peekfun
+      - US_8625 TG@peekfun
+      - US_8826 TG@peekfun
+      - US_8555 TG@peekfun
+      - US_9378 TG@peekfun
+      - US_9707 TG@peekfun
+      - US_10644 TG@peekfun
+      - US_8881 TG@peekfun
+      - US_9517 TG@peekfun
+      - US_8630 TG@peekfun
+      - US_8829 TG@peekfun
+      - US_8983 TG@peekfun
+      - US_9318 TG@peekfun
+      - US_10592 TG@peekfun
+      - US_10696 TG@peekfun
+      - US_9447 TG@peekfun
+      - US_10690 TG@peekfun
+      - US_9484 TG@peekfun
+      - US_9521 TG@peekfun
+      - US_8806 TG@peekfun
+      - US_9719 TG@peekfun
+      - US_9120 TG@peekfun
+      - US_10608 TG@peekfun
+      - US_10595 TG@peekfun
+      - US_9213 TG@peekfun
+      - US_9709 TG@peekfun
+      - US_9715 TG@peekfun
+      - US_9713 TG@peekfun
+      - US_8814 TG@peekfun
+      - US_9720 TG@peekfun
+      - US_8876 TG@peekfun
+      - US_10629 TG@peekfun
+      - US_10727 TG@peekfun
+      - US_9706 TG@peekfun
+      - US_9387 TG@peekfun
+      - US_9615 TG@peekfun
+      - US_8843 TG@peekfun
+      - US_8558 TG@peekfun
+      - US_8629 TG@peekfun
+      - US_9402 TG@peekfun
+      - US_10583 TG@peekfun
+      - US_9625 TG@peekfun
+      - US_8802 TG@peekfun
+      - US_8810 TG@peekfun
+      - US_8974 TG@peekfun
+      - US_10643 TG@peekfun
+      - US_8969 TG@peekfun
+      - US_9384 TG@peekfun
+      - US_10589 TG@peekfun
+      - US_8812 TG@peekfun
+      - US_8760 TG@peekfun
+      - US_8329 TG@peekfun
+      - US_9729 TG@peekfun
+      - US_9576 TG@peekfun
+      - US_10579 TG@peekfun
+      - US_9669 TG@peekfun
+      - US_9694 TG@peekfun
+      - US_8799 TG@peekfun
+      - US_8968 TG@peekfun
+      - US_9581 TG@peekfun
+      - US_8553 TG@peekfun
+      - US_9571 TG@peekfun
+      - US_9723 TG@peekfun
+      - US_9642 TG@peekfun
+      - US_9668 TG@peekfun
+      - US_8305 TG@peekfun
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_4910 TG@peekfun
-      - Relay_ | 3.51Mb
-      - Relay_🇨🇳CN-🇹🇼TW_206 |24.09Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_22 |51.09Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |14.53Mb
-      - Relay_🇨🇳CN-🇹🇼TW_209 |23.42Mb
-      - CN_4881 TG@peekfun
-      - Relay_ |11.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |53.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_221 |13.34Mb
-      - CN_4865 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_99 |46.25Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |23.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_106 |42.69Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_21 |30.85Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_20 |44.73Mb
-      - Relay_🇨🇳CN-🇹🇼TW_93 |24.72Mb
-      - CN_4895 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_101 |45.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_97 |35.39Mb
-      - CN_4914 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_100 |53.01Mb
-      - Relay_🇨🇳CN-🇹🇼TW_104 |36.67Mb
+      - US_9329 TG@peekfun
+      - US_8685 TG@peekfun
+      - US_9361 TG@peekfun
+      - US_10697 TG@peekfun
+      - US_9117 TG@peekfun
+      - US_9714 TG@peekfun
+      - US_8556 TG@peekfun
+      - US_10709 TG@peekfun
+      - US_9039 TG@peekfun
+      - US_9286 TG@peekfun
+      - US_10687 TG@peekfun
+      - US_10683 TG@peekfun
+      - US_8725 TG@peekfun
+      - US_8988 TG@peekfun
+      - US_8627 TG@peekfun
+      - US_8644 TG@peekfun
+      - US_10654 TG@peekfun
+      - US_8911 TG@peekfun
+      - US_8945 TG@peekfun
+      - US_9330 TG@peekfun
+      - US_10675 TG@peekfun
+      - US_9031 TG@peekfun
+      - US_8836 TG@peekfun
+      - US_9575 TG@peekfun
+      - US_10606 TG@peekfun
+      - US_10663 TG@peekfun
+      - US_8732 TG@peekfun
+      - US_9269 TG@peekfun
+      - US_9711 TG@peekfun
+      - US_10672 TG@peekfun
+      - US_9364 TG@peekfun
+      - US_9095 TG@peekfun
+      - US_8594 TG@peekfun
+      - US_8828 TG@peekfun
+      - US_8422 TG@peekfun
+      - US_8625 TG@peekfun
+      - US_8826 TG@peekfun
+      - US_8555 TG@peekfun
+      - US_9378 TG@peekfun
+      - US_9707 TG@peekfun
+      - US_10644 TG@peekfun
+      - US_8881 TG@peekfun
+      - US_9517 TG@peekfun
+      - US_8630 TG@peekfun
+      - US_8829 TG@peekfun
+      - US_8983 TG@peekfun
+      - US_9318 TG@peekfun
+      - US_10592 TG@peekfun
+      - US_10696 TG@peekfun
+      - US_9447 TG@peekfun
+      - US_10690 TG@peekfun
+      - US_9484 TG@peekfun
+      - US_9521 TG@peekfun
+      - US_8806 TG@peekfun
+      - US_9719 TG@peekfun
+      - US_9120 TG@peekfun
+      - US_10608 TG@peekfun
+      - US_10595 TG@peekfun
+      - US_9213 TG@peekfun
+      - US_9709 TG@peekfun
+      - US_9715 TG@peekfun
+      - US_9713 TG@peekfun
+      - US_8814 TG@peekfun
+      - US_9720 TG@peekfun
+      - US_8876 TG@peekfun
+      - US_10629 TG@peekfun
+      - US_10727 TG@peekfun
+      - US_9706 TG@peekfun
+      - US_9387 TG@peekfun
+      - US_9615 TG@peekfun
+      - US_8843 TG@peekfun
+      - US_8558 TG@peekfun
+      - US_8629 TG@peekfun
+      - US_9402 TG@peekfun
+      - US_10583 TG@peekfun
+      - US_9625 TG@peekfun
+      - US_8802 TG@peekfun
+      - US_8810 TG@peekfun
+      - US_8974 TG@peekfun
+      - US_10643 TG@peekfun
+      - US_8969 TG@peekfun
+      - US_9384 TG@peekfun
+      - US_10589 TG@peekfun
+      - US_8812 TG@peekfun
+      - US_8760 TG@peekfun
+      - US_8329 TG@peekfun
+      - US_9729 TG@peekfun
+      - US_9576 TG@peekfun
+      - US_10579 TG@peekfun
+      - US_9669 TG@peekfun
+      - US_9694 TG@peekfun
+      - US_8799 TG@peekfun
+      - US_8968 TG@peekfun
+      - US_9581 TG@peekfun
+      - US_8553 TG@peekfun
+      - US_9571 TG@peekfun
+      - US_9723 TG@peekfun
+      - US_9642 TG@peekfun
+      - US_9668 TG@peekfun
+      - US_8305 TG@peekfun
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -132,29 +440,106 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_4910 TG@peekfun
-      - Relay_ | 3.51Mb
-      - Relay_🇨🇳CN-🇹🇼TW_206 |24.09Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_22 |51.09Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |14.53Mb
-      - Relay_🇨🇳CN-🇹🇼TW_209 |23.42Mb
-      - CN_4881 TG@peekfun
-      - Relay_ |11.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |53.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_221 |13.34Mb
-      - CN_4865 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_99 |46.25Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |23.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_106 |42.69Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_21 |30.85Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_20 |44.73Mb
-      - Relay_🇨🇳CN-🇹🇼TW_93 |24.72Mb
-      - CN_4895 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_101 |45.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_97 |35.39Mb
-      - CN_4914 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_100 |53.01Mb
-      - Relay_🇨🇳CN-🇹🇼TW_104 |36.67Mb
+      - US_9329 TG@peekfun
+      - US_8685 TG@peekfun
+      - US_9361 TG@peekfun
+      - US_10697 TG@peekfun
+      - US_9117 TG@peekfun
+      - US_9714 TG@peekfun
+      - US_8556 TG@peekfun
+      - US_10709 TG@peekfun
+      - US_9039 TG@peekfun
+      - US_9286 TG@peekfun
+      - US_10687 TG@peekfun
+      - US_10683 TG@peekfun
+      - US_8725 TG@peekfun
+      - US_8988 TG@peekfun
+      - US_8627 TG@peekfun
+      - US_8644 TG@peekfun
+      - US_10654 TG@peekfun
+      - US_8911 TG@peekfun
+      - US_8945 TG@peekfun
+      - US_9330 TG@peekfun
+      - US_10675 TG@peekfun
+      - US_9031 TG@peekfun
+      - US_8836 TG@peekfun
+      - US_9575 TG@peekfun
+      - US_10606 TG@peekfun
+      - US_10663 TG@peekfun
+      - US_8732 TG@peekfun
+      - US_9269 TG@peekfun
+      - US_9711 TG@peekfun
+      - US_10672 TG@peekfun
+      - US_9364 TG@peekfun
+      - US_9095 TG@peekfun
+      - US_8594 TG@peekfun
+      - US_8828 TG@peekfun
+      - US_8422 TG@peekfun
+      - US_8625 TG@peekfun
+      - US_8826 TG@peekfun
+      - US_8555 TG@peekfun
+      - US_9378 TG@peekfun
+      - US_9707 TG@peekfun
+      - US_10644 TG@peekfun
+      - US_8881 TG@peekfun
+      - US_9517 TG@peekfun
+      - US_8630 TG@peekfun
+      - US_8829 TG@peekfun
+      - US_8983 TG@peekfun
+      - US_9318 TG@peekfun
+      - US_10592 TG@peekfun
+      - US_10696 TG@peekfun
+      - US_9447 TG@peekfun
+      - US_10690 TG@peekfun
+      - US_9484 TG@peekfun
+      - US_9521 TG@peekfun
+      - US_8806 TG@peekfun
+      - US_9719 TG@peekfun
+      - US_9120 TG@peekfun
+      - US_10608 TG@peekfun
+      - US_10595 TG@peekfun
+      - US_9213 TG@peekfun
+      - US_9709 TG@peekfun
+      - US_9715 TG@peekfun
+      - US_9713 TG@peekfun
+      - US_8814 TG@peekfun
+      - US_9720 TG@peekfun
+      - US_8876 TG@peekfun
+      - US_10629 TG@peekfun
+      - US_10727 TG@peekfun
+      - US_9706 TG@peekfun
+      - US_9387 TG@peekfun
+      - US_9615 TG@peekfun
+      - US_8843 TG@peekfun
+      - US_8558 TG@peekfun
+      - US_8629 TG@peekfun
+      - US_9402 TG@peekfun
+      - US_10583 TG@peekfun
+      - US_9625 TG@peekfun
+      - US_8802 TG@peekfun
+      - US_8810 TG@peekfun
+      - US_8974 TG@peekfun
+      - US_10643 TG@peekfun
+      - US_8969 TG@peekfun
+      - US_9384 TG@peekfun
+      - US_10589 TG@peekfun
+      - US_8812 TG@peekfun
+      - US_8760 TG@peekfun
+      - US_8329 TG@peekfun
+      - US_9729 TG@peekfun
+      - US_9576 TG@peekfun
+      - US_10579 TG@peekfun
+      - US_9669 TG@peekfun
+      - US_9694 TG@peekfun
+      - US_8799 TG@peekfun
+      - US_8968 TG@peekfun
+      - US_9581 TG@peekfun
+      - US_8553 TG@peekfun
+      - US_9571 TG@peekfun
+      - US_9723 TG@peekfun
+      - US_9642 TG@peekfun
+      - US_9668 TG@peekfun
+      - US_8305 TG@peekfun
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -165,86 +550,317 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_4910 TG@peekfun
-      - Relay_ | 3.51Mb
-      - Relay_🇨🇳CN-🇹🇼TW_206 |24.09Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_22 |51.09Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |14.53Mb
-      - Relay_🇨🇳CN-🇹🇼TW_209 |23.42Mb
-      - CN_4881 TG@peekfun
-      - Relay_ |11.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |53.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_221 |13.34Mb
-      - CN_4865 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_99 |46.25Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |23.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_106 |42.69Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_21 |30.85Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_20 |44.73Mb
-      - Relay_🇨🇳CN-🇹🇼TW_93 |24.72Mb
-      - CN_4895 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_101 |45.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_97 |35.39Mb
-      - CN_4914 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_100 |53.01Mb
-      - Relay_🇨🇳CN-🇹🇼TW_104 |36.67Mb
+      - US_9329 TG@peekfun
+      - US_8685 TG@peekfun
+      - US_9361 TG@peekfun
+      - US_10697 TG@peekfun
+      - US_9117 TG@peekfun
+      - US_9714 TG@peekfun
+      - US_8556 TG@peekfun
+      - US_10709 TG@peekfun
+      - US_9039 TG@peekfun
+      - US_9286 TG@peekfun
+      - US_10687 TG@peekfun
+      - US_10683 TG@peekfun
+      - US_8725 TG@peekfun
+      - US_8988 TG@peekfun
+      - US_8627 TG@peekfun
+      - US_8644 TG@peekfun
+      - US_10654 TG@peekfun
+      - US_8911 TG@peekfun
+      - US_8945 TG@peekfun
+      - US_9330 TG@peekfun
+      - US_10675 TG@peekfun
+      - US_9031 TG@peekfun
+      - US_8836 TG@peekfun
+      - US_9575 TG@peekfun
+      - US_10606 TG@peekfun
+      - US_10663 TG@peekfun
+      - US_8732 TG@peekfun
+      - US_9269 TG@peekfun
+      - US_9711 TG@peekfun
+      - US_10672 TG@peekfun
+      - US_9364 TG@peekfun
+      - US_9095 TG@peekfun
+      - US_8594 TG@peekfun
+      - US_8828 TG@peekfun
+      - US_8422 TG@peekfun
+      - US_8625 TG@peekfun
+      - US_8826 TG@peekfun
+      - US_8555 TG@peekfun
+      - US_9378 TG@peekfun
+      - US_9707 TG@peekfun
+      - US_10644 TG@peekfun
+      - US_8881 TG@peekfun
+      - US_9517 TG@peekfun
+      - US_8630 TG@peekfun
+      - US_8829 TG@peekfun
+      - US_8983 TG@peekfun
+      - US_9318 TG@peekfun
+      - US_10592 TG@peekfun
+      - US_10696 TG@peekfun
+      - US_9447 TG@peekfun
+      - US_10690 TG@peekfun
+      - US_9484 TG@peekfun
+      - US_9521 TG@peekfun
+      - US_8806 TG@peekfun
+      - US_9719 TG@peekfun
+      - US_9120 TG@peekfun
+      - US_10608 TG@peekfun
+      - US_10595 TG@peekfun
+      - US_9213 TG@peekfun
+      - US_9709 TG@peekfun
+      - US_9715 TG@peekfun
+      - US_9713 TG@peekfun
+      - US_8814 TG@peekfun
+      - US_9720 TG@peekfun
+      - US_8876 TG@peekfun
+      - US_10629 TG@peekfun
+      - US_10727 TG@peekfun
+      - US_9706 TG@peekfun
+      - US_9387 TG@peekfun
+      - US_9615 TG@peekfun
+      - US_8843 TG@peekfun
+      - US_8558 TG@peekfun
+      - US_8629 TG@peekfun
+      - US_9402 TG@peekfun
+      - US_10583 TG@peekfun
+      - US_9625 TG@peekfun
+      - US_8802 TG@peekfun
+      - US_8810 TG@peekfun
+      - US_8974 TG@peekfun
+      - US_10643 TG@peekfun
+      - US_8969 TG@peekfun
+      - US_9384 TG@peekfun
+      - US_10589 TG@peekfun
+      - US_8812 TG@peekfun
+      - US_8760 TG@peekfun
+      - US_8329 TG@peekfun
+      - US_9729 TG@peekfun
+      - US_9576 TG@peekfun
+      - US_10579 TG@peekfun
+      - US_9669 TG@peekfun
+      - US_9694 TG@peekfun
+      - US_8799 TG@peekfun
+      - US_8968 TG@peekfun
+      - US_9581 TG@peekfun
+      - US_8553 TG@peekfun
+      - US_9571 TG@peekfun
+      - US_9723 TG@peekfun
+      - US_9642 TG@peekfun
+      - US_9668 TG@peekfun
+      - US_8305 TG@peekfun
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_4910 TG@peekfun
-      - Relay_ | 3.51Mb
-      - Relay_🇨🇳CN-🇹🇼TW_206 |24.09Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_22 |51.09Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |14.53Mb
-      - Relay_🇨🇳CN-🇹🇼TW_209 |23.42Mb
-      - CN_4881 TG@peekfun
-      - Relay_ |11.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |53.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_221 |13.34Mb
-      - CN_4865 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_99 |46.25Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |23.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_106 |42.69Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_21 |30.85Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_20 |44.73Mb
-      - Relay_🇨🇳CN-🇹🇼TW_93 |24.72Mb
-      - CN_4895 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_101 |45.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_97 |35.39Mb
-      - CN_4914 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_100 |53.01Mb
-      - Relay_🇨🇳CN-🇹🇼TW_104 |36.67Mb
+      - US_9329 TG@peekfun
+      - US_8685 TG@peekfun
+      - US_9361 TG@peekfun
+      - US_10697 TG@peekfun
+      - US_9117 TG@peekfun
+      - US_9714 TG@peekfun
+      - US_8556 TG@peekfun
+      - US_10709 TG@peekfun
+      - US_9039 TG@peekfun
+      - US_9286 TG@peekfun
+      - US_10687 TG@peekfun
+      - US_10683 TG@peekfun
+      - US_8725 TG@peekfun
+      - US_8988 TG@peekfun
+      - US_8627 TG@peekfun
+      - US_8644 TG@peekfun
+      - US_10654 TG@peekfun
+      - US_8911 TG@peekfun
+      - US_8945 TG@peekfun
+      - US_9330 TG@peekfun
+      - US_10675 TG@peekfun
+      - US_9031 TG@peekfun
+      - US_8836 TG@peekfun
+      - US_9575 TG@peekfun
+      - US_10606 TG@peekfun
+      - US_10663 TG@peekfun
+      - US_8732 TG@peekfun
+      - US_9269 TG@peekfun
+      - US_9711 TG@peekfun
+      - US_10672 TG@peekfun
+      - US_9364 TG@peekfun
+      - US_9095 TG@peekfun
+      - US_8594 TG@peekfun
+      - US_8828 TG@peekfun
+      - US_8422 TG@peekfun
+      - US_8625 TG@peekfun
+      - US_8826 TG@peekfun
+      - US_8555 TG@peekfun
+      - US_9378 TG@peekfun
+      - US_9707 TG@peekfun
+      - US_10644 TG@peekfun
+      - US_8881 TG@peekfun
+      - US_9517 TG@peekfun
+      - US_8630 TG@peekfun
+      - US_8829 TG@peekfun
+      - US_8983 TG@peekfun
+      - US_9318 TG@peekfun
+      - US_10592 TG@peekfun
+      - US_10696 TG@peekfun
+      - US_9447 TG@peekfun
+      - US_10690 TG@peekfun
+      - US_9484 TG@peekfun
+      - US_9521 TG@peekfun
+      - US_8806 TG@peekfun
+      - US_9719 TG@peekfun
+      - US_9120 TG@peekfun
+      - US_10608 TG@peekfun
+      - US_10595 TG@peekfun
+      - US_9213 TG@peekfun
+      - US_9709 TG@peekfun
+      - US_9715 TG@peekfun
+      - US_9713 TG@peekfun
+      - US_8814 TG@peekfun
+      - US_9720 TG@peekfun
+      - US_8876 TG@peekfun
+      - US_10629 TG@peekfun
+      - US_10727 TG@peekfun
+      - US_9706 TG@peekfun
+      - US_9387 TG@peekfun
+      - US_9615 TG@peekfun
+      - US_8843 TG@peekfun
+      - US_8558 TG@peekfun
+      - US_8629 TG@peekfun
+      - US_9402 TG@peekfun
+      - US_10583 TG@peekfun
+      - US_9625 TG@peekfun
+      - US_8802 TG@peekfun
+      - US_8810 TG@peekfun
+      - US_8974 TG@peekfun
+      - US_10643 TG@peekfun
+      - US_8969 TG@peekfun
+      - US_9384 TG@peekfun
+      - US_10589 TG@peekfun
+      - US_8812 TG@peekfun
+      - US_8760 TG@peekfun
+      - US_8329 TG@peekfun
+      - US_9729 TG@peekfun
+      - US_9576 TG@peekfun
+      - US_10579 TG@peekfun
+      - US_9669 TG@peekfun
+      - US_9694 TG@peekfun
+      - US_8799 TG@peekfun
+      - US_8968 TG@peekfun
+      - US_9581 TG@peekfun
+      - US_8553 TG@peekfun
+      - US_9571 TG@peekfun
+      - US_9723 TG@peekfun
+      - US_9642 TG@peekfun
+      - US_9668 TG@peekfun
+      - US_8305 TG@peekfun
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_4910 TG@peekfun
-      - Relay_ | 3.51Mb
-      - Relay_🇨🇳CN-🇹🇼TW_206 |24.09Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_22 |51.09Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |14.53Mb
-      - Relay_🇨🇳CN-🇹🇼TW_209 |23.42Mb
-      - CN_4881 TG@peekfun
-      - Relay_ |11.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |53.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_221 |13.34Mb
-      - CN_4865 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_99 |46.25Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |23.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_106 |42.69Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_21 |30.85Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_20 |44.73Mb
-      - Relay_🇨🇳CN-🇹🇼TW_93 |24.72Mb
-      - CN_4895 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_101 |45.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_97 |35.39Mb
-      - CN_4914 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_100 |53.01Mb
-      - Relay_🇨🇳CN-🇹🇼TW_104 |36.67Mb
+      - US_9329 TG@peekfun
+      - US_8685 TG@peekfun
+      - US_9361 TG@peekfun
+      - US_10697 TG@peekfun
+      - US_9117 TG@peekfun
+      - US_9714 TG@peekfun
+      - US_8556 TG@peekfun
+      - US_10709 TG@peekfun
+      - US_9039 TG@peekfun
+      - US_9286 TG@peekfun
+      - US_10687 TG@peekfun
+      - US_10683 TG@peekfun
+      - US_8725 TG@peekfun
+      - US_8988 TG@peekfun
+      - US_8627 TG@peekfun
+      - US_8644 TG@peekfun
+      - US_10654 TG@peekfun
+      - US_8911 TG@peekfun
+      - US_8945 TG@peekfun
+      - US_9330 TG@peekfun
+      - US_10675 TG@peekfun
+      - US_9031 TG@peekfun
+      - US_8836 TG@peekfun
+      - US_9575 TG@peekfun
+      - US_10606 TG@peekfun
+      - US_10663 TG@peekfun
+      - US_8732 TG@peekfun
+      - US_9269 TG@peekfun
+      - US_9711 TG@peekfun
+      - US_10672 TG@peekfun
+      - US_9364 TG@peekfun
+      - US_9095 TG@peekfun
+      - US_8594 TG@peekfun
+      - US_8828 TG@peekfun
+      - US_8422 TG@peekfun
+      - US_8625 TG@peekfun
+      - US_8826 TG@peekfun
+      - US_8555 TG@peekfun
+      - US_9378 TG@peekfun
+      - US_9707 TG@peekfun
+      - US_10644 TG@peekfun
+      - US_8881 TG@peekfun
+      - US_9517 TG@peekfun
+      - US_8630 TG@peekfun
+      - US_8829 TG@peekfun
+      - US_8983 TG@peekfun
+      - US_9318 TG@peekfun
+      - US_10592 TG@peekfun
+      - US_10696 TG@peekfun
+      - US_9447 TG@peekfun
+      - US_10690 TG@peekfun
+      - US_9484 TG@peekfun
+      - US_9521 TG@peekfun
+      - US_8806 TG@peekfun
+      - US_9719 TG@peekfun
+      - US_9120 TG@peekfun
+      - US_10608 TG@peekfun
+      - US_10595 TG@peekfun
+      - US_9213 TG@peekfun
+      - US_9709 TG@peekfun
+      - US_9715 TG@peekfun
+      - US_9713 TG@peekfun
+      - US_8814 TG@peekfun
+      - US_9720 TG@peekfun
+      - US_8876 TG@peekfun
+      - US_10629 TG@peekfun
+      - US_10727 TG@peekfun
+      - US_9706 TG@peekfun
+      - US_9387 TG@peekfun
+      - US_9615 TG@peekfun
+      - US_8843 TG@peekfun
+      - US_8558 TG@peekfun
+      - US_8629 TG@peekfun
+      - US_9402 TG@peekfun
+      - US_10583 TG@peekfun
+      - US_9625 TG@peekfun
+      - US_8802 TG@peekfun
+      - US_8810 TG@peekfun
+      - US_8974 TG@peekfun
+      - US_10643 TG@peekfun
+      - US_8969 TG@peekfun
+      - US_9384 TG@peekfun
+      - US_10589 TG@peekfun
+      - US_8812 TG@peekfun
+      - US_8760 TG@peekfun
+      - US_8329 TG@peekfun
+      - US_9729 TG@peekfun
+      - US_9576 TG@peekfun
+      - US_10579 TG@peekfun
+      - US_9669 TG@peekfun
+      - US_9694 TG@peekfun
+      - US_8799 TG@peekfun
+      - US_8968 TG@peekfun
+      - US_9581 TG@peekfun
+      - US_8553 TG@peekfun
+      - US_9571 TG@peekfun
+      - US_9723 TG@peekfun
+      - US_9642 TG@peekfun
+      - US_9668 TG@peekfun
+      - US_8305 TG@peekfun
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -260,29 +876,106 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_4910 TG@peekfun
-      - Relay_ | 3.51Mb
-      - Relay_🇨🇳CN-🇹🇼TW_206 |24.09Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_22 |51.09Mb
-      - Relay_🇨🇳CN-🇹🇼TW_105 |14.53Mb
-      - Relay_🇨🇳CN-🇹🇼TW_209 |23.42Mb
-      - CN_4881 TG@peekfun
-      - Relay_ |11.52Mb
-      - Relay_🇨🇳CN-🇹🇼TW_102 |53.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_221 |13.34Mb
-      - CN_4865 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_99 |46.25Mb
-      - Relay_🇨🇳CN-🇹🇼TW_98 |23.11Mb
-      - Relay_🇨🇳CN-🇹🇼TW_106 |42.69Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_21 |30.85Mb
-      - Relay_🇨🇳 CN-🇹🇼TW_20 |44.73Mb
-      - Relay_🇨🇳CN-🇹🇼TW_93 |24.72Mb
-      - CN_4895 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_101 |45.08Mb
-      - Relay_🇨🇳CN-🇹🇼TW_97 |35.39Mb
-      - CN_4914 TG@peekfun
-      - Relay_🇨🇳CN-🇹🇼TW_100 |53.01Mb
-      - Relay_🇨🇳CN-🇹🇼TW_104 |36.67Mb
+      - US_9329 TG@peekfun
+      - US_8685 TG@peekfun
+      - US_9361 TG@peekfun
+      - US_10697 TG@peekfun
+      - US_9117 TG@peekfun
+      - US_9714 TG@peekfun
+      - US_8556 TG@peekfun
+      - US_10709 TG@peekfun
+      - US_9039 TG@peekfun
+      - US_9286 TG@peekfun
+      - US_10687 TG@peekfun
+      - US_10683 TG@peekfun
+      - US_8725 TG@peekfun
+      - US_8988 TG@peekfun
+      - US_8627 TG@peekfun
+      - US_8644 TG@peekfun
+      - US_10654 TG@peekfun
+      - US_8911 TG@peekfun
+      - US_8945 TG@peekfun
+      - US_9330 TG@peekfun
+      - US_10675 TG@peekfun
+      - US_9031 TG@peekfun
+      - US_8836 TG@peekfun
+      - US_9575 TG@peekfun
+      - US_10606 TG@peekfun
+      - US_10663 TG@peekfun
+      - US_8732 TG@peekfun
+      - US_9269 TG@peekfun
+      - US_9711 TG@peekfun
+      - US_10672 TG@peekfun
+      - US_9364 TG@peekfun
+      - US_9095 TG@peekfun
+      - US_8594 TG@peekfun
+      - US_8828 TG@peekfun
+      - US_8422 TG@peekfun
+      - US_8625 TG@peekfun
+      - US_8826 TG@peekfun
+      - US_8555 TG@peekfun
+      - US_9378 TG@peekfun
+      - US_9707 TG@peekfun
+      - US_10644 TG@peekfun
+      - US_8881 TG@peekfun
+      - US_9517 TG@peekfun
+      - US_8630 TG@peekfun
+      - US_8829 TG@peekfun
+      - US_8983 TG@peekfun
+      - US_9318 TG@peekfun
+      - US_10592 TG@peekfun
+      - US_10696 TG@peekfun
+      - US_9447 TG@peekfun
+      - US_10690 TG@peekfun
+      - US_9484 TG@peekfun
+      - US_9521 TG@peekfun
+      - US_8806 TG@peekfun
+      - US_9719 TG@peekfun
+      - US_9120 TG@peekfun
+      - US_10608 TG@peekfun
+      - US_10595 TG@peekfun
+      - US_9213 TG@peekfun
+      - US_9709 TG@peekfun
+      - US_9715 TG@peekfun
+      - US_9713 TG@peekfun
+      - US_8814 TG@peekfun
+      - US_9720 TG@peekfun
+      - US_8876 TG@peekfun
+      - US_10629 TG@peekfun
+      - US_10727 TG@peekfun
+      - US_9706 TG@peekfun
+      - US_9387 TG@peekfun
+      - US_9615 TG@peekfun
+      - US_8843 TG@peekfun
+      - US_8558 TG@peekfun
+      - US_8629 TG@peekfun
+      - US_9402 TG@peekfun
+      - US_10583 TG@peekfun
+      - US_9625 TG@peekfun
+      - US_8802 TG@peekfun
+      - US_8810 TG@peekfun
+      - US_8974 TG@peekfun
+      - US_10643 TG@peekfun
+      - US_8969 TG@peekfun
+      - US_9384 TG@peekfun
+      - US_10589 TG@peekfun
+      - US_8812 TG@peekfun
+      - US_8760 TG@peekfun
+      - US_8329 TG@peekfun
+      - US_9729 TG@peekfun
+      - US_9576 TG@peekfun
+      - US_10579 TG@peekfun
+      - US_9669 TG@peekfun
+      - US_9694 TG@peekfun
+      - US_8799 TG@peekfun
+      - US_8968 TG@peekfun
+      - US_9581 TG@peekfun
+      - US_8553 TG@peekfun
+      - US_9571 TG@peekfun
+      - US_9723 TG@peekfun
+      - US_9642 TG@peekfun
+      - US_9668 TG@peekfun
+      - US_8305 TG@peekfun
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
