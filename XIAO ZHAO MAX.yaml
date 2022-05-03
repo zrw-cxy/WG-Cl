@@ -5,63 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "|17.08Mb", server: cm1-sg.hutaod.me, port: 12336, type: vmess, uuid: 6954c760-6c9c-3f2a-bec0-1348296177e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|28.55Mb", server: cm1-sg.hutaod.me, port: 12335, type: vmess, uuid: 6954c760-6c9c-3f2a-bec0-1348296177e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|15.90Mb", server: cm1-kr.hutaod.me, port: 12135, type: vmess, uuid: 6954c760-6c9c-3f2a-bec0-1348296177e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|12.11Mb", server: cm1-hk.hutaod.me, port: 12435, type: vmess, uuid: 6954c760-6c9c-3f2a-bec0-1348296177e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|15.01Mb", server: cm1-hk.hutaod.me, port: 12434, type: vmess, uuid: 6954c760-6c9c-3f2a-bec0-1348296177e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_407 |26.72Mb, server: cm1-us.hutaod.me, port: 12234, type: vmess, uuid: 6954c760-6c9c-3f2a-bec0-1348296177e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|16.08Mb", server: cm1-us.hutaod.me, port: 12233, type: vmess, uuid: 6954c760-6c9c-3f2a-bec0-1348296177e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|22.89Mb", server: cm1-hk.hutaod.me, port: 12433, type: vmess, uuid: 6954c760-6c9c-3f2a-bec0-1348296177e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|16.91Mb", server: cm1-hk.hutaod.me, port: 12438, type: vmess, uuid: 6954c760-6c9c-3f2a-bec0-1348296177e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_99 |10.06Mb, server: f948d94.pa.gladns.com, port: 3389, type: trojan, password: 83e6cc61973003f1, sni: f948d94.pa.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_220 |10.38Mb, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_213 |21.85Mb, server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_138 |14.53Mb, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_222 | 8.39Mb, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇹🇼TW_45 |51.09Mb, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_136 |33.44Mb, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN_4829 TG@peekfun, server: 116.129.253.134, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_139 |36.67Mb, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1359 | 2.19Mb, server: kr5.mayiyun.vip, port: 80, type: vmess, uuid: 7a0e7d79-47e0-4a81-9fbe-086dc0159533, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr5.mayiyun.vip}, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_140 |53.08Mb, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN_4910 TG@peekfun, server: 116.129.253.191, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_137 |35.39Mb, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|17.08Mb"
-      - "|28.55Mb"
-      - "|15.90Mb"
-      - "|12.11Mb"
-      - "|15.01Mb"
-      - CN_407 |26.72Mb
-      - "|16.08Mb"
-      - "|22.89Mb"
-      - "|16.91Mb"
-      - Relay_🇨🇳CN-🇹🇼TW_99 |10.06Mb
+      - Relay_🇨🇳CN-🇹🇼TW_220 |10.38Mb
+      - Relay_🇨🇳CN-🇹🇼TW_213 |21.85Mb
+      - Relay_🇨🇳CN-🇹🇼TW_138 |14.53Mb
+      - Relay_🇨🇳CN-🇹🇼TW_222 | 8.39Mb
+      - Relay_🇨🇳 CN-🇹🇼TW_45 |51.09Mb
+      - Relay_🇨🇳CN-🇹🇼TW_136 |33.44Mb
+      - CN_4829 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_139 |36.67Mb
+      - Relay_🇺🇸US-🇺🇸US_1359 | 2.19Mb
+      - Relay_🇨🇳CN-🇹🇼TW_140 |53.08Mb
+      - CN_4910 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_137 |35.39Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "|17.08Mb"
-      - "|28.55Mb"
-      - "|15.90Mb"
-      - "|12.11Mb"
-      - "|15.01Mb"
-      - CN_407 |26.72Mb
-      - "|16.08Mb"
-      - "|22.89Mb"
-      - "|16.91Mb"
-      - Relay_🇨🇳CN-🇹🇼TW_99 |10.06Mb
+      - Relay_🇨🇳CN-🇹🇼TW_220 |10.38Mb
+      - Relay_🇨🇳CN-🇹🇼TW_213 |21.85Mb
+      - Relay_🇨🇳CN-🇹🇼TW_138 |14.53Mb
+      - Relay_🇨🇳CN-🇹🇼TW_222 | 8.39Mb
+      - Relay_🇨🇳 CN-🇹🇼TW_45 |51.09Mb
+      - Relay_🇨🇳CN-🇹🇼TW_136 |33.44Mb
+      - CN_4829 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_139 |36.67Mb
+      - Relay_🇺🇸US-🇺🇸US_1359 | 2.19Mb
+      - Relay_🇨🇳CN-🇹🇼TW_140 |53.08Mb
+      - CN_4910 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_137 |35.39Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|17.08Mb"
-      - "|28.55Mb"
-      - "|15.90Mb"
-      - "|12.11Mb"
-      - "|15.01Mb"
-      - CN_407 |26.72Mb
-      - "|16.08Mb"
-      - "|22.89Mb"
-      - "|16.91Mb"
-      - Relay_🇨🇳CN-🇹🇼TW_99 |10.06Mb
+      - Relay_🇨🇳CN-🇹🇼TW_220 |10.38Mb
+      - Relay_🇨🇳CN-🇹🇼TW_213 |21.85Mb
+      - Relay_🇨🇳CN-🇹🇼TW_138 |14.53Mb
+      - Relay_🇨🇳CN-🇹🇼TW_222 | 8.39Mb
+      - Relay_🇨🇳 CN-🇹🇼TW_45 |51.09Mb
+      - Relay_🇨🇳CN-🇹🇼TW_136 |33.44Mb
+      - CN_4829 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_139 |36.67Mb
+      - Relay_🇺🇸US-🇺🇸US_1359 | 2.19Mb
+      - Relay_🇨🇳CN-🇹🇼TW_140 |53.08Mb
+      - CN_4910 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_137 |35.39Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,16 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|17.08Mb"
-      - "|28.55Mb"
-      - "|15.90Mb"
-      - "|12.11Mb"
-      - "|15.01Mb"
-      - CN_407 |26.72Mb
-      - "|16.08Mb"
-      - "|22.89Mb"
-      - "|16.91Mb"
-      - Relay_🇨🇳CN-🇹🇼TW_99 |10.06Mb
+      - Relay_🇨🇳CN-🇹🇼TW_220 |10.38Mb
+      - Relay_🇨🇳CN-🇹🇼TW_213 |21.85Mb
+      - Relay_🇨🇳CN-🇹🇼TW_138 |14.53Mb
+      - Relay_🇨🇳CN-🇹🇼TW_222 | 8.39Mb
+      - Relay_🇨🇳 CN-🇹🇼TW_45 |51.09Mb
+      - Relay_🇨🇳CN-🇹🇼TW_136 |33.44Mb
+      - CN_4829 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_139 |36.67Mb
+      - Relay_🇺🇸US-🇺🇸US_1359 | 2.19Mb
+      - Relay_🇨🇳CN-🇹🇼TW_140 |53.08Mb
+      - CN_4910 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_137 |35.39Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -100,47 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "|17.08Mb"
-      - "|28.55Mb"
-      - "|15.90Mb"
-      - "|12.11Mb"
-      - "|15.01Mb"
-      - CN_407 |26.72Mb
-      - "|16.08Mb"
-      - "|22.89Mb"
-      - "|16.91Mb"
-      - Relay_🇨🇳CN-🇹🇼TW_99 |10.06Mb
+      - Relay_🇨🇳CN-🇹🇼TW_220 |10.38Mb
+      - Relay_🇨🇳CN-🇹🇼TW_213 |21.85Mb
+      - Relay_🇨🇳CN-🇹🇼TW_138 |14.53Mb
+      - Relay_🇨🇳CN-🇹🇼TW_222 | 8.39Mb
+      - Relay_🇨🇳 CN-🇹🇼TW_45 |51.09Mb
+      - Relay_🇨🇳CN-🇹🇼TW_136 |33.44Mb
+      - CN_4829 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_139 |36.67Mb
+      - Relay_🇺🇸US-🇺🇸US_1359 | 2.19Mb
+      - Relay_🇨🇳CN-🇹🇼TW_140 |53.08Mb
+      - CN_4910 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_137 |35.39Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "|17.08Mb"
-      - "|28.55Mb"
-      - "|15.90Mb"
-      - "|12.11Mb"
-      - "|15.01Mb"
-      - CN_407 |26.72Mb
-      - "|16.08Mb"
-      - "|22.89Mb"
-      - "|16.91Mb"
-      - Relay_🇨🇳CN-🇹🇼TW_99 |10.06Mb
+      - Relay_🇨🇳CN-🇹🇼TW_220 |10.38Mb
+      - Relay_🇨🇳CN-🇹🇼TW_213 |21.85Mb
+      - Relay_🇨🇳CN-🇹🇼TW_138 |14.53Mb
+      - Relay_🇨🇳CN-🇹🇼TW_222 | 8.39Mb
+      - Relay_🇨🇳 CN-🇹🇼TW_45 |51.09Mb
+      - Relay_🇨🇳CN-🇹🇼TW_136 |33.44Mb
+      - CN_4829 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_139 |36.67Mb
+      - Relay_🇺🇸US-🇺🇸US_1359 | 2.19Mb
+      - Relay_🇨🇳CN-🇹🇼TW_140 |53.08Mb
+      - CN_4910 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_137 |35.39Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "|17.08Mb"
-      - "|28.55Mb"
-      - "|15.90Mb"
-      - "|12.11Mb"
-      - "|15.01Mb"
-      - CN_407 |26.72Mb
-      - "|16.08Mb"
-      - "|22.89Mb"
-      - "|16.91Mb"
-      - Relay_🇨🇳CN-🇹🇼TW_99 |10.06Mb
+      - Relay_🇨🇳CN-🇹🇼TW_220 |10.38Mb
+      - Relay_🇨🇳CN-🇹🇼TW_213 |21.85Mb
+      - Relay_🇨🇳CN-🇹🇼TW_138 |14.53Mb
+      - Relay_🇨🇳CN-🇹🇼TW_222 | 8.39Mb
+      - Relay_🇨🇳 CN-🇹🇼TW_45 |51.09Mb
+      - Relay_🇨🇳CN-🇹🇼TW_136 |33.44Mb
+      - CN_4829 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_139 |36.67Mb
+      - Relay_🇺🇸US-🇺🇸US_1359 | 2.19Mb
+      - Relay_🇨🇳CN-🇹🇼TW_140 |53.08Mb
+      - CN_4910 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_137 |35.39Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,16 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "|17.08Mb"
-      - "|28.55Mb"
-      - "|15.90Mb"
-      - "|12.11Mb"
-      - "|15.01Mb"
-      - CN_407 |26.72Mb
-      - "|16.08Mb"
-      - "|22.89Mb"
-      - "|16.91Mb"
-      - Relay_🇨🇳CN-🇹🇼TW_99 |10.06Mb
+      - Relay_🇨🇳CN-🇹🇼TW_220 |10.38Mb
+      - Relay_🇨🇳CN-🇹🇼TW_213 |21.85Mb
+      - Relay_🇨🇳CN-🇹🇼TW_138 |14.53Mb
+      - Relay_🇨🇳CN-🇹🇼TW_222 | 8.39Mb
+      - Relay_🇨🇳 CN-🇹🇼TW_45 |51.09Mb
+      - Relay_🇨🇳CN-🇹🇼TW_136 |33.44Mb
+      - CN_4829 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_139 |36.67Mb
+      - Relay_🇺🇸US-🇺🇸US_1359 | 2.19Mb
+      - Relay_🇨🇳CN-🇹🇼TW_140 |53.08Mb
+      - CN_4910 TG@peekfun
+      - Relay_🇨🇳CN-🇹🇼TW_137 |35.39Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
