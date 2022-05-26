@@ -5,67 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇯🇵JP-🇬🇧GB_174 |41.58Mb, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_77 | 2.18Mb, server: gz2.52168.xyz, port: 12109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: Relay_🇨🇦CA-🇺🇸US_31 | 8.61Mb, server: free.spcloud.us, port: 20009, type: trojan, password: 118fc04e-fb8c-4154-9092-352cf1958fcd, sni: free.spcloud.us, skip-cert-verify: true, udp: true}
-  - {name: JP_503, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇩🇪DE_68 | 4.28Mb, server: gz1.52168.xyz, port: 11102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: DE_466, server: 5.183.179.139, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: KR_101 | 2.54Mb, server: 61.111.128.153, port: 8888, type: ss, cipher: rc4-md5, password: Xiongmao@^ios.ss, udp: true}
-  - {name: "|31.72Mb", server: fr-trojan.bonds.id, port: 443, type: trojan, password: e4307a50-9853-11ec-9b4b-1239d0255272, sni: fr-trojan.bonds.id, skip-cert-verify: true, udp: true}
-  - {name: SG_257 | 7.39Mb, server: 157.230.41.220, port: 29596, type: ss, cipher: aes-256-cfb, password: e6c1cf51375c407d92d110881a825acb, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_78 |21.86Mb, server: gdcm-2.onescloud.top, port: 22026, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 22811:DVlUD1, obfs-param: 977b222811.microsoft.com, udp: true}
-  - {name: DE_153 | 2.12Mb, server: 5.183.179.139, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: CN_3901 TG@peekfun, server: 183.31.9.149, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
+  - {name: US_1210 |79.79Mb, server: 54.213.250.111, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: JP_7172 TG@peekfun, server: jp1.trojan.tel, port: 443, type: trojan, password: f736834f-1fc8-4738-9884-9afe0eb0d818, sni: jp1.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: AU_181 TG@peekfun, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: CN_5134 TG@peekfun, server: 116.129.253.177, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: CN_5176 TG@peekfun, server: 116.129.253.177, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇬🇧GB_174 |41.58Mb
-      - Relay_🇨🇳CN-🏁ZZ_77 | 2.18Mb
-      - Relay_🇨🇦CA-🇺🇸US_31 | 8.61Mb
-      - JP_503
-      - Relay_🇨🇳CN-🇩🇪DE_68 | 4.28Mb
-      - DE_466
-      - KR_101 | 2.54Mb
-      - "|31.72Mb"
-      - SG_257 | 7.39Mb
-      - Relay_🇨🇳CN-🇹🇼TW_78 |21.86Mb
-      - DE_153 | 2.12Mb
+      - CN_3901 TG@peekfun
+      - US_1210 |79.79Mb
+      - JP_7172 TG@peekfun
+      - AU_181 TG@peekfun
+      - CN_5134 TG@peekfun
+      - CN_5176 TG@peekfun
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇯🇵JP-🇬🇧GB_174 |41.58Mb
-      - Relay_🇨🇳CN-🏁ZZ_77 | 2.18Mb
-      - Relay_🇨🇦CA-🇺🇸US_31 | 8.61Mb
-      - JP_503
-      - Relay_🇨🇳CN-🇩🇪DE_68 | 4.28Mb
-      - DE_466
-      - KR_101 | 2.54Mb
-      - "|31.72Mb"
-      - SG_257 | 7.39Mb
-      - Relay_🇨🇳CN-🇹🇼TW_78 |21.86Mb
-      - DE_153 | 2.12Mb
+      - CN_3901 TG@peekfun
+      - US_1210 |79.79Mb
+      - JP_7172 TG@peekfun
+      - AU_181 TG@peekfun
+      - CN_5134 TG@peekfun
+      - CN_5176 TG@peekfun
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇬🇧GB_174 |41.58Mb
-      - Relay_🇨🇳CN-🏁ZZ_77 | 2.18Mb
-      - Relay_🇨🇦CA-🇺🇸US_31 | 8.61Mb
-      - JP_503
-      - Relay_🇨🇳CN-🇩🇪DE_68 | 4.28Mb
-      - DE_466
-      - KR_101 | 2.54Mb
-      - "|31.72Mb"
-      - SG_257 | 7.39Mb
-      - Relay_🇨🇳CN-🇹🇼TW_78 |21.86Mb
-      - DE_153 | 2.12Mb
+      - CN_3901 TG@peekfun
+      - US_1210 |79.79Mb
+      - JP_7172 TG@peekfun
+      - AU_181 TG@peekfun
+      - CN_5134 TG@peekfun
+      - CN_5176 TG@peekfun
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,17 +64,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇬🇧GB_174 |41.58Mb
-      - Relay_🇨🇳CN-🏁ZZ_77 | 2.18Mb
-      - Relay_🇨🇦CA-🇺🇸US_31 | 8.61Mb
-      - JP_503
-      - Relay_🇨🇳CN-🇩🇪DE_68 | 4.28Mb
-      - DE_466
-      - KR_101 | 2.54Mb
-      - "|31.72Mb"
-      - SG_257 | 7.39Mb
-      - Relay_🇨🇳CN-🇹🇼TW_78 |21.86Mb
-      - DE_153 | 2.12Mb
+      - CN_3901 TG@peekfun
+      - US_1210 |79.79Mb
+      - JP_7172 TG@peekfun
+      - AU_181 TG@peekfun
+      - CN_5134 TG@peekfun
+      - CN_5176 TG@peekfun
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -105,50 +80,35 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇯🇵JP-🇬🇧GB_174 |41.58Mb
-      - Relay_🇨🇳CN-🏁ZZ_77 | 2.18Mb
-      - Relay_🇨🇦CA-🇺🇸US_31 | 8.61Mb
-      - JP_503
-      - Relay_🇨🇳CN-🇩🇪DE_68 | 4.28Mb
-      - DE_466
-      - KR_101 | 2.54Mb
-      - "|31.72Mb"
-      - SG_257 | 7.39Mb
-      - Relay_🇨🇳CN-🇹🇼TW_78 |21.86Mb
-      - DE_153 | 2.12Mb
+      - CN_3901 TG@peekfun
+      - US_1210 |79.79Mb
+      - JP_7172 TG@peekfun
+      - AU_181 TG@peekfun
+      - CN_5134 TG@peekfun
+      - CN_5176 TG@peekfun
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇬🇧GB_174 |41.58Mb
-      - Relay_🇨🇳CN-🏁ZZ_77 | 2.18Mb
-      - Relay_🇨🇦CA-🇺🇸US_31 | 8.61Mb
-      - JP_503
-      - Relay_🇨🇳CN-🇩🇪DE_68 | 4.28Mb
-      - DE_466
-      - KR_101 | 2.54Mb
-      - "|31.72Mb"
-      - SG_257 | 7.39Mb
-      - Relay_🇨🇳CN-🇹🇼TW_78 |21.86Mb
-      - DE_153 | 2.12Mb
+      - CN_3901 TG@peekfun
+      - US_1210 |79.79Mb
+      - JP_7172 TG@peekfun
+      - AU_181 TG@peekfun
+      - CN_5134 TG@peekfun
+      - CN_5176 TG@peekfun
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵JP-🇬🇧GB_174 |41.58Mb
-      - Relay_🇨🇳CN-🏁ZZ_77 | 2.18Mb
-      - Relay_🇨🇦CA-🇺🇸US_31 | 8.61Mb
-      - JP_503
-      - Relay_🇨🇳CN-🇩🇪DE_68 | 4.28Mb
-      - DE_466
-      - KR_101 | 2.54Mb
-      - "|31.72Mb"
-      - SG_257 | 7.39Mb
-      - Relay_🇨🇳CN-🇹🇼TW_78 |21.86Mb
-      - DE_153 | 2.12Mb
+      - CN_3901 TG@peekfun
+      - US_1210 |79.79Mb
+      - JP_7172 TG@peekfun
+      - AU_181 TG@peekfun
+      - CN_5134 TG@peekfun
+      - CN_5176 TG@peekfun
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵JP-🇬🇧GB_174 |41.58Mb
-      - Relay_🇨🇳CN-🏁ZZ_77 | 2.18Mb
-      - Relay_🇨🇦CA-🇺🇸US_31 | 8.61Mb
-      - JP_503
-      - Relay_🇨🇳CN-🇩🇪DE_68 | 4.28Mb
-      - DE_466
-      - KR_101 | 2.54Mb
-      - "|31.72Mb"
-      - SG_257 | 7.39Mb
-      - Relay_🇨🇳CN-🇹🇼TW_78 |21.86Mb
-      - DE_153 | 2.12Mb
+      - CN_3901 TG@peekfun
+      - US_1210 |79.79Mb
+      - JP_7172 TG@peekfun
+      - AU_181 TG@peekfun
+      - CN_5134 TG@peekfun
+      - CN_5176 TG@peekfun
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
