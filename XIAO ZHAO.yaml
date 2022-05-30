@@ -5,47 +5,159 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_3901 TG@peekfun, server: 183.31.9.149, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
-  - {name: US_1210 |79.79Mb, server: 54.213.250.111, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: JP_7172 TG@peekfun, server: jp1.trojan.tel, port: 443, type: trojan, password: f736834f-1fc8-4738-9884-9afe0eb0d818, sni: jp1.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: AU_181 TG@peekfun, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: CN_5134 TG@peekfun, server: 116.129.253.177, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
-  - {name: CN_5176 TG@peekfun, server: 116.129.253.177, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: CN_19 |89.49Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_96 |56.58Mb, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_95 |35.36Mb, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_36 | 6.22Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_94 |20.22Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_98 |18.44Mb, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_31 | 6.25Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_17 | 9.34Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_65 |22.38Mb, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_32 | 5.38Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_53 | 4.57Mb, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_48 | 7.62Mb, server: 117.91.179.134, port: 10352, type: ss, cipher: chacha20-ietf-poly1305, password: 49bd189b-9531-4d21-a3f9-95a099ceaad2, udp: true}
+  - {name: CN_35 |24.06Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_21 |87.58Mb, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_37 |62.77Mb, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_33 |10.02Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_76 |63.00Mb, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_56 |12.35Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_42 | 5.11Mb, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_47 | 4.38Mb, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_34 | 5.17Mb, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_59 |14.68Mb, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_80 |60.64Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_39 |19.24Mb, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_41 |45.99Mb, server: 36.156.219.92, port: 10199, type: ss, cipher: chacha20-ietf-poly1305, password: 49bd189b-9531-4d21-a3f9-95a099ceaad2, udp: true}
+  - {name: CN_60 |77.01Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_97 |15.35Mb, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_68 |25.27Mb, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_38 | 5.36Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇦CA_30 |67.64Mb, server: 117.91.179.134, port: 10353, type: ss, cipher: chacha20-ietf-poly1305, password: 49bd189b-9531-4d21-a3f9-95a099ceaad2, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_82 |24.66Mb, server: 117.91.179.134, port: 10369, type: ss, cipher: chacha20-ietf-poly1305, password: 49bd189b-9531-4d21-a3f9-95a099ceaad2, udp: true}
+  - {name: CN_74 | 3.99Mb, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_45 |57.72Mb, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_55 | 9.33Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_3901 TG@peekfun
-      - US_1210 |79.79Mb
-      - JP_7172 TG@peekfun
-      - AU_181 TG@peekfun
-      - CN_5134 TG@peekfun
-      - CN_5176 TG@peekfun
+      - CN_19 |89.49Mb
+      - CN_96 |56.58Mb
+      - CN_95 |35.36Mb
+      - CN_36 | 6.22Mb
+      - CN_94 |20.22Mb
+      - CN_98 |18.44Mb
+      - CN_31 | 6.25Mb
+      - CN_17 | 9.34Mb
+      - CN_65 |22.38Mb
+      - CN_32 | 5.38Mb
+      - CN_53 | 4.57Mb
+      - Relay_🇨🇳CN-🇺🇸US_48 | 7.62Mb
+      - CN_35 |24.06Mb
+      - CN_21 |87.58Mb
+      - CN_37 |62.77Mb
+      - CN_33 |10.02Mb
+      - CN_76 |63.00Mb
+      - CN_56 |12.35Mb
+      - CN_42 | 5.11Mb
+      - CN_47 | 4.38Mb
+      - CN_34 | 5.17Mb
+      - CN_59 |14.68Mb
+      - CN_80 |60.64Mb
+      - CN_39 |19.24Mb
+      - Relay_🇨🇳CN-🇺🇸US_41 |45.99Mb
+      - CN_60 |77.01Mb
+      - CN_97 |15.35Mb
+      - CN_68 |25.27Mb
+      - CN_38 | 5.36Mb
+      - Relay_🇨🇳CN-🇨🇦CA_30 |67.64Mb
+      - Relay_🇨🇳CN-🇺🇸US_82 |24.66Mb
+      - CN_74 | 3.99Mb
+      - CN_45 |57.72Mb
+      - CN_55 | 9.33Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_3901 TG@peekfun
-      - US_1210 |79.79Mb
-      - JP_7172 TG@peekfun
-      - AU_181 TG@peekfun
-      - CN_5134 TG@peekfun
-      - CN_5176 TG@peekfun
+      - CN_19 |89.49Mb
+      - CN_96 |56.58Mb
+      - CN_95 |35.36Mb
+      - CN_36 | 6.22Mb
+      - CN_94 |20.22Mb
+      - CN_98 |18.44Mb
+      - CN_31 | 6.25Mb
+      - CN_17 | 9.34Mb
+      - CN_65 |22.38Mb
+      - CN_32 | 5.38Mb
+      - CN_53 | 4.57Mb
+      - Relay_🇨🇳CN-🇺🇸US_48 | 7.62Mb
+      - CN_35 |24.06Mb
+      - CN_21 |87.58Mb
+      - CN_37 |62.77Mb
+      - CN_33 |10.02Mb
+      - CN_76 |63.00Mb
+      - CN_56 |12.35Mb
+      - CN_42 | 5.11Mb
+      - CN_47 | 4.38Mb
+      - CN_34 | 5.17Mb
+      - CN_59 |14.68Mb
+      - CN_80 |60.64Mb
+      - CN_39 |19.24Mb
+      - Relay_🇨🇳CN-🇺🇸US_41 |45.99Mb
+      - CN_60 |77.01Mb
+      - CN_97 |15.35Mb
+      - CN_68 |25.27Mb
+      - CN_38 | 5.36Mb
+      - Relay_🇨🇳CN-🇨🇦CA_30 |67.64Mb
+      - Relay_🇨🇳CN-🇺🇸US_82 |24.66Mb
+      - CN_74 | 3.99Mb
+      - CN_45 |57.72Mb
+      - CN_55 | 9.33Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_3901 TG@peekfun
-      - US_1210 |79.79Mb
-      - JP_7172 TG@peekfun
-      - AU_181 TG@peekfun
-      - CN_5134 TG@peekfun
-      - CN_5176 TG@peekfun
+      - CN_19 |89.49Mb
+      - CN_96 |56.58Mb
+      - CN_95 |35.36Mb
+      - CN_36 | 6.22Mb
+      - CN_94 |20.22Mb
+      - CN_98 |18.44Mb
+      - CN_31 | 6.25Mb
+      - CN_17 | 9.34Mb
+      - CN_65 |22.38Mb
+      - CN_32 | 5.38Mb
+      - CN_53 | 4.57Mb
+      - Relay_🇨🇳CN-🇺🇸US_48 | 7.62Mb
+      - CN_35 |24.06Mb
+      - CN_21 |87.58Mb
+      - CN_37 |62.77Mb
+      - CN_33 |10.02Mb
+      - CN_76 |63.00Mb
+      - CN_56 |12.35Mb
+      - CN_42 | 5.11Mb
+      - CN_47 | 4.38Mb
+      - CN_34 | 5.17Mb
+      - CN_59 |14.68Mb
+      - CN_80 |60.64Mb
+      - CN_39 |19.24Mb
+      - Relay_🇨🇳CN-🇺🇸US_41 |45.99Mb
+      - CN_60 |77.01Mb
+      - CN_97 |15.35Mb
+      - CN_68 |25.27Mb
+      - CN_38 | 5.36Mb
+      - Relay_🇨🇳CN-🇨🇦CA_30 |67.64Mb
+      - Relay_🇨🇳CN-🇺🇸US_82 |24.66Mb
+      - CN_74 | 3.99Mb
+      - CN_45 |57.72Mb
+      - CN_55 | 9.33Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +176,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_3901 TG@peekfun
-      - US_1210 |79.79Mb
-      - JP_7172 TG@peekfun
-      - AU_181 TG@peekfun
-      - CN_5134 TG@peekfun
-      - CN_5176 TG@peekfun
+      - CN_19 |89.49Mb
+      - CN_96 |56.58Mb
+      - CN_95 |35.36Mb
+      - CN_36 | 6.22Mb
+      - CN_94 |20.22Mb
+      - CN_98 |18.44Mb
+      - CN_31 | 6.25Mb
+      - CN_17 | 9.34Mb
+      - CN_65 |22.38Mb
+      - CN_32 | 5.38Mb
+      - CN_53 | 4.57Mb
+      - Relay_🇨🇳CN-🇺🇸US_48 | 7.62Mb
+      - CN_35 |24.06Mb
+      - CN_21 |87.58Mb
+      - CN_37 |62.77Mb
+      - CN_33 |10.02Mb
+      - CN_76 |63.00Mb
+      - CN_56 |12.35Mb
+      - CN_42 | 5.11Mb
+      - CN_47 | 4.38Mb
+      - CN_34 | 5.17Mb
+      - CN_59 |14.68Mb
+      - CN_80 |60.64Mb
+      - CN_39 |19.24Mb
+      - Relay_🇨🇳CN-🇺🇸US_41 |45.99Mb
+      - CN_60 |77.01Mb
+      - CN_97 |15.35Mb
+      - CN_68 |25.27Mb
+      - CN_38 | 5.36Mb
+      - Relay_🇨🇳CN-🇨🇦CA_30 |67.64Mb
+      - Relay_🇨🇳CN-🇺🇸US_82 |24.66Mb
+      - CN_74 | 3.99Mb
+      - CN_45 |57.72Mb
+      - CN_55 | 9.33Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -80,35 +220,119 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_3901 TG@peekfun
-      - US_1210 |79.79Mb
-      - JP_7172 TG@peekfun
-      - AU_181 TG@peekfun
-      - CN_5134 TG@peekfun
-      - CN_5176 TG@peekfun
+      - CN_19 |89.49Mb
+      - CN_96 |56.58Mb
+      - CN_95 |35.36Mb
+      - CN_36 | 6.22Mb
+      - CN_94 |20.22Mb
+      - CN_98 |18.44Mb
+      - CN_31 | 6.25Mb
+      - CN_17 | 9.34Mb
+      - CN_65 |22.38Mb
+      - CN_32 | 5.38Mb
+      - CN_53 | 4.57Mb
+      - Relay_🇨🇳CN-🇺🇸US_48 | 7.62Mb
+      - CN_35 |24.06Mb
+      - CN_21 |87.58Mb
+      - CN_37 |62.77Mb
+      - CN_33 |10.02Mb
+      - CN_76 |63.00Mb
+      - CN_56 |12.35Mb
+      - CN_42 | 5.11Mb
+      - CN_47 | 4.38Mb
+      - CN_34 | 5.17Mb
+      - CN_59 |14.68Mb
+      - CN_80 |60.64Mb
+      - CN_39 |19.24Mb
+      - Relay_🇨🇳CN-🇺🇸US_41 |45.99Mb
+      - CN_60 |77.01Mb
+      - CN_97 |15.35Mb
+      - CN_68 |25.27Mb
+      - CN_38 | 5.36Mb
+      - Relay_🇨🇳CN-🇨🇦CA_30 |67.64Mb
+      - Relay_🇨🇳CN-🇺🇸US_82 |24.66Mb
+      - CN_74 | 3.99Mb
+      - CN_45 |57.72Mb
+      - CN_55 | 9.33Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_3901 TG@peekfun
-      - US_1210 |79.79Mb
-      - JP_7172 TG@peekfun
-      - AU_181 TG@peekfun
-      - CN_5134 TG@peekfun
-      - CN_5176 TG@peekfun
+      - CN_19 |89.49Mb
+      - CN_96 |56.58Mb
+      - CN_95 |35.36Mb
+      - CN_36 | 6.22Mb
+      - CN_94 |20.22Mb
+      - CN_98 |18.44Mb
+      - CN_31 | 6.25Mb
+      - CN_17 | 9.34Mb
+      - CN_65 |22.38Mb
+      - CN_32 | 5.38Mb
+      - CN_53 | 4.57Mb
+      - Relay_🇨🇳CN-🇺🇸US_48 | 7.62Mb
+      - CN_35 |24.06Mb
+      - CN_21 |87.58Mb
+      - CN_37 |62.77Mb
+      - CN_33 |10.02Mb
+      - CN_76 |63.00Mb
+      - CN_56 |12.35Mb
+      - CN_42 | 5.11Mb
+      - CN_47 | 4.38Mb
+      - CN_34 | 5.17Mb
+      - CN_59 |14.68Mb
+      - CN_80 |60.64Mb
+      - CN_39 |19.24Mb
+      - Relay_🇨🇳CN-🇺🇸US_41 |45.99Mb
+      - CN_60 |77.01Mb
+      - CN_97 |15.35Mb
+      - CN_68 |25.27Mb
+      - CN_38 | 5.36Mb
+      - Relay_🇨🇳CN-🇨🇦CA_30 |67.64Mb
+      - Relay_🇨🇳CN-🇺🇸US_82 |24.66Mb
+      - CN_74 | 3.99Mb
+      - CN_45 |57.72Mb
+      - CN_55 | 9.33Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_3901 TG@peekfun
-      - US_1210 |79.79Mb
-      - JP_7172 TG@peekfun
-      - AU_181 TG@peekfun
-      - CN_5134 TG@peekfun
-      - CN_5176 TG@peekfun
+      - CN_19 |89.49Mb
+      - CN_96 |56.58Mb
+      - CN_95 |35.36Mb
+      - CN_36 | 6.22Mb
+      - CN_94 |20.22Mb
+      - CN_98 |18.44Mb
+      - CN_31 | 6.25Mb
+      - CN_17 | 9.34Mb
+      - CN_65 |22.38Mb
+      - CN_32 | 5.38Mb
+      - CN_53 | 4.57Mb
+      - Relay_🇨🇳CN-🇺🇸US_48 | 7.62Mb
+      - CN_35 |24.06Mb
+      - CN_21 |87.58Mb
+      - CN_37 |62.77Mb
+      - CN_33 |10.02Mb
+      - CN_76 |63.00Mb
+      - CN_56 |12.35Mb
+      - CN_42 | 5.11Mb
+      - CN_47 | 4.38Mb
+      - CN_34 | 5.17Mb
+      - CN_59 |14.68Mb
+      - CN_80 |60.64Mb
+      - CN_39 |19.24Mb
+      - Relay_🇨🇳CN-🇺🇸US_41 |45.99Mb
+      - CN_60 |77.01Mb
+      - CN_97 |15.35Mb
+      - CN_68 |25.27Mb
+      - CN_38 | 5.36Mb
+      - Relay_🇨🇳CN-🇨🇦CA_30 |67.64Mb
+      - Relay_🇨🇳CN-🇺🇸US_82 |24.66Mb
+      - CN_74 | 3.99Mb
+      - CN_45 |57.72Mb
+      - CN_55 | 9.33Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +348,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_3901 TG@peekfun
-      - US_1210 |79.79Mb
-      - JP_7172 TG@peekfun
-      - AU_181 TG@peekfun
-      - CN_5134 TG@peekfun
-      - CN_5176 TG@peekfun
+      - CN_19 |89.49Mb
+      - CN_96 |56.58Mb
+      - CN_95 |35.36Mb
+      - CN_36 | 6.22Mb
+      - CN_94 |20.22Mb
+      - CN_98 |18.44Mb
+      - CN_31 | 6.25Mb
+      - CN_17 | 9.34Mb
+      - CN_65 |22.38Mb
+      - CN_32 | 5.38Mb
+      - CN_53 | 4.57Mb
+      - Relay_🇨🇳CN-🇺🇸US_48 | 7.62Mb
+      - CN_35 |24.06Mb
+      - CN_21 |87.58Mb
+      - CN_37 |62.77Mb
+      - CN_33 |10.02Mb
+      - CN_76 |63.00Mb
+      - CN_56 |12.35Mb
+      - CN_42 | 5.11Mb
+      - CN_47 | 4.38Mb
+      - CN_34 | 5.17Mb
+      - CN_59 |14.68Mb
+      - CN_80 |60.64Mb
+      - CN_39 |19.24Mb
+      - Relay_🇨🇳CN-🇺🇸US_41 |45.99Mb
+      - CN_60 |77.01Mb
+      - CN_97 |15.35Mb
+      - CN_68 |25.27Mb
+      - CN_38 | 5.36Mb
+      - Relay_🇨🇳CN-🇨🇦CA_30 |67.64Mb
+      - Relay_🇨🇳CN-🇺🇸US_82 |24.66Mb
+      - CN_74 | 3.99Mb
+      - CN_45 |57.72Mb
+      - CN_55 | 9.33Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
