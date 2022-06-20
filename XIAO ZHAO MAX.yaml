@@ -5,63 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_261, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_1034🇺🇸US_1026, server: 104.243.25.95, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: US_265, server: 107.167.24.6, port: 17001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_1411, server: 103.172.116.113, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: DE_286 |17.74Mb, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_1412, server: 103.172.116.113, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: Relay_Relay_🏁ZZ-🇹🇼TW_1416🏁ZZ-🇹🇼TW_1417, server: 103.172.116.113, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: DE_101, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: DE_89, server: 212.81.47.12, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: DE_100, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_35 |75.45Mb, server: gzyd1.xxcv.cc, port: 30010, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_41 |10.02Mb, server: gzyd2.xxcv.cc, port: 30010, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇯🇵JP_36 | 7.57Mb, server: gzyd2.xxcv.cc, port: 30130, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇦🇺AU_63 |58.77Mb, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇯🇵JP_37 |11.62Mb, server: gzyd1.xxcv.cc, port: 30130, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_65 |11.01Mb, server: fk.i809.ml, port: 11111, type: trojan, password: 8fe9d7b3-e209-4477-bb2c-7903c33eb54f, sni: fk.i809.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇯🇵JP_74 |10.87Mb, server: hnyd.xxcv.cc, port: 30130, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇩🇪DE_45 | 7.15Mb, server: hnyd.xxcv.cc, port: 30080, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1251, server: bai-piao-wang-zhe-iplc12.98848.xyz, port: 19222, type: trojan, password: 2b815eb6-3982-4f09-9181-3c02c479d4d1, sni: bai-piao-wang-zhe-iplc12.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1229, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_43, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_39 |38.72Mb, server: hnyd.xxcv.cc, port: 30010, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇩🇪DE_60 | 0.64Mb, server: gzyd1.xxcv.cc, port: 30080, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_112 | 6.70Mb, server: cm-gz.okvpn.xyz, port: 20000, type: trojan, password: 604c3e18-a40a-434e-bcc1-d810845bf034, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1252, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: US_1087, server: 165.232.169.142, port: 29332, type: ss, cipher: aes-256-cfb, password: 1e5111699c45496da84112f35db665c4, udp: true}
+  - {name: US_308, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_261
-      - US_1034🇺🇸US_1026
-      - US_265
-      - Relay_🏁ZZ-🇹🇼TW_1411
-      - DE_286 |17.74Mb
-      - Relay_🏁ZZ-🇹🇼TW_1412
-      - Relay_Relay_🏁ZZ-🇹🇼TW_1416🏁ZZ-🇹🇼TW_1417
-      - DE_101
-      - DE_89
-      - DE_100
+      - Relay_-🇹🇼TW_35 |75.45Mb
+      - Relay_-🇹🇼TW_41 |10.02Mb
+      - Relay_-🇯🇵JP_36 | 7.57Mb
+      - Relay_-🇦🇺AU_63 |58.77Mb
+      - Relay_-🇯🇵JP_37 |11.62Mb
+      - Relay_-🇹🇼TW_65 |11.01Mb
+      - Relay_-🇯🇵JP_74 |10.87Mb
+      - Relay_-🇩🇪DE_45 | 7.15Mb
+      - Relay_🇺🇸US-🇺🇸US_1251
+      - Relay_🇺🇸US-🇺🇸US_1229
+      - Relay_🇦🇺AU-🇦🇺AU_43
+      - Relay_-🇹🇼TW_39 |38.72Mb
+      - Relay_-🇩🇪DE_60 | 0.64Mb
+      - Relay_🇨🇳CN-🇭🇰HK_112 | 6.70Mb
+      - Relay_🇺🇸US-🇺🇸US_1252
+      - US_1087
+      - US_308
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_261
-      - US_1034🇺🇸US_1026
-      - US_265
-      - Relay_🏁ZZ-🇹🇼TW_1411
-      - DE_286 |17.74Mb
-      - Relay_🏁ZZ-🇹🇼TW_1412
-      - Relay_Relay_🏁ZZ-🇹🇼TW_1416🏁ZZ-🇹🇼TW_1417
-      - DE_101
-      - DE_89
-      - DE_100
+      - Relay_-🇹🇼TW_35 |75.45Mb
+      - Relay_-🇹🇼TW_41 |10.02Mb
+      - Relay_-🇯🇵JP_36 | 7.57Mb
+      - Relay_-🇦🇺AU_63 |58.77Mb
+      - Relay_-🇯🇵JP_37 |11.62Mb
+      - Relay_-🇹🇼TW_65 |11.01Mb
+      - Relay_-🇯🇵JP_74 |10.87Mb
+      - Relay_-🇩🇪DE_45 | 7.15Mb
+      - Relay_🇺🇸US-🇺🇸US_1251
+      - Relay_🇺🇸US-🇺🇸US_1229
+      - Relay_🇦🇺AU-🇦🇺AU_43
+      - Relay_-🇹🇼TW_39 |38.72Mb
+      - Relay_-🇩🇪DE_60 | 0.64Mb
+      - Relay_🇨🇳CN-🇭🇰HK_112 | 6.70Mb
+      - Relay_🇺🇸US-🇺🇸US_1252
+      - US_1087
+      - US_308
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_261
-      - US_1034🇺🇸US_1026
-      - US_265
-      - Relay_🏁ZZ-🇹🇼TW_1411
-      - DE_286 |17.74Mb
-      - Relay_🏁ZZ-🇹🇼TW_1412
-      - Relay_Relay_🏁ZZ-🇹🇼TW_1416🏁ZZ-🇹🇼TW_1417
-      - DE_101
-      - DE_89
-      - DE_100
+      - Relay_-🇹🇼TW_35 |75.45Mb
+      - Relay_-🇹🇼TW_41 |10.02Mb
+      - Relay_-🇯🇵JP_36 | 7.57Mb
+      - Relay_-🇦🇺AU_63 |58.77Mb
+      - Relay_-🇯🇵JP_37 |11.62Mb
+      - Relay_-🇹🇼TW_65 |11.01Mb
+      - Relay_-🇯🇵JP_74 |10.87Mb
+      - Relay_-🇩🇪DE_45 | 7.15Mb
+      - Relay_🇺🇸US-🇺🇸US_1251
+      - Relay_🇺🇸US-🇺🇸US_1229
+      - Relay_🇦🇺AU-🇦🇺AU_43
+      - Relay_-🇹🇼TW_39 |38.72Mb
+      - Relay_-🇩🇪DE_60 | 0.64Mb
+      - Relay_🇨🇳CN-🇭🇰HK_112 | 6.70Mb
+      - Relay_🇺🇸US-🇺🇸US_1252
+      - US_1087
+      - US_308
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,16 +108,23 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_261
-      - US_1034🇺🇸US_1026
-      - US_265
-      - Relay_🏁ZZ-🇹🇼TW_1411
-      - DE_286 |17.74Mb
-      - Relay_🏁ZZ-🇹🇼TW_1412
-      - Relay_Relay_🏁ZZ-🇹🇼TW_1416🏁ZZ-🇹🇼TW_1417
-      - DE_101
-      - DE_89
-      - DE_100
+      - Relay_-🇹🇼TW_35 |75.45Mb
+      - Relay_-🇹🇼TW_41 |10.02Mb
+      - Relay_-🇯🇵JP_36 | 7.57Mb
+      - Relay_-🇦🇺AU_63 |58.77Mb
+      - Relay_-🇯🇵JP_37 |11.62Mb
+      - Relay_-🇹🇼TW_65 |11.01Mb
+      - Relay_-🇯🇵JP_74 |10.87Mb
+      - Relay_-🇩🇪DE_45 | 7.15Mb
+      - Relay_🇺🇸US-🇺🇸US_1251
+      - Relay_🇺🇸US-🇺🇸US_1229
+      - Relay_🇦🇺AU-🇦🇺AU_43
+      - Relay_-🇹🇼TW_39 |38.72Mb
+      - Relay_-🇩🇪DE_60 | 0.64Mb
+      - Relay_🇨🇳CN-🇭🇰HK_112 | 6.70Mb
+      - Relay_🇺🇸US-🇺🇸US_1252
+      - US_1087
+      - US_308
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -100,47 +135,68 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_261
-      - US_1034🇺🇸US_1026
-      - US_265
-      - Relay_🏁ZZ-🇹🇼TW_1411
-      - DE_286 |17.74Mb
-      - Relay_🏁ZZ-🇹🇼TW_1412
-      - Relay_Relay_🏁ZZ-🇹🇼TW_1416🏁ZZ-🇹🇼TW_1417
-      - DE_101
-      - DE_89
-      - DE_100
+      - Relay_-🇹🇼TW_35 |75.45Mb
+      - Relay_-🇹🇼TW_41 |10.02Mb
+      - Relay_-🇯🇵JP_36 | 7.57Mb
+      - Relay_-🇦🇺AU_63 |58.77Mb
+      - Relay_-🇯🇵JP_37 |11.62Mb
+      - Relay_-🇹🇼TW_65 |11.01Mb
+      - Relay_-🇯🇵JP_74 |10.87Mb
+      - Relay_-🇩🇪DE_45 | 7.15Mb
+      - Relay_🇺🇸US-🇺🇸US_1251
+      - Relay_🇺🇸US-🇺🇸US_1229
+      - Relay_🇦🇺AU-🇦🇺AU_43
+      - Relay_-🇹🇼TW_39 |38.72Mb
+      - Relay_-🇩🇪DE_60 | 0.64Mb
+      - Relay_🇨🇳CN-🇭🇰HK_112 | 6.70Mb
+      - Relay_🇺🇸US-🇺🇸US_1252
+      - US_1087
+      - US_308
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_261
-      - US_1034🇺🇸US_1026
-      - US_265
-      - Relay_🏁ZZ-🇹🇼TW_1411
-      - DE_286 |17.74Mb
-      - Relay_🏁ZZ-🇹🇼TW_1412
-      - Relay_Relay_🏁ZZ-🇹🇼TW_1416🏁ZZ-🇹🇼TW_1417
-      - DE_101
-      - DE_89
-      - DE_100
+      - Relay_-🇹🇼TW_35 |75.45Mb
+      - Relay_-🇹🇼TW_41 |10.02Mb
+      - Relay_-🇯🇵JP_36 | 7.57Mb
+      - Relay_-🇦🇺AU_63 |58.77Mb
+      - Relay_-🇯🇵JP_37 |11.62Mb
+      - Relay_-🇹🇼TW_65 |11.01Mb
+      - Relay_-🇯🇵JP_74 |10.87Mb
+      - Relay_-🇩🇪DE_45 | 7.15Mb
+      - Relay_🇺🇸US-🇺🇸US_1251
+      - Relay_🇺🇸US-🇺🇸US_1229
+      - Relay_🇦🇺AU-🇦🇺AU_43
+      - Relay_-🇹🇼TW_39 |38.72Mb
+      - Relay_-🇩🇪DE_60 | 0.64Mb
+      - Relay_🇨🇳CN-🇭🇰HK_112 | 6.70Mb
+      - Relay_🇺🇸US-🇺🇸US_1252
+      - US_1087
+      - US_308
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_261
-      - US_1034🇺🇸US_1026
-      - US_265
-      - Relay_🏁ZZ-🇹🇼TW_1411
-      - DE_286 |17.74Mb
-      - Relay_🏁ZZ-🇹🇼TW_1412
-      - Relay_Relay_🏁ZZ-🇹🇼TW_1416🏁ZZ-🇹🇼TW_1417
-      - DE_101
-      - DE_89
-      - DE_100
+      - Relay_-🇹🇼TW_35 |75.45Mb
+      - Relay_-🇹🇼TW_41 |10.02Mb
+      - Relay_-🇯🇵JP_36 | 7.57Mb
+      - Relay_-🇦🇺AU_63 |58.77Mb
+      - Relay_-🇯🇵JP_37 |11.62Mb
+      - Relay_-🇹🇼TW_65 |11.01Mb
+      - Relay_-🇯🇵JP_74 |10.87Mb
+      - Relay_-🇩🇪DE_45 | 7.15Mb
+      - Relay_🇺🇸US-🇺🇸US_1251
+      - Relay_🇺🇸US-🇺🇸US_1229
+      - Relay_🇦🇺AU-🇦🇺AU_43
+      - Relay_-🇹🇼TW_39 |38.72Mb
+      - Relay_-🇩🇪DE_60 | 0.64Mb
+      - Relay_🇨🇳CN-🇭🇰HK_112 | 6.70Mb
+      - Relay_🇺🇸US-🇺🇸US_1252
+      - US_1087
+      - US_308
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,16 +212,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_261
-      - US_1034🇺🇸US_1026
-      - US_265
-      - Relay_🏁ZZ-🇹🇼TW_1411
-      - DE_286 |17.74Mb
-      - Relay_🏁ZZ-🇹🇼TW_1412
-      - Relay_Relay_🏁ZZ-🇹🇼TW_1416🏁ZZ-🇹🇼TW_1417
-      - DE_101
-      - DE_89
-      - DE_100
+      - Relay_-🇹🇼TW_35 |75.45Mb
+      - Relay_-🇹🇼TW_41 |10.02Mb
+      - Relay_-🇯🇵JP_36 | 7.57Mb
+      - Relay_-🇦🇺AU_63 |58.77Mb
+      - Relay_-🇯🇵JP_37 |11.62Mb
+      - Relay_-🇹🇼TW_65 |11.01Mb
+      - Relay_-🇯🇵JP_74 |10.87Mb
+      - Relay_-🇩🇪DE_45 | 7.15Mb
+      - Relay_🇺🇸US-🇺🇸US_1251
+      - Relay_🇺🇸US-🇺🇸US_1229
+      - Relay_🇦🇺AU-🇦🇺AU_43
+      - Relay_-🇹🇼TW_39 |38.72Mb
+      - Relay_-🇩🇪DE_60 | 0.64Mb
+      - Relay_🇨🇳CN-🇭🇰HK_112 | 6.70Mb
+      - Relay_🇺🇸US-🇺🇸US_1252
+      - US_1087
+      - US_308
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
