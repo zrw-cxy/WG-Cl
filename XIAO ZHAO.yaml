@@ -5,39 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇭🇰HK_04+|+3.41Mb, server: 14.29.124.174, port: 11016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇭🇰HK-🇺🇸US_251 |20.55Mb, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇺🇸US_253 |21.64Mb, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇺🇸US_252 |11.03Mb, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_160 |41.32Mb, server: 29d78fe.nf.gladns.com, port: 3389, type: trojan, password: 8c72bafbd4837610, sni: 29d78fe.nf.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇹🇼TW-🇹🇼TW_1319, server: 29d78fe.pi.gladns.com, port: 3389, type: trojan, password: 8c72bafbd4837610, sni: 29d78fe.pi.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: 95.169.4.174:254, server: 95.169.4.174, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: US_168+|20.94Mb, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: NONE, server: 164.70.68.67, port: 28000, type: trojan, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, skip-cert-verify: true, udp: true}
+  - {name: NONE 2, server: 164.70.68.67, port: 28443, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, skip-cert-verify: true, udp: true}
+  - {name: NONE 3, server: 203.138.98.199, port: 28000, type: trojan, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, skip-cert-verify: true, udp: true}
+  - {name: NONE 4, server: 203.138.98.199, port: 28443, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, skip-cert-verify: true, udp: true}
+  - {name: CA_97, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: "|10.05Mb", server: au1-1.nrojat.com, port: 443, type: trojan, password: EJBsFzWnEgXZnmzHq8, sni: au1-1.nrojat.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_04+|+3.41Mb
-      - Relay_🇭🇰HK-🇺🇸US_251 |20.55Mb
-      - Relay_🇭🇰HK-🇺🇸US_253 |21.64Mb
-      - Relay_🇭🇰HK-🇺🇸US_252 |11.03Mb
+      - TW_160 |41.32Mb
+      - Relay_🇹🇼TW-🇹🇼TW_1319
+      - 95.169.4.174:254
+      - US_168+|20.94Mb
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - CA_97
+      - "|10.05Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇭🇰HK_04+|+3.41Mb
-      - Relay_🇭🇰HK-🇺🇸US_251 |20.55Mb
-      - Relay_🇭🇰HK-🇺🇸US_253 |21.64Mb
-      - Relay_🇭🇰HK-🇺🇸US_252 |11.03Mb
+      - TW_160 |41.32Mb
+      - Relay_🇹🇼TW-🇹🇼TW_1319
+      - 95.169.4.174:254
+      - US_168+|20.94Mb
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - CA_97
+      - "|10.05Mb"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_04+|+3.41Mb
-      - Relay_🇭🇰HK-🇺🇸US_251 |20.55Mb
-      - Relay_🇭🇰HK-🇺🇸US_253 |21.64Mb
-      - Relay_🇭🇰HK-🇺🇸US_252 |11.03Mb
+      - TW_160 |41.32Mb
+      - Relay_🇹🇼TW-🇹🇼TW_1319
+      - 95.169.4.174:254
+      - US_168+|20.94Mb
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - CA_97
+      - "|10.05Mb"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,10 +80,16 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_04+|+3.41Mb
-      - Relay_🇭🇰HK-🇺🇸US_251 |20.55Mb
-      - Relay_🇭🇰HK-🇺🇸US_253 |21.64Mb
-      - Relay_🇭🇰HK-🇺🇸US_252 |11.03Mb
+      - TW_160 |41.32Mb
+      - Relay_🇹🇼TW-🇹🇼TW_1319
+      - 95.169.4.174:254
+      - US_168+|20.94Mb
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - CA_97
+      - "|10.05Mb"
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -70,29 +100,47 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇭🇰HK_04+|+3.41Mb
-      - Relay_🇭🇰HK-🇺🇸US_251 |20.55Mb
-      - Relay_🇭🇰HK-🇺🇸US_253 |21.64Mb
-      - Relay_🇭🇰HK-🇺🇸US_252 |11.03Mb
+      - TW_160 |41.32Mb
+      - Relay_🇹🇼TW-🇹🇼TW_1319
+      - 95.169.4.174:254
+      - US_168+|20.94Mb
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - CA_97
+      - "|10.05Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_04+|+3.41Mb
-      - Relay_🇭🇰HK-🇺🇸US_251 |20.55Mb
-      - Relay_🇭🇰HK-🇺🇸US_253 |21.64Mb
-      - Relay_🇭🇰HK-🇺🇸US_252 |11.03Mb
+      - TW_160 |41.32Mb
+      - Relay_🇹🇼TW-🇹🇼TW_1319
+      - 95.169.4.174:254
+      - US_168+|20.94Mb
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - CA_97
+      - "|10.05Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_04+|+3.41Mb
-      - Relay_🇭🇰HK-🇺🇸US_251 |20.55Mb
-      - Relay_🇭🇰HK-🇺🇸US_253 |21.64Mb
-      - Relay_🇭🇰HK-🇺🇸US_252 |11.03Mb
+      - TW_160 |41.32Mb
+      - Relay_🇹🇼TW-🇹🇼TW_1319
+      - 95.169.4.174:254
+      - US_168+|20.94Mb
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - CA_97
+      - "|10.05Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +156,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_04+|+3.41Mb
-      - Relay_🇭🇰HK-🇺🇸US_251 |20.55Mb
-      - Relay_🇭🇰HK-🇺🇸US_253 |21.64Mb
-      - Relay_🇭🇰HK-🇺🇸US_252 |11.03Mb
+      - TW_160 |41.32Mb
+      - Relay_🇹🇼TW-🇹🇼TW_1319
+      - 95.169.4.174:254
+      - US_168+|20.94Mb
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - CA_97
+      - "|10.05Mb"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
