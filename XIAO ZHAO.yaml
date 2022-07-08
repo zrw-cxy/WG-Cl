@@ -5,67 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_1627, server: 134.195.101.32, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_451, server: 103.56.60.235, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_452, server: 103.56.60.235, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_430, server: 103.56.60.235, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_459, server: 116.129.253.134, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_458, server: 116.129.253.134, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_80 |18.85Mb, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_76 | 1.88Mb, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US_1629, server: 134.195.101.32, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_18, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: GB_11, server: 178.62.16.161, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: CN_427, server: relayjp2.vip.www.klrxyru.cn, port: 1452, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 5, server: hnyd.52147.top, port: 20140, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 香港(油管:破解资源君2.0) 5, server: hnyd.52147.top, port: 30180, type: trojan, password: f5f239fc-d21a-45ba-aeaf-b137d7d730a6, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 7, server: hnyd.52147.top, port: 20060, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 香港(油管:破解资源君2.0) 6, server: hnyd.52147.top, port: 20170, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 香港(油管:破解资源君2.0) 4, server: gzyd2.52147.top, port: 20170, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 香港(油管:破解资源君2.0) 3, server: gzyd2.52147.top, port: 30180, type: trojan, password: f5f239fc-d21a-45ba-aeaf-b137d7d730a6, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN_418, server: aiasgp1.game.www.klrxyru.cn, port: 1520, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN_419, server: aiajp1.game.www.klrxyru.cn, port: 1460, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 10, server: gzyd1.52147.top, port: 30080, type: trojan, password: f5f239fc-d21a-45ba-aeaf-b137d7d730a6, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 8, server: gzyd1.52147.top, port: 20060, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN_425, server: aiaus1.game.www.klrxyru.cn, port: 1420, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN_426, server: relayjp3.vip.www.klrxyru.cn, port: 1453, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN_420, server: shkr2.vip.www.klrxyru.cn, port: 1552, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1627
-      - CN_451
-      - CN_452
-      - CN_430
-      - CN_459
-      - CN_458
-      - Relay_🇺🇸US-🇺🇸US_80 |18.85Mb
-      - Relay_🇺🇸US-🇺🇸US_76 | 1.88Mb
-      - US_1629
-      - Relay_🇨🇳CN-🏁ZZ_18
-      - GB_11
+      - CN_427
+      - 台湾(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 5
+      - 欧洲(油管:破解资源君2.0) 7
+      - 香港(油管:破解资源君2.0) 6
+      - 香港(油管:破解资源君2.0) 4
+      - 香港(油管:破解资源君2.0) 3
+      - CN_418
+      - CN_419
+      - 欧洲(油管:破解资源君2.0) 10
+      - 欧洲(油管:破解资源君2.0) 8
+      - CN_425
+      - CN_426
+      - CN_420
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_1627
-      - CN_451
-      - CN_452
-      - CN_430
-      - CN_459
-      - CN_458
-      - Relay_🇺🇸US-🇺🇸US_80 |18.85Mb
-      - Relay_🇺🇸US-🇺🇸US_76 | 1.88Mb
-      - US_1629
-      - Relay_🇨🇳CN-🏁ZZ_18
-      - GB_11
+      - CN_427
+      - 台湾(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 5
+      - 欧洲(油管:破解资源君2.0) 7
+      - 香港(油管:破解资源君2.0) 6
+      - 香港(油管:破解资源君2.0) 4
+      - 香港(油管:破解资源君2.0) 3
+      - CN_418
+      - CN_419
+      - 欧洲(油管:破解资源君2.0) 10
+      - 欧洲(油管:破解资源君2.0) 8
+      - CN_425
+      - CN_426
+      - CN_420
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1627
-      - CN_451
-      - CN_452
-      - CN_430
-      - CN_459
-      - CN_458
-      - Relay_🇺🇸US-🇺🇸US_80 |18.85Mb
-      - Relay_🇺🇸US-🇺🇸US_76 | 1.88Mb
-      - US_1629
-      - Relay_🇨🇳CN-🏁ZZ_18
-      - GB_11
+      - CN_427
+      - 台湾(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 5
+      - 欧洲(油管:破解资源君2.0) 7
+      - 香港(油管:破解资源君2.0) 6
+      - 香港(油管:破解资源君2.0) 4
+      - 香港(油管:破解资源君2.0) 3
+      - CN_418
+      - CN_419
+      - 欧洲(油管:破解资源君2.0) 10
+      - 欧洲(油管:破解资源君2.0) 8
+      - CN_425
+      - CN_426
+      - CN_420
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,71 +96,88 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1627
-      - CN_451
-      - CN_452
-      - CN_430
-      - CN_459
-      - CN_458
-      - Relay_🇺🇸US-🇺🇸US_80 |18.85Mb
-      - Relay_🇺🇸US-🇺🇸US_76 | 1.88Mb
-      - US_1629
-      - Relay_🇨🇳CN-🏁ZZ_18
-      - GB_11
+      - CN_427
+      - 台湾(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 5
+      - 欧洲(油管:破解资源君2.0) 7
+      - 香港(油管:破解资源君2.0) 6
+      - 香港(油管:破解资源君2.0) 4
+      - 香港(油管:破解资源君2.0) 3
+      - CN_418
+      - CN_419
+      - 欧洲(油管:破解资源君2.0) 10
+      - 欧洲(油管:破解资源君2.0) 8
+      - CN_425
+      - CN_426
+      - CN_420
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 6
+      - 香港(油管:破解资源君2.0) 4
+      - 香港(油管:破解资源君2.0) 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_1627
-      - CN_451
-      - CN_452
-      - CN_430
-      - CN_459
-      - CN_458
-      - Relay_🇺🇸US-🇺🇸US_80 |18.85Mb
-      - Relay_🇺🇸US-🇺🇸US_76 | 1.88Mb
-      - US_1629
-      - Relay_🇨🇳CN-🏁ZZ_18
-      - GB_11
+      - CN_427
+      - 台湾(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 5
+      - 欧洲(油管:破解资源君2.0) 7
+      - 香港(油管:破解资源君2.0) 6
+      - 香港(油管:破解资源君2.0) 4
+      - 香港(油管:破解资源君2.0) 3
+      - CN_418
+      - CN_419
+      - 欧洲(油管:破解资源君2.0) 10
+      - 欧洲(油管:破解资源君2.0) 8
+      - CN_425
+      - CN_426
+      - CN_420
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_1627
-      - CN_451
-      - CN_452
-      - CN_430
-      - CN_459
-      - CN_458
-      - Relay_🇺🇸US-🇺🇸US_80 |18.85Mb
-      - Relay_🇺🇸US-🇺🇸US_76 | 1.88Mb
-      - US_1629
-      - Relay_🇨🇳CN-🏁ZZ_18
-      - GB_11
+      - CN_427
+      - 台湾(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 5
+      - 欧洲(油管:破解资源君2.0) 7
+      - 香港(油管:破解资源君2.0) 6
+      - 香港(油管:破解资源君2.0) 4
+      - 香港(油管:破解资源君2.0) 3
+      - CN_418
+      - CN_419
+      - 欧洲(油管:破解资源君2.0) 10
+      - 欧洲(油管:破解资源君2.0) 8
+      - CN_425
+      - CN_426
+      - CN_420
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1627
-      - CN_451
-      - CN_452
-      - CN_430
-      - CN_459
-      - CN_458
-      - Relay_🇺🇸US-🇺🇸US_80 |18.85Mb
-      - Relay_🇺🇸US-🇺🇸US_76 | 1.88Mb
-      - US_1629
-      - Relay_🇨🇳CN-🏁ZZ_18
-      - GB_11
+      - CN_427
+      - 台湾(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 5
+      - 欧洲(油管:破解资源君2.0) 7
+      - 香港(油管:破解资源君2.0) 6
+      - 香港(油管:破解资源君2.0) 4
+      - 香港(油管:破解资源君2.0) 3
+      - CN_418
+      - CN_419
+      - 欧洲(油管:破解资源君2.0) 10
+      - 欧洲(油管:破解资源君2.0) 8
+      - CN_425
+      - CN_426
+      - CN_420
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +193,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1627
-      - CN_451
-      - CN_452
-      - CN_430
-      - CN_459
-      - CN_458
-      - Relay_🇺🇸US-🇺🇸US_80 |18.85Mb
-      - Relay_🇺🇸US-🇺🇸US_76 | 1.88Mb
-      - US_1629
-      - Relay_🇨🇳CN-🏁ZZ_18
-      - GB_11
+      - CN_427
+      - 台湾(油管:破解资源君2.0) 5
+      - 香港(油管:破解资源君2.0) 5
+      - 欧洲(油管:破解资源君2.0) 7
+      - 香港(油管:破解资源君2.0) 6
+      - 香港(油管:破解资源君2.0) 4
+      - 香港(油管:破解资源君2.0) 3
+      - CN_418
+      - CN_419
+      - 欧洲(油管:破解资源君2.0) 10
+      - 欧洲(油管:破解资源君2.0) 8
+      - CN_425
+      - CN_426
+      - CN_420
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
