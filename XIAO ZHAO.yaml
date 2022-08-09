@@ -5,39 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_中国->🇭🇰_HK_香港, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: c810fe45-44c3-4fe0-a680-a3ebf8bd461a, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇷🇺_RU_俄罗斯联邦, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: c810fe45-44c3-4fe0-a680-a3ebf8bd461a, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, type: trojan, password: c810fe45-44c3-4fe0-a680-a3ebf8bd461a, sni: hlu.bgp2.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 2, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本, server: 85.208.108.94, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_975 | 7.59Mb, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 2, server: 85.208.108.94, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(油管:破解资源君) 22, server: 45.155.43.244, port: 44360, type: vmess, uuid: 6b8f422d-22dd-4665-958c-c59dfa6f586a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 3, server: 85.208.108.94, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _JP_日本 4, server: 85.208.108.94, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _JP_日本 5, server: 85.208.108.21, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _JP_日本 6, server: 85.208.108.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _JP_日本 7, server: 85.208.108.94, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _JP_日本 8, server: 85.208.108.94, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_803, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _JP_日本 9, server: 85.208.108.94, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _JP_日本 10, server: 85.208.108.94, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _JP_日本 11, server: 85.208.108.21, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _JP_日本 12, server: 85.208.108.94, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: AU_06, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
+      - _JP_日本
+      - US_975 | 7.59Mb
+      - _JP_日本 2
+      - 美国(油管:破解资源君) 22
+      - _JP_日本 3
+      - _JP_日本 4
+      - _JP_日本 5
+      - _JP_日本 6
+      - _JP_日本 7
+      - _JP_日本 8
+      - US_803
+      - _JP_日本 9
+      - _JP_日本 10
+      - _JP_日本 11
+      - _JP_日本 12
+      - AU_06
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
+      - _JP_日本
+      - US_975 | 7.59Mb
+      - _JP_日本 2
+      - 美国(油管:破解资源君) 22
+      - _JP_日本 3
+      - _JP_日本 4
+      - _JP_日本 5
+      - _JP_日本 6
+      - _JP_日本 7
+      - _JP_日本 8
+      - US_803
+      - _JP_日本 9
+      - _JP_日本 10
+      - _JP_日本 11
+      - _JP_日本 12
+      - AU_06
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
+      - _JP_日本
+      - US_975 | 7.59Mb
+      - _JP_日本 2
+      - 美国(油管:破解资源君) 22
+      - _JP_日本 3
+      - _JP_日本 4
+      - _JP_日本 5
+      - _JP_日本 6
+      - _JP_日本 7
+      - _JP_日本 8
+      - US_803
+      - _JP_日本 9
+      - _JP_日本 10
+      - _JP_日本 11
+      - _JP_日本 12
+      - AU_06
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,46 +104,91 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
+      - _JP_日本
+      - US_975 | 7.59Mb
+      - _JP_日本 2
+      - 美国(油管:破解资源君) 22
+      - _JP_日本 3
+      - _JP_日本 4
+      - _JP_日本 5
+      - _JP_日本 6
+      - _JP_日本 7
+      - _JP_日本 8
+      - US_803
+      - _JP_日本 9
+      - _JP_日本 10
+      - _JP_日本 11
+      - _JP_日本 12
+      - AU_06
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
+      - _JP_日本
+      - US_975 | 7.59Mb
+      - _JP_日本 2
+      - 美国(油管:破解资源君) 22
+      - _JP_日本 3
+      - _JP_日本 4
+      - _JP_日本 5
+      - _JP_日本 6
+      - _JP_日本 7
+      - _JP_日本 8
+      - US_803
+      - _JP_日本 9
+      - _JP_日本 10
+      - _JP_日本 11
+      - _JP_日本 12
+      - AU_06
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
+      - _JP_日本
+      - US_975 | 7.59Mb
+      - _JP_日本 2
+      - 美国(油管:破解资源君) 22
+      - _JP_日本 3
+      - _JP_日本 4
+      - _JP_日本 5
+      - _JP_日本 6
+      - _JP_日本 7
+      - _JP_日本 8
+      - US_803
+      - _JP_日本 9
+      - _JP_日本 10
+      - _JP_日本 11
+      - _JP_日本 12
+      - AU_06
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
+      - _JP_日本
+      - US_975 | 7.59Mb
+      - _JP_日本 2
+      - 美国(油管:破解资源君) 22
+      - _JP_日本 3
+      - _JP_日本 4
+      - _JP_日本 5
+      - _JP_日本 6
+      - _JP_日本 7
+      - _JP_日本 8
+      - US_803
+      - _JP_日本 9
+      - _JP_日本 10
+      - _JP_日本 11
+      - _JP_日本 12
+      - AU_06
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -111,10 +204,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
+      - _JP_日本
+      - US_975 | 7.59Mb
+      - _JP_日本 2
+      - 美国(油管:破解资源君) 22
+      - _JP_日本 3
+      - _JP_日本 4
+      - _JP_日本 5
+      - _JP_日本 6
+      - _JP_日本 7
+      - _JP_日本 8
+      - US_803
+      - _JP_日本 9
+      - _JP_日本 10
+      - _JP_日本 11
+      - _JP_日本 12
+      - AU_06
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
