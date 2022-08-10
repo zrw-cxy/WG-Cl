@@ -5,51 +5,175 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "|香港|电报@Yzcloud★12", server: cm.spacez.cloud, port: 30000, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: "|台湾|电报@Yzcloud★10", server: 111.45.29.75, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: _US_美国, server: crj749919467.n-tmd.com, port: 31502, type: vmess, uuid: 9b4f0258-1127-41d9-f30a-469e80737327, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 2, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_147 |28.46Mb, server: sg2.xkray.sbs, port: 443, type: trojan, password: 8e0d416e-758e-484c-b268-1d33a9af6c89, sni: sg2.xkray.sbs, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_145 |32.20Mb, server: sg1.xkray.sbs, port: 443, type: trojan, password: 8e0d416e-758e-484c-b268-1d33a9af6c89, sni: sg1.xkray.sbs, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_251 |22.13Mb, server: hk3.xkray.sbs, port: 443, type: trojan, password: 8e0d416e-758e-484c-b268-1d33a9af6c89, sni: hk3.xkray.sbs, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_249 |21.99Mb, server: hk6.xkray.sbs, port: 443, type: trojan, password: 8e0d416e-758e-484c-b268-1d33a9af6c89, sni: hk6.xkray.sbs, skip-cert-verify: true, udp: true}
+  - {name: US_59, server: 93.179.112.70, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_52 |25.77Mb, server: hk2.xkray.sbs, port: 443, type: trojan, password: 8e0d416e-758e-484c-b268-1d33a9af6c89, sni: hk2.xkray.sbs, skip-cert-verify: true, udp: true}
+  - {name: US_268, server: 144.168.60.70, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: US_828, server: 167.88.61.14, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 日本@Shadow_Cloud_25, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_842, server: 167.88.61.14, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_251, server: 167.88.61.14, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_50, server: 104.243.30.252, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_248 |31.82Mb, server: us1.xkray.sbs, port: 443, type: trojan, password: 8e0d416e-758e-484c-b268-1d33a9af6c89, sni: us1.xkray.sbs, skip-cert-verify: true, udp: true}
+  - {name: US_834, server: 167.88.61.14, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_195, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_204, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_146 |26.81Mb, server: sg3.xkray.sbs, port: 443, type: trojan, password: 8e0d416e-758e-484c-b268-1d33a9af6c89, sni: sg3.xkray.sbs, skip-cert-verify: true, udp: true}
+  - {name: US_197, server: 167.88.61.14, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国@Shadow_Cloud_35, server: 172.99.190.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_310, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CA_35, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_202, server: 172.99.188.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国@Shadow_Cloud_33, server: 172.99.190.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国@Shadow_Cloud_30, server: 172.99.190.61, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA_28, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_284, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_254, server: 167.88.61.14, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_33, server: 196.247.59.154, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_245 |32.93Mb, server: us4.xkray.sbs, port: 443, type: trojan, password: 8e0d416e-758e-484c-b268-1d33a9af6c89, sni: us4.xkray.sbs, skip-cert-verify: true, udp: true}
+  - {name: US_200, server: 172.99.188.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国@Shadow_Cloud_16, server: 172.99.190.61, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_819, server: 167.88.61.14, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _BG_保加利亚, server: 213.183.63.221, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_246 |32.63Mb, server: us2.xkray.sbs, port: 443, type: trojan, password: 8e0d416e-758e-484c-b268-1d33a9af6c89, sni: us2.xkray.sbs, skip-cert-verify: true, udp: true}
+  - {name: CA_18, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_253, server: 167.88.61.14, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: DE_87, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国@Shadow_Cloud_13, server: 172.99.190.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|香港|电报@Yzcloud★12"
-      - _CN_中国->🇹🇼_TW_台湾
-      - _SG_新加坡
-      - "|台湾|电报@Yzcloud★10"
-      - _CN_中国->🇭🇰_HK_香港
-      - _US_美国
-      - _US_美国 2
+      - Relay_🇸🇬SG-🇸🇬SG_147 |28.46Mb
+      - Relay_🇸🇬SG-🇸🇬SG_145 |32.20Mb
+      - Relay_🇺🇸US-🇺🇸US_251 |22.13Mb
+      - Relay_🇺🇸US-🇺🇸US_249 |21.99Mb
+      - US_59
+      - Relay_🇭🇰HK-🇭🇰HK_52 |25.77Mb
+      - US_268
+      - US_828
+      - 日本@Shadow_Cloud_25
+      - US_842
+      - US_251
+      - US_50
+      - Relay_🇺🇸US-🇺🇸US_248 |31.82Mb
+      - US_834
+      - US_195
+      - US_204
+      - Relay_🇸🇬SG-🇸🇬SG_146 |26.81Mb
+      - US_197
+      - 美国@Shadow_Cloud_35
+      - US_310
+      - CA_35
+      - US_202
+      - 美国@Shadow_Cloud_33
+      - 美国@Shadow_Cloud_30
+      - CA_28
+      - US_284
+      - US_254
+      - CA_33
+      - Relay_🇺🇸US-🇺🇸US_245 |32.93Mb
+      - US_200
+      - 美国@Shadow_Cloud_16
+      - US_819
+      - _BG_保加利亚
+      - Relay_🇺🇸US-🇺🇸US_246 |32.63Mb
+      - CA_18
+      - US_253
+      - DE_87
+      - 美国@Shadow_Cloud_13
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "|香港|电报@Yzcloud★12"
-      - _CN_中国->🇹🇼_TW_台湾
-      - _SG_新加坡
-      - "|台湾|电报@Yzcloud★10"
-      - _CN_中国->🇭🇰_HK_香港
-      - _US_美国
-      - _US_美国 2
+      - Relay_🇸🇬SG-🇸🇬SG_147 |28.46Mb
+      - Relay_🇸🇬SG-🇸🇬SG_145 |32.20Mb
+      - Relay_🇺🇸US-🇺🇸US_251 |22.13Mb
+      - Relay_🇺🇸US-🇺🇸US_249 |21.99Mb
+      - US_59
+      - Relay_🇭🇰HK-🇭🇰HK_52 |25.77Mb
+      - US_268
+      - US_828
+      - 日本@Shadow_Cloud_25
+      - US_842
+      - US_251
+      - US_50
+      - Relay_🇺🇸US-🇺🇸US_248 |31.82Mb
+      - US_834
+      - US_195
+      - US_204
+      - Relay_🇸🇬SG-🇸🇬SG_146 |26.81Mb
+      - US_197
+      - 美国@Shadow_Cloud_35
+      - US_310
+      - CA_35
+      - US_202
+      - 美国@Shadow_Cloud_33
+      - 美国@Shadow_Cloud_30
+      - CA_28
+      - US_284
+      - US_254
+      - CA_33
+      - Relay_🇺🇸US-🇺🇸US_245 |32.93Mb
+      - US_200
+      - 美国@Shadow_Cloud_16
+      - US_819
+      - _BG_保加利亚
+      - Relay_🇺🇸US-🇺🇸US_246 |32.63Mb
+      - CA_18
+      - US_253
+      - DE_87
+      - 美国@Shadow_Cloud_13
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|香港|电报@Yzcloud★12"
-      - _CN_中国->🇹🇼_TW_台湾
-      - _SG_新加坡
-      - "|台湾|电报@Yzcloud★10"
-      - _CN_中国->🇭🇰_HK_香港
-      - _US_美国
-      - _US_美国 2
+      - Relay_🇸🇬SG-🇸🇬SG_147 |28.46Mb
+      - Relay_🇸🇬SG-🇸🇬SG_145 |32.20Mb
+      - Relay_🇺🇸US-🇺🇸US_251 |22.13Mb
+      - Relay_🇺🇸US-🇺🇸US_249 |21.99Mb
+      - US_59
+      - Relay_🇭🇰HK-🇭🇰HK_52 |25.77Mb
+      - US_268
+      - US_828
+      - 日本@Shadow_Cloud_25
+      - US_842
+      - US_251
+      - US_50
+      - Relay_🇺🇸US-🇺🇸US_248 |31.82Mb
+      - US_834
+      - US_195
+      - US_204
+      - Relay_🇸🇬SG-🇸🇬SG_146 |26.81Mb
+      - US_197
+      - 美国@Shadow_Cloud_35
+      - US_310
+      - CA_35
+      - US_202
+      - 美国@Shadow_Cloud_33
+      - 美国@Shadow_Cloud_30
+      - CA_28
+      - US_284
+      - US_254
+      - CA_33
+      - Relay_🇺🇸US-🇺🇸US_245 |32.93Mb
+      - US_200
+      - 美国@Shadow_Cloud_16
+      - US_819
+      - _BG_保加利亚
+      - Relay_🇺🇸US-🇺🇸US_246 |32.63Mb
+      - CA_18
+      - US_253
+      - DE_87
+      - 美国@Shadow_Cloud_13
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,59 +192,179 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|香港|电报@Yzcloud★12"
-      - _CN_中国->🇹🇼_TW_台湾
-      - _SG_新加坡
-      - "|台湾|电报@Yzcloud★10"
-      - _CN_中国->🇭🇰_HK_香港
-      - _US_美国
-      - _US_美国 2
+      - Relay_🇸🇬SG-🇸🇬SG_147 |28.46Mb
+      - Relay_🇸🇬SG-🇸🇬SG_145 |32.20Mb
+      - Relay_🇺🇸US-🇺🇸US_251 |22.13Mb
+      - Relay_🇺🇸US-🇺🇸US_249 |21.99Mb
+      - US_59
+      - Relay_🇭🇰HK-🇭🇰HK_52 |25.77Mb
+      - US_268
+      - US_828
+      - 日本@Shadow_Cloud_25
+      - US_842
+      - US_251
+      - US_50
+      - Relay_🇺🇸US-🇺🇸US_248 |31.82Mb
+      - US_834
+      - US_195
+      - US_204
+      - Relay_🇸🇬SG-🇸🇬SG_146 |26.81Mb
+      - US_197
+      - 美国@Shadow_Cloud_35
+      - US_310
+      - CA_35
+      - US_202
+      - 美国@Shadow_Cloud_33
+      - 美国@Shadow_Cloud_30
+      - CA_28
+      - US_284
+      - US_254
+      - CA_33
+      - Relay_🇺🇸US-🇺🇸US_245 |32.93Mb
+      - US_200
+      - 美国@Shadow_Cloud_16
+      - US_819
+      - _BG_保加利亚
+      - Relay_🇺🇸US-🇺🇸US_246 |32.63Mb
+      - CA_18
+      - US_253
+      - DE_87
+      - 美国@Shadow_Cloud_13
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "|香港|电报@Yzcloud★12"
-      - _CN_中国->🇹🇼_TW_台湾
-      - "|台湾|电报@Yzcloud★10"
-      - _CN_中国->🇭🇰_HK_香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "|香港|电报@Yzcloud★12"
-      - _CN_中国->🇹🇼_TW_台湾
-      - _SG_新加坡
-      - "|台湾|电报@Yzcloud★10"
-      - _CN_中国->🇭🇰_HK_香港
-      - _US_美国
-      - _US_美国 2
+      - Relay_🇸🇬SG-🇸🇬SG_147 |28.46Mb
+      - Relay_🇸🇬SG-🇸🇬SG_145 |32.20Mb
+      - Relay_🇺🇸US-🇺🇸US_251 |22.13Mb
+      - Relay_🇺🇸US-🇺🇸US_249 |21.99Mb
+      - US_59
+      - Relay_🇭🇰HK-🇭🇰HK_52 |25.77Mb
+      - US_268
+      - US_828
+      - 日本@Shadow_Cloud_25
+      - US_842
+      - US_251
+      - US_50
+      - Relay_🇺🇸US-🇺🇸US_248 |31.82Mb
+      - US_834
+      - US_195
+      - US_204
+      - Relay_🇸🇬SG-🇸🇬SG_146 |26.81Mb
+      - US_197
+      - 美国@Shadow_Cloud_35
+      - US_310
+      - CA_35
+      - US_202
+      - 美国@Shadow_Cloud_33
+      - 美国@Shadow_Cloud_30
+      - CA_28
+      - US_284
+      - US_254
+      - CA_33
+      - Relay_🇺🇸US-🇺🇸US_245 |32.93Mb
+      - US_200
+      - 美国@Shadow_Cloud_16
+      - US_819
+      - _BG_保加利亚
+      - Relay_🇺🇸US-🇺🇸US_246 |32.63Mb
+      - CA_18
+      - US_253
+      - DE_87
+      - 美国@Shadow_Cloud_13
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "|香港|电报@Yzcloud★12"
-      - _CN_中国->🇹🇼_TW_台湾
-      - _SG_新加坡
-      - "|台湾|电报@Yzcloud★10"
-      - _CN_中国->🇭🇰_HK_香港
-      - _US_美国
-      - _US_美国 2
+      - Relay_🇸🇬SG-🇸🇬SG_147 |28.46Mb
+      - Relay_🇸🇬SG-🇸🇬SG_145 |32.20Mb
+      - Relay_🇺🇸US-🇺🇸US_251 |22.13Mb
+      - Relay_🇺🇸US-🇺🇸US_249 |21.99Mb
+      - US_59
+      - Relay_🇭🇰HK-🇭🇰HK_52 |25.77Mb
+      - US_268
+      - US_828
+      - 日本@Shadow_Cloud_25
+      - US_842
+      - US_251
+      - US_50
+      - Relay_🇺🇸US-🇺🇸US_248 |31.82Mb
+      - US_834
+      - US_195
+      - US_204
+      - Relay_🇸🇬SG-🇸🇬SG_146 |26.81Mb
+      - US_197
+      - 美国@Shadow_Cloud_35
+      - US_310
+      - CA_35
+      - US_202
+      - 美国@Shadow_Cloud_33
+      - 美国@Shadow_Cloud_30
+      - CA_28
+      - US_284
+      - US_254
+      - CA_33
+      - Relay_🇺🇸US-🇺🇸US_245 |32.93Mb
+      - US_200
+      - 美国@Shadow_Cloud_16
+      - US_819
+      - _BG_保加利亚
+      - Relay_🇺🇸US-🇺🇸US_246 |32.63Mb
+      - CA_18
+      - US_253
+      - DE_87
+      - 美国@Shadow_Cloud_13
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "|香港|电报@Yzcloud★12"
-      - _CN_中国->🇹🇼_TW_台湾
-      - _SG_新加坡
-      - "|台湾|电报@Yzcloud★10"
-      - _CN_中国->🇭🇰_HK_香港
-      - _US_美国
-      - _US_美国 2
+      - Relay_🇸🇬SG-🇸🇬SG_147 |28.46Mb
+      - Relay_🇸🇬SG-🇸🇬SG_145 |32.20Mb
+      - Relay_🇺🇸US-🇺🇸US_251 |22.13Mb
+      - Relay_🇺🇸US-🇺🇸US_249 |21.99Mb
+      - US_59
+      - Relay_🇭🇰HK-🇭🇰HK_52 |25.77Mb
+      - US_268
+      - US_828
+      - 日本@Shadow_Cloud_25
+      - US_842
+      - US_251
+      - US_50
+      - Relay_🇺🇸US-🇺🇸US_248 |31.82Mb
+      - US_834
+      - US_195
+      - US_204
+      - Relay_🇸🇬SG-🇸🇬SG_146 |26.81Mb
+      - US_197
+      - 美国@Shadow_Cloud_35
+      - US_310
+      - CA_35
+      - US_202
+      - 美国@Shadow_Cloud_33
+      - 美国@Shadow_Cloud_30
+      - CA_28
+      - US_284
+      - US_254
+      - CA_33
+      - Relay_🇺🇸US-🇺🇸US_245 |32.93Mb
+      - US_200
+      - 美国@Shadow_Cloud_16
+      - US_819
+      - _BG_保加利亚
+      - Relay_🇺🇸US-🇺🇸US_246 |32.63Mb
+      - CA_18
+      - US_253
+      - DE_87
+      - 美国@Shadow_Cloud_13
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -136,13 +380,44 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "|香港|电报@Yzcloud★12"
-      - _CN_中国->🇹🇼_TW_台湾
-      - _SG_新加坡
-      - "|台湾|电报@Yzcloud★10"
-      - _CN_中国->🇭🇰_HK_香港
-      - _US_美国
-      - _US_美国 2
+      - Relay_🇸🇬SG-🇸🇬SG_147 |28.46Mb
+      - Relay_🇸🇬SG-🇸🇬SG_145 |32.20Mb
+      - Relay_🇺🇸US-🇺🇸US_251 |22.13Mb
+      - Relay_🇺🇸US-🇺🇸US_249 |21.99Mb
+      - US_59
+      - Relay_🇭🇰HK-🇭🇰HK_52 |25.77Mb
+      - US_268
+      - US_828
+      - 日本@Shadow_Cloud_25
+      - US_842
+      - US_251
+      - US_50
+      - Relay_🇺🇸US-🇺🇸US_248 |31.82Mb
+      - US_834
+      - US_195
+      - US_204
+      - Relay_🇸🇬SG-🇸🇬SG_146 |26.81Mb
+      - US_197
+      - 美国@Shadow_Cloud_35
+      - US_310
+      - CA_35
+      - US_202
+      - 美国@Shadow_Cloud_33
+      - 美国@Shadow_Cloud_30
+      - CA_28
+      - US_284
+      - US_254
+      - CA_33
+      - Relay_🇺🇸US-🇺🇸US_245 |32.93Mb
+      - US_200
+      - 美国@Shadow_Cloud_16
+      - US_819
+      - _BG_保加利亚
+      - Relay_🇺🇸US-🇺🇸US_246 |32.63Mb
+      - CA_18
+      - US_253
+      - DE_87
+      - 美国@Shadow_Cloud_13
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
