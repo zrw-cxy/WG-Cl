@@ -5,67 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CA_163 |25.42Mb, server: 727tw01.ok365.cyou, port: 443, type: trojan, password: 43a3a833-c2cb-426c-bf0d-51e8e7f172f1, sni: 727tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: CN_258 | 1.68Mb, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_162 | 3.93Mb, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_175 | 3.40Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_198 |13.35Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_56, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_40, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_178 | 3.33Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_60, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_48, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_61, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_中国, server: tw-tpe-h-tr.cdn.savoy.click, port: 10089, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, sni: tw-tpe-h-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: 原频道已易主，与我无关--25, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国 2, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_106, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 2, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 3, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_104, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳 CN-🇭🇰HK_73, server: debian10.updatensv3.com, port: 8015, type: ss, cipher: chacha20-ietf-poly1305, password: d6fa3a869c3a4a3edb8416e36a59e4aa, plugin: obfs, plugin-opts: {mode: http, host: eb19780f3835.microsoft.com}, udp: true}
+  - {name: CN_109, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _SG_新加坡, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CN_133, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _RU_俄罗斯联邦, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_163 |25.42Mb
-      - CN_258 | 1.68Mb
-      - CN_162 | 3.93Mb
-      - CN_175 | 3.40Mb
-      - CN_198 |13.35Mb
-      - CN_56
-      - CN_40
-      - CN_178 | 3.33Mb
-      - CN_60
-      - CN_48
-      - CN_61
+      - _CN_中国
+      - 原频道已易主，与我无关--25
+      - _CN_中国 2
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_106
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - CN_104
+      - Relay_🇨🇳 CN-🇭🇰HK_73
+      - CN_109
+      - _SG_新加坡
+      - CN_133
+      - _RU_俄罗斯联邦
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CA_163 |25.42Mb
-      - CN_258 | 1.68Mb
-      - CN_162 | 3.93Mb
-      - CN_175 | 3.40Mb
-      - CN_198 |13.35Mb
-      - CN_56
-      - CN_40
-      - CN_178 | 3.33Mb
-      - CN_60
-      - CN_48
-      - CN_61
+      - _CN_中国
+      - 原频道已易主，与我无关--25
+      - _CN_中国 2
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_106
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - CN_104
+      - Relay_🇨🇳 CN-🇭🇰HK_73
+      - CN_109
+      - _SG_新加坡
+      - CN_133
+      - _RU_俄罗斯联邦
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_163 |25.42Mb
-      - CN_258 | 1.68Mb
-      - CN_162 | 3.93Mb
-      - CN_175 | 3.40Mb
-      - CN_198 |13.35Mb
-      - CN_56
-      - CN_40
-      - CN_178 | 3.33Mb
-      - CN_60
-      - CN_48
-      - CN_61
+      - _CN_中国
+      - 原频道已易主，与我无关--25
+      - _CN_中国 2
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_106
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - CN_104
+      - Relay_🇨🇳 CN-🇭🇰HK_73
+      - CN_109
+      - _SG_新加坡
+      - CN_133
+      - _RU_俄罗斯联邦
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,71 +92,82 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_163 |25.42Mb
-      - CN_258 | 1.68Mb
-      - CN_162 | 3.93Mb
-      - CN_175 | 3.40Mb
-      - CN_198 |13.35Mb
-      - CN_56
-      - CN_40
-      - CN_178 | 3.33Mb
-      - CN_60
-      - CN_48
-      - CN_61
+      - _CN_中国
+      - 原频道已易主，与我无关--25
+      - _CN_中国 2
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_106
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - CN_104
+      - Relay_🇨🇳 CN-🇭🇰HK_73
+      - CN_109
+      - _SG_新加坡
+      - CN_133
+      - _RU_俄罗斯联邦
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CA_163 |25.42Mb
-      - CN_258 | 1.68Mb
-      - CN_162 | 3.93Mb
-      - CN_175 | 3.40Mb
-      - CN_198 |13.35Mb
-      - CN_56
-      - CN_40
-      - CN_178 | 3.33Mb
-      - CN_60
-      - CN_48
-      - CN_61
+      - _CN_中国
+      - 原频道已易主，与我无关--25
+      - _CN_中国 2
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_106
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - CN_104
+      - Relay_🇨🇳 CN-🇭🇰HK_73
+      - CN_109
+      - _SG_新加坡
+      - CN_133
+      - _RU_俄罗斯联邦
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CA_163 |25.42Mb
-      - CN_258 | 1.68Mb
-      - CN_162 | 3.93Mb
-      - CN_175 | 3.40Mb
-      - CN_198 |13.35Mb
-      - CN_56
-      - CN_40
-      - CN_178 | 3.33Mb
-      - CN_60
-      - CN_48
-      - CN_61
+      - _CN_中国
+      - 原频道已易主，与我无关--25
+      - _CN_中国 2
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_106
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - CN_104
+      - Relay_🇨🇳 CN-🇭🇰HK_73
+      - CN_109
+      - _SG_新加坡
+      - CN_133
+      - _RU_俄罗斯联邦
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_163 |25.42Mb
-      - CN_258 | 1.68Mb
-      - CN_162 | 3.93Mb
-      - CN_175 | 3.40Mb
-      - CN_198 |13.35Mb
-      - CN_56
-      - CN_40
-      - CN_178 | 3.33Mb
-      - CN_60
-      - CN_48
-      - CN_61
+      - _CN_中国
+      - 原频道已易主，与我无关--25
+      - _CN_中国 2
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_106
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - CN_104
+      - Relay_🇨🇳 CN-🇭🇰HK_73
+      - CN_109
+      - _SG_新加坡
+      - CN_133
+      - _RU_俄罗斯联邦
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +183,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_163 |25.42Mb
-      - CN_258 | 1.68Mb
-      - CN_162 | 3.93Mb
-      - CN_175 | 3.40Mb
-      - CN_198 |13.35Mb
-      - CN_56
-      - CN_40
-      - CN_178 | 3.33Mb
-      - CN_60
-      - CN_48
-      - CN_61
+      - _CN_中国
+      - 原频道已易主，与我无关--25
+      - _CN_中国 2
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_106
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - CN_104
+      - Relay_🇨🇳 CN-🇭🇰HK_73
+      - CN_109
+      - _SG_新加坡
+      - CN_133
+      - _RU_俄罗斯联邦
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
