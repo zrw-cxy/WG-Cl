@@ -5,51 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: ZZ_988 |59.56Mb, server: 134.195.196.107, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_978 |61.16Mb, server: 134.195.196.107, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_1010 |60.60Mb, server: 134.195.196.107, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_958, server: 107.173.83.214, port: 37541, type: vmess, uuid: ef59a586-0532-4763-f353-948eb413f00d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZZ_76 | 2.52Mb, server: 169.197.141.14, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_650 |57.56Mb, server: 167.88.62.62, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_44 | 3.27Mb, server: 20.210.122.21, port: 443, type: ss, cipher: aes-256-gcm, password: 233blog.com, udp: true}
+  - {name: US_72 |48.35Mb, server: 113.fastea.top, port: 53313, type: trojan, password: d90960ab-1a01-401b-a404-0085dc745afe, sni: 113.fastea.top, skip-cert-verify: true, udp: true}
+  - {name: ZZ_120 | 5.65Mb, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_09, server: 27fr.networklinkpro.net, port: 443, type: trojan, password: e392bfdd-d4ce-4df2-9534-fef23f037121, sni: 27fr.networklinkpro.net, skip-cert-verify: true, udp: true}
+  - {name: US_29 |175.90Mb, server: 3.99.152.11, port: 50000, type: ss, cipher: aes-256-cfb, password: !<str> 3135771619, udp: true}
+  - {name: US_79 | 8.29Mb, server: 115.fastea.top, port: 53315, type: trojan, password: d90960ab-1a01-401b-a404-0085dc745afe, sni: 115.fastea.top, skip-cert-verify: true, udp: true}
+  - {name: CA_07 | 5.19Mb, server: 165.154.253.15, port: 49008, type: trojan, password: 6c4e3611-5f2d-4eb5-8c56-3e2b850e4cca, skip-cert-verify: true, udp: true}
+  - {name: US_64 | 3.70Mb, server: 138.2.113.248, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
+  - {name: DE_06 |31.09Mb, server: 193.108.118.202, port: 50000, type: ss, cipher: aes-256-cfb, password: !<str> 3135771619, udp: true}
+  - {name: FR_10 |38.50Mb, server: 54.38.144.255, port: 50000, type: ss, cipher: aes-256-cfb, password: !<str> 3135771619, udp: true}
+  - {name: US_81 | 7.03Mb, server: 38.143.66.20, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ZZ_988 |59.56Mb
-      - ZZ_978 |61.16Mb
-      - ZZ_1010 |60.60Mb
-      - Relay_🇺🇸US-🇺🇸US_958
-      - ZZ_76 | 2.52Mb
-      - US_650 |57.56Mb
-      - US_44 | 3.27Mb
+      - US_72 |48.35Mb
+      - ZZ_120 | 5.65Mb
+      - Relay_🇺🇸US-🇺🇸US_09
+      - US_29 |175.90Mb
+      - US_79 | 8.29Mb
+      - CA_07 | 5.19Mb
+      - US_64 | 3.70Mb
+      - DE_06 |31.09Mb
+      - FR_10 |38.50Mb
+      - US_81 | 7.03Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - ZZ_988 |59.56Mb
-      - ZZ_978 |61.16Mb
-      - ZZ_1010 |60.60Mb
-      - Relay_🇺🇸US-🇺🇸US_958
-      - ZZ_76 | 2.52Mb
-      - US_650 |57.56Mb
-      - US_44 | 3.27Mb
+      - US_72 |48.35Mb
+      - ZZ_120 | 5.65Mb
+      - Relay_🇺🇸US-🇺🇸US_09
+      - US_29 |175.90Mb
+      - US_79 | 8.29Mb
+      - CA_07 | 5.19Mb
+      - US_64 | 3.70Mb
+      - DE_06 |31.09Mb
+      - FR_10 |38.50Mb
+      - US_81 | 7.03Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ZZ_988 |59.56Mb
-      - ZZ_978 |61.16Mb
-      - ZZ_1010 |60.60Mb
-      - Relay_🇺🇸US-🇺🇸US_958
-      - ZZ_76 | 2.52Mb
-      - US_650 |57.56Mb
-      - US_44 | 3.27Mb
+      - US_72 |48.35Mb
+      - ZZ_120 | 5.65Mb
+      - Relay_🇺🇸US-🇺🇸US_09
+      - US_29 |175.90Mb
+      - US_79 | 8.29Mb
+      - CA_07 | 5.19Mb
+      - US_64 | 3.70Mb
+      - DE_06 |31.09Mb
+      - FR_10 |38.50Mb
+      - US_81 | 7.03Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +80,16 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ZZ_988 |59.56Mb
-      - ZZ_978 |61.16Mb
-      - ZZ_1010 |60.60Mb
-      - Relay_🇺🇸US-🇺🇸US_958
-      - ZZ_76 | 2.52Mb
-      - US_650 |57.56Mb
-      - US_44 | 3.27Mb
+      - US_72 |48.35Mb
+      - ZZ_120 | 5.65Mb
+      - Relay_🇺🇸US-🇺🇸US_09
+      - US_29 |175.90Mb
+      - US_79 | 8.29Mb
+      - CA_07 | 5.19Mb
+      - US_64 | 3.70Mb
+      - DE_06 |31.09Mb
+      - FR_10 |38.50Mb
+      - US_81 | 7.03Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +100,47 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - ZZ_988 |59.56Mb
-      - ZZ_978 |61.16Mb
-      - ZZ_1010 |60.60Mb
-      - Relay_🇺🇸US-🇺🇸US_958
-      - ZZ_76 | 2.52Mb
-      - US_650 |57.56Mb
-      - US_44 | 3.27Mb
+      - US_72 |48.35Mb
+      - ZZ_120 | 5.65Mb
+      - Relay_🇺🇸US-🇺🇸US_09
+      - US_29 |175.90Mb
+      - US_79 | 8.29Mb
+      - CA_07 | 5.19Mb
+      - US_64 | 3.70Mb
+      - DE_06 |31.09Mb
+      - FR_10 |38.50Mb
+      - US_81 | 7.03Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - ZZ_988 |59.56Mb
-      - ZZ_978 |61.16Mb
-      - ZZ_1010 |60.60Mb
-      - Relay_🇺🇸US-🇺🇸US_958
-      - ZZ_76 | 2.52Mb
-      - US_650 |57.56Mb
-      - US_44 | 3.27Mb
+      - US_72 |48.35Mb
+      - ZZ_120 | 5.65Mb
+      - Relay_🇺🇸US-🇺🇸US_09
+      - US_29 |175.90Mb
+      - US_79 | 8.29Mb
+      - CA_07 | 5.19Mb
+      - US_64 | 3.70Mb
+      - DE_06 |31.09Mb
+      - FR_10 |38.50Mb
+      - US_81 | 7.03Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ZZ_988 |59.56Mb
-      - ZZ_978 |61.16Mb
-      - ZZ_1010 |60.60Mb
-      - Relay_🇺🇸US-🇺🇸US_958
-      - ZZ_76 | 2.52Mb
-      - US_650 |57.56Mb
-      - US_44 | 3.27Mb
+      - US_72 |48.35Mb
+      - ZZ_120 | 5.65Mb
+      - Relay_🇺🇸US-🇺🇸US_09
+      - US_29 |175.90Mb
+      - US_79 | 8.29Mb
+      - CA_07 | 5.19Mb
+      - US_64 | 3.70Mb
+      - DE_06 |31.09Mb
+      - FR_10 |38.50Mb
+      - US_81 | 7.03Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +156,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ZZ_988 |59.56Mb
-      - ZZ_978 |61.16Mb
-      - ZZ_1010 |60.60Mb
-      - Relay_🇺🇸US-🇺🇸US_958
-      - ZZ_76 | 2.52Mb
-      - US_650 |57.56Mb
-      - US_44 | 3.27Mb
+      - US_72 |48.35Mb
+      - ZZ_120 | 5.65Mb
+      - Relay_🇺🇸US-🇺🇸US_09
+      - US_29 |175.90Mb
+      - US_79 | 8.29Mb
+      - CA_07 | 5.19Mb
+      - US_64 | 3.70Mb
+      - DE_06 |31.09Mb
+      - FR_10 |38.50Mb
+      - US_81 | 7.03Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
