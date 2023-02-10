@@ -5,91 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_中国, server: 221.131.165.72, port: 11907, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇰🇷_KR_韩国, server: 223.111.202.183, port: 28157, type: trojan, password: M76604a2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国 2, server: 221.131.165.72, port: 11916, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国 3, server: 43.248.96.185, port: 10248, type: trojan, password: e4799b20-3315-4b7d-baaa-bd3a6d6e3306, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港, server: 47.243.100.254, port: 20373, type: vmess, uuid: 180c6326-6679-4192-b418-457df58e8ba9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.100.254]}}, udp: true}
-  - {name: _CN_中国 4, server: 221.131.165.72, port: 11922, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 2, server: 47.242.193.213, port: 26605, type: vmess, uuid: 59f44d1e-c2e7-4de9-983a-4727bb861f43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.193.213]}}, udp: true}
-  - {name: _HK_香港 3, server: 47.242.60.8, port: 44161, type: vmess, uuid: bb170858-0779-484a-a708-7dc1728921cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.60.8]}}, udp: true}
-  - {name: _FR_法国, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: _FR_法国 2, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider26.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _KR_韩国, server: kr1.api-aws.com, port: 443, type: trojan, password: edeb6377-0d40-483b-869a-8b3be9d74850, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 4, server: 47.243.134.223, port: 36079, type: vmess, uuid: 73eb2fee-b1aa-44a6-af18-224c0ab348e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.134.223]}}, udp: true}
-  - {name: _HK_香港 5, server: 47.243.18.69, port: 39941, type: vmess, uuid: f2f964e9-1a9b-43f9-82a5-b80ee2ccb4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.18.69]}}, udp: true}
-  - {name: _HK_香港 6, server: 47.243.177.72, port: 27991, type: vmess, uuid: 7f25b2a0-188a-4fea-89cb-e3a4f6e3434a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.177.72]}}, udp: true}
-  - {name: _FR_法国 3, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 7, server: 47.243.182.204, port: 22082, type: vmess, uuid: f46292d1-a5c6-44e3-9539-c45ea9f7ec6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.182.204]}}, udp: true}
+  - {name: _HK_香港, server: 47.243.131.166, port: 24319, type: vmess, uuid: 1163bd66-75eb-4fc3-8980-0154cb86dd4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.131.166]}}, udp: true}
+  - {name: _HK_香港 2, server: 47.243.227.139, port: 31450, type: vmess, uuid: bbe67936-0312-4da1-900b-80ffe82e8521, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.227.139]}}, udp: true}
+  - {name: _FR_法国, server: 149.202.82.172, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _FR_法国 2, server: 149.202.82.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _FR_法国 3, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _FR_法国 4, server: 149.202.82.172, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _FR_法国 5, server: 149.202.82.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _FR_法国 6, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _FR_法国 7, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _FR_法国 8, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _FR_法国 9, server: 149.202.82.172, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _FR_法国 10, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _FR_法国 11, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _SG_新加坡, server: 13.215.49.89, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _SG_新加坡 2, server: 13.215.178.190, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国 2
-      - _CN_中国 3
       - _HK_香港
-      - _CN_中国 4
       - _HK_香港 2
-      - _HK_香港 3
       - _FR_法国
       - _FR_法国 2
-      - _SG_新加坡
-      - _KR_韩国
-      - _HK_香港 4
-      - _HK_香港 5
-      - _HK_香港 6
       - _FR_法国 3
-      - _HK_香港 7
+      - _FR_法国 4
+      - _FR_法国 5
+      - _FR_法国 6
+      - _FR_法国 7
+      - _FR_法国 8
+      - _FR_法国 9
+      - _FR_法国 10
+      - _FR_法国 11
+      - _SG_新加坡
+      - _SG_新加坡 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_中国
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国 2
-      - _CN_中国 3
       - _HK_香港
-      - _CN_中国 4
       - _HK_香港 2
-      - _HK_香港 3
       - _FR_法国
       - _FR_法国 2
-      - _SG_新加坡
-      - _KR_韩国
-      - _HK_香港 4
-      - _HK_香港 5
-      - _HK_香港 6
       - _FR_法国 3
-      - _HK_香港 7
+      - _FR_法国 4
+      - _FR_法国 5
+      - _FR_法国 6
+      - _FR_法国 7
+      - _FR_法国 8
+      - _FR_法国 9
+      - _FR_法国 10
+      - _FR_法国 11
+      - _SG_新加坡
+      - _SG_新加坡 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国 2
-      - _CN_中国 3
       - _HK_香港
-      - _CN_中国 4
       - _HK_香港 2
-      - _HK_香港 3
       - _FR_法国
       - _FR_法国 2
-      - _SG_新加坡
-      - _KR_韩国
-      - _HK_香港 4
-      - _HK_香港 5
-      - _HK_香港 6
       - _FR_法国 3
-      - _HK_香港 7
+      - _FR_法国 4
+      - _FR_法国 5
+      - _FR_法国 6
+      - _FR_法国 7
+      - _FR_法国 8
+      - _FR_法国 9
+      - _FR_法国 10
+      - _FR_法国 11
+      - _SG_新加坡
+      - _SG_新加坡 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -108,102 +100,89 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国 2
-      - _CN_中国 3
       - _HK_香港
-      - _CN_中国 4
       - _HK_香港 2
-      - _HK_香港 3
       - _FR_法国
       - _FR_法国 2
-      - _SG_新加坡
-      - _KR_韩国
-      - _HK_香港 4
-      - _HK_香港 5
-      - _HK_香港 6
       - _FR_法国 3
-      - _HK_香港 7
+      - _FR_法国 4
+      - _FR_法国 5
+      - _FR_法国 6
+      - _FR_法国 7
+      - _FR_法国 8
+      - _FR_法国 9
+      - _FR_法国 10
+      - _FR_法国 11
+      - _SG_新加坡
+      - _SG_新加坡 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - _HK_香港
       - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _HK_香港 6
-      - _HK_香港 7
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_中国
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国 2
-      - _CN_中国 3
       - _HK_香港
-      - _CN_中国 4
       - _HK_香港 2
-      - _HK_香港 3
       - _FR_法国
       - _FR_法国 2
-      - _SG_新加坡
-      - _KR_韩国
-      - _HK_香港 4
-      - _HK_香港 5
-      - _HK_香港 6
       - _FR_法国 3
-      - _HK_香港 7
+      - _FR_法国 4
+      - _FR_法国 5
+      - _FR_法国 6
+      - _FR_法国 7
+      - _FR_法国 8
+      - _FR_法国 9
+      - _FR_法国 10
+      - _FR_法国 11
+      - _SG_新加坡
+      - _SG_新加坡 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_中国
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国 2
-      - _CN_中国 3
       - _HK_香港
-      - _CN_中国 4
       - _HK_香港 2
-      - _HK_香港 3
       - _FR_法国
       - _FR_法国 2
-      - _SG_新加坡
-      - _KR_韩国
-      - _HK_香港 4
-      - _HK_香港 5
-      - _HK_香港 6
       - _FR_法国 3
-      - _HK_香港 7
+      - _FR_法国 4
+      - _FR_法国 5
+      - _FR_法国 6
+      - _FR_法国 7
+      - _FR_法国 8
+      - _FR_法国 9
+      - _FR_法国 10
+      - _FR_法国 11
+      - _SG_新加坡
+      - _SG_新加坡 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国 2
-      - _CN_中国 3
       - _HK_香港
-      - _CN_中国 4
       - _HK_香港 2
-      - _HK_香港 3
       - _FR_法国
       - _FR_法国 2
-      - _SG_新加坡
-      - _KR_韩国
-      - _HK_香港 4
-      - _HK_香港 5
-      - _HK_香港 6
       - _FR_法国 3
-      - _HK_香港 7
+      - _FR_法国 4
+      - _FR_法国 5
+      - _FR_法国 6
+      - _FR_法国 7
+      - _FR_法国 8
+      - _FR_法国 9
+      - _FR_法国 10
+      - _FR_法国 11
+      - _SG_新加坡
+      - _SG_新加坡 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -219,23 +198,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国 2
-      - _CN_中国 3
       - _HK_香港
-      - _CN_中国 4
       - _HK_香港 2
-      - _HK_香港 3
       - _FR_法国
       - _FR_法国 2
-      - _SG_新加坡
-      - _KR_韩国
-      - _HK_香港 4
-      - _HK_香港 5
-      - _HK_香港 6
       - _FR_法国 3
-      - _HK_香港 7
+      - _FR_法国 4
+      - _FR_法国 5
+      - _FR_法国 6
+      - _FR_法国 7
+      - _FR_法国 8
+      - _FR_法国 9
+      - _FR_法国 10
+      - _FR_法国 11
+      - _SG_新加坡
+      - _SG_新加坡 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
